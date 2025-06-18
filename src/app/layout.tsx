@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'ShakaQuest - 中学受験社会学習アプリ',
-  description: '47都道府県と県庁所在地を楽しく学習する中学受験対応アプリ',
+  description: '社会を楽しく学習する中学受験対応アプリ',
   manifest: '/manifest.json',
   themeColor: '#3b82f6',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
