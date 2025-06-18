@@ -307,6 +307,15 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: "hard",
     type: "multiple-choice"
   }
+  {
+    id: 21,
+    question: "選挙権を得られる年齢は？",
+    options: ["16歳", "18歳", "20歳", "25歳"],
+    correct: 1,
+    category: "選挙制度",
+    difficulty: "easy",
+    explanation: "2016年から選挙権年齢は18歳に引き下げられました。"
+}
 ];
 
 // Utility functions
