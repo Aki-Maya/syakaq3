@@ -4,6 +4,15 @@ import { useState, useEffect } from 'react';
 import { subjects, getPlayerLevel, getXPForNextLevel, type Subject } from '@/data/index';
 import Link from 'next/link';
 
+// 🆕 日付取得関数を追加
+const getCurrentDate = () => {
+  return new Date().toLocaleDateString('ja-JP', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  });
+};
+
 interface UserStats {
   level: number;
   xp: number;
@@ -21,6 +30,7 @@ interface UserStats {
 }
 
 const ShakaQuestHome = () => {
+  // 🔄 useState初期値を空に変更
   const [userStats, setUserStats] = useState<UserStats>({
     level: 1,
     xp: 450,
@@ -29,14 +39,90 @@ const ShakaQuestHome = () => {
     totalAnswered: 45,
     correctAnswers: 38,
     subjectProgress: {
-      geography: { answered: 18, correct: 15, lastStudied: '2024-01-15' },
-      history: { answered: 15, correct: 12, lastStudied: '2024-01-14' },
-      civics: { answered: 12, correct: 11, lastStudied: '2024-01-13' }
+      geography: { answered: 18, correct: 15, lastStudied: '' },
+      history: { answered: 15, correct: 12, lastStudied: '' },
+      civics: { answered: 12, correct: 11, lastStudied: '' }
     }
   });
 
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  // 🆕 useEffect でlocalStorage対応を追加
+  useEffect(() => {
+    const savedStats = localStorage.getItem('shakaquest_userStats');
+    if (savedStats) {
+      try {
+        const parsedStats = JSON.parse(savedStats);
+        setUserStats(parsedStats);
+      } catch (error) {
+        console.error('Error parsing saved stats:', error);
+        initializeStats();
+      }
+    } else {
+      initializeStats();
+    }
+  }, []);
+
+  // 🆕 初期化関数を追加
+  const initializeStats = () => {
+    const currentDate = getCurrentDate();
+    const initialStats = {
+      level: 1,
+      xp: 450,
+      coins: 180,
+      streak: 7,
+      totalAnswered: 45,
+      correctAnswers: 38,
+      subjectProgress: {
+        geography: { answered: 18, correct: 15, lastStudied: currentDate },
+        history: { answered: 15, correct: 12, lastStudied: currentDate },
+        civics: { answered: 12, correct: 11, lastStudied: currentDate }
+      }
+    };
+    setUserStats(initialStats);
+    localStorage.setItem('shakaquest_userStats', JSON.stringify(initialStats));
+  };
+
+  // 🆕 学習日更新関数を追加
+  const updateLastStudied = (subjectId: string) => {
+    setUserStats(prev => {
+      const updated = {
+        ...prev,
+        subjectProgress: {
+          ...prev.subjectProgress,
+          [subjectId]: {
+            ...prev.subjectProgress[subjectId],
+            lastStudied: getCurrentDate()
+          }
+        }
+      };
+      localStorage.setItem('shakaquest_userStats', JSON.stringify(updated));
+      return updated;
+    });
+  };
+
+  // 🆕 統計更新関数を追加
+  const updateStats = (subjectId: string, isCorrect: boolean) => {
+    setUserStats(prev => {
+      const subjectStats = prev.subjectProgress[subjectId];
+      const updated = {
+        ...prev,
+        totalAnswered: prev.totalAnswered + 1,
+        correctAnswers: prev.correctAnswers + (isCorrect ? 1 : 0),
+        subjectProgress: {
+          ...prev.subjectProgress,
+          [subjectId]: {
+            answered: subjectStats.answered + 1,
+            correct: subjectStats.correct + (isCorrect ? 1 : 0),
+            lastStudied: getCurrentDate()
+          }
+        }
+      };
+      localStorage.setItem('shakaquest_userStats', JSON.stringify(updated));
+      return updated;
+    });
+  };
 
   const currentLevel = getPlayerLevel(userStats.xp);
   const xpForNext = getXPForNextLevel(userStats.xp);
@@ -51,7 +137,11 @@ const ShakaQuestHome = () => {
     return (
       <div 
         className={`${subject.color} rounded-xl p-6 text-white cursor-pointer transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl`}
-        onClick={() => setSelectedSubject(subject.id)}
+        onClick={() => {
+          setSelectedSubject(subject.id);
+          // 🔄 分野選択時に学習日を更新
+          updateLastStudied(subject.id);
+        }}
       >
         <div className="flex items-center justify-between mb-4">
           <div className="text-4xl">{subject.icon}</div>
@@ -98,6 +188,7 @@ const ShakaQuestHome = () => {
           <Link 
             href={`/quiz?subject=${subjectId}&category=${category.id}`}
             className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors"
+            onClick={() => updateLastStudied(subjectId)} // 🆕 クイズ開始時に更新
           >
             開始
           </Link>
@@ -106,7 +197,39 @@ const ShakaQuestHome = () => {
     );
   };
 
-  // User Stats Card Component
+  // 🔄 今日の学習進捗を動的計算
+  const DailyGoalCard = () => {
+    const dailyGoal = 10;
+    const today = getCurrentDate();
+    
+    // 今日学習した分野をカウント
+    const todayStudied = Object.values(userStats.subjectProgress).filter(
+      stats => stats.lastStudied === today
+    ).length;
+    
+    const todayAnswered = Math.min(todayStudied * 2, dailyGoal); // 仮の計算
+    const goalProgress = (todayAnswered / dailyGoal) * 100;
+
+    return (
+      <div className="bg-yellow-100 rounded-lg p-4 mb-6 border-l-4 border-yellow-500">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="font-bold text-yellow-800">📅 今日の目標</h3>
+          <span className="text-yellow-600 text-sm">{todayAnswered}/{dailyGoal}問</span>
+        </div>
+        <div className="w-full bg-yellow-200 rounded-full h-2 mb-2">
+          <div 
+            className="bg-yellow-500 rounded-full h-2 transition-all duration-300" 
+            style={{ width: `${goalProgress}%` }}
+          />
+        </div>
+        <p className="text-yellow-700 text-sm">
+          あと{Math.max(0, dailyGoal - todayAnswered)}問で今日の目標達成！
+        </p>
+      </div>
+    );
+  };
+
+  // 以下のコンポーネントは変更なし（UserStatsCard以降）
   const UserStatsCard = () => (
     <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl p-6 text-white mb-6">
       <div className="flex items-center justify-between mb-4">
@@ -149,31 +272,6 @@ const ShakaQuestHome = () => {
       </div>
     </div>
   );
-
-  // Daily Goal Card
-  const DailyGoalCard = () => {
-    const dailyGoal = 10;
-    const todayAnswered = 6;
-    const goalProgress = (todayAnswered / dailyGoal) * 100;
-
-    return (
-      <div className="bg-yellow-100 rounded-lg p-4 mb-6 border-l-4 border-yellow-500">
-        <div className="flex items-center justify-between mb-2">
-          <h3 className="font-bold text-yellow-800">📅 今日の目標</h3>
-          <span className="text-yellow-600 text-sm">{todayAnswered}/{dailyGoal}問</span>
-        </div>
-        <div className="w-full bg-yellow-200 rounded-full h-2 mb-2">
-          <div 
-            className="bg-yellow-500 rounded-full h-2 transition-all duration-300" 
-            style={{ width: `${goalProgress}%` }}
-          />
-        </div>
-        <p className="text-yellow-700 text-sm">
-          あと{dailyGoal - todayAnswered}問で今日の目標達成！
-        </p>
-      </div>
-    );
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
