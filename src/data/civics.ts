@@ -306,7 +306,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     category: "international",
     difficulty: "hard",
     type: "multiple-choice"
-  }
+  },
   {
     id: 21,
     question: "選挙権を得られる年齢は？",
