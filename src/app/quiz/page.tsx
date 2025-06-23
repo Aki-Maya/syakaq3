@@ -79,13 +79,14 @@ const QuizComponent = () => {
     }));
   };
 
+  // 🔄 修正: 選択と同時に回答処理
   const handleAnswerSelect = (answerIndex: number) => {
     if (quizState.showExplanation) return;
     
-    // 選択と同時に回答処理
+    // 選択と同時に回答処理を実行
     const newAnswers = [...quizState.answers];
     newAnswers[quizState.currentIndex] = answerIndex;
-  
+
     setQuizState(prev => ({
       ...prev,
       selectedAnswer: answerIndex,
@@ -94,8 +95,7 @@ const QuizComponent = () => {
     }));
   };
 
-  const handleAnswerSelect = (answerIndex: number) => {
-    if (quizState.showExplanation) return;
+  // 🗑️ 削除: handleSubmitAnswer 関数は不要になったため削除
 
   const handleNextQuestion = () => {
     if (quizState.currentIndex < quizState.questions.length - 1) {
@@ -287,15 +287,19 @@ const QuizComponent = () => {
             </div>
           )}
 
+          {/* 🔄 修正: 「回答する」ボタンを削除し、簡潔な表示に変更 */}
           <div className="text-center">
-            {!quizState.showExplanation ? (
-            ) : (
+            {quizState.showExplanation ? (
               <button
                 onClick={handleNextQuestion}
                 className="bg-green-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-600 transition-colors"
               >
                 {quizState.currentIndex < quizState.questions.length - 1 ? '次の問題' : '結果を見る'}
               </button>
+            ) : (
+              <div className="text-gray-500 text-sm">
+                選択肢をクリックして回答してください
+              </div>
             )}
           </div>
         </div>
