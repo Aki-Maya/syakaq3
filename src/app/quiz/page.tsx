@@ -47,7 +47,7 @@ const QuizComponent = () => {
       questions = getRandomQuestionsMixed(10);
     }
 
-    const shuffled = [...questions].sort(() => 0.5 - Math.random()).slice(0, 10);
+    const shuffled = [...questions].sort(() => 0.5 - Math.random()).slice(0, 5);
 
     setQuizState(prev => ({
       ...prev,
