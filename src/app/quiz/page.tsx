@@ -81,19 +81,21 @@ const QuizComponent = () => {
 
   const handleAnswerSelect = (answerIndex: number) => {
     if (quizState.showExplanation) return;
-    setQuizState(prev => ({ ...prev, selectedAnswer: answerIndex }));
-  };
-
-  const handleSubmitAnswer = () => {
+    
+    // 選択と同時に回答処理
     const newAnswers = [...quizState.answers];
-    newAnswers[quizState.currentIndex] = quizState.selectedAnswer;
-
+    newAnswers[quizState.currentIndex] = answerIndex;
+  
     setQuizState(prev => ({
       ...prev,
+      selectedAnswer: answerIndex,
       answers: newAnswers,
       showExplanation: true
     }));
   };
+
+  const handleAnswerSelect = (answerIndex: number) => {
+    if (quizState.showExplanation) return;
 
   const handleNextQuestion = () => {
     if (quizState.currentIndex < quizState.questions.length - 1) {
@@ -287,17 +289,6 @@ const QuizComponent = () => {
 
           <div className="text-center">
             {!quizState.showExplanation ? (
-              <button
-                onClick={handleSubmitAnswer}
-                disabled={quizState.selectedAnswer === null}
-                className={`px-8 py-3 rounded-lg font-bold transition-colors ${
-                  quizState.selectedAnswer !== null
-                    ? 'bg-blue-500 text-white hover:bg-blue-600'
-                    : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                }`}
-              >
-                回答する
-              </button>
             ) : (
               <button
                 onClick={handleNextQuestion}
