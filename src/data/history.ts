@@ -82,7 +82,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "prehistoric",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "原始時代"
+    era: "原始"
   },
   {
     id: 2,
@@ -93,7 +93,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "prehistoric",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "原始時代"
+    era: "原始"
   },
   {
     id: 3,
