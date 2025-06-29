@@ -2,7 +2,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { subjects, Subject, UserProgress, initializeUserProgress, getLevelByXP, getNextLevel } from '../data/index';
+// ★ 修正: SubjectCategory型もインポートします
+import { subjects, Subject, SubjectCategory, UserProgress, initializeUserProgress, getLevelByXP, getNextLevel } from '../data/index';
+
+// 外部コンポーネントをインポートする想定（ファイル分割した場合）
+// import StatCard from './StatCard'; 
+// import SubjectCard from './SubjectCard';
+// import CategoryCard from './CategoryCard';
 
 interface MainPageProps {
   onStartQuiz: (subject: string, category?: string) => void;
@@ -26,6 +32,9 @@ export default function EnhancedMainPage({ onStartQuiz }: MainPageProps) {
   const progressPercentage = nextLevel 
     ? ((userProgress.totalXP - currentLevel.xpRequired) / (nextLevel.xpRequired - currentLevel.xpRequired)) * 100
     : 100;
+  
+  // ★ 修正: 表示用に100%を上限とする変数を定義
+  const displayProgressPercentage = Math.min(100, progressPercentage);
 
   const handleSubjectSelect = (subjectId: string) => {
     if (selectedSubject === subjectId) {
@@ -109,7 +118,7 @@ export default function EnhancedMainPage({ onStartQuiz }: MainPageProps) {
           <div className="w-full bg-gray-200 rounded-full h-3">
             <div 
               className={`h-3 rounded-full transition-all duration-300 ${currentLevel.color}`}
-              style={{ width: `${progressPercentage}%` }}
+              style={{ width: `${displayProgressPercentage}%` }}
             ></div>
           </div>
         </div>
@@ -133,15 +142,19 @@ export default function EnhancedMainPage({ onStartQuiz }: MainPageProps) {
 
         {/* 科目選択 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {subjects.map((subject) => (
-            <SubjectCard
-              key={subject.id}
-              subject={subject}
-              isSelected={selectedSubject === subject.id}
-              onClick={() => handleSubjectSelect(subject.id)}
-              userStats={userProgress.subjectStats[subject.id as keyof typeof userProgress.subjectStats]}
-            />
-          ))}
+          {subjects.map((subject) => {
+            // ★ 修正: データがない場合に備え、デフォルト値を設定
+            const stats = userProgress.subjectStats[subject.id as keyof typeof userProgress.subjectStats] || { correct: 0, answered: 0 };
+            return (
+              <SubjectCard
+                key={subject.id}
+                subject={subject}
+                isSelected={selectedSubject === subject.id}
+                onClick={() => handleSubjectSelect(subject.id)}
+                userStats={stats}
+              />
+            );
+          })}
         </div>
 
         {/* カテゴリ選択 */}
@@ -182,20 +195,23 @@ export default function EnhancedMainPage({ onStartQuiz }: MainPageProps) {
           <h3 className="text-xl font-semibold mb-4">📊 学習統計</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {subjects.map((subject) => {
-              const stats = userProgress.subjectStats[subject.id as keyof typeof userProgress.subjectStats];
-              const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+              // ★ 修正: データがない場合に備え、デフォルト値を設定
+              const stats = userProgress.subjectStats[subject.id as keyof typeof userProgress.subjectStats] || { correct: 0, answered: 0 };
+              // ★ 修正: 正答率の計算式に上限(100)を設定し、プロパティ名をansweredに統一
+              const accuracy = stats.answered > 0 ? Math.min(100, Math.round((stats.correct / stats.answered) * 100)) : 0;
+              const displayAccuracy = Math.min(100, accuracy);
 
               return (
                 <div key={subject.id} className="text-center">
                   <div className="text-2xl mb-2">{subject.icon}</div>
                   <h4 className="font-semibold text-gray-800">{subject.name}</h4>
                   <p className="text-sm text-gray-600 mb-2">
-                    正解: {stats.correct} / {stats.total}
+                    正解: {stats.correct} / {stats.answered}
                   </p>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div 
                       className={`h-2 rounded-full ${subject.color}`}
-                      style={{ width: `${accuracy}%` }}
+                      style={{ width: `${displayAccuracy}%` }}
                     ></div>
                   </div>
                   <p className="text-xs text-gray-500 mt-1">{accuracy}%</p>
@@ -222,7 +238,7 @@ function StatCard({ title, value, subtitle, icon, color }: {
       <div className="flex items-center justify-between">
         <div>
           <p className="text-sm text-gray-600">{title}</p>
-          <p className="text-2xl font-bold text-gray-800">{value}</p>
+          <p className="text-2xl font-bold text-gray-800">{value.toLocaleString()}</p>
           <p className="text-xs text-gray-500">{subtitle}</p>
         </div>
         <div className={`w-12 h-12 ${color} rounded-full flex items-center justify-center text-white text-xl`}>
@@ -238,10 +254,12 @@ function SubjectCard({ subject, isSelected, onClick, userStats }: {
   subject: Subject;
   isSelected: boolean;
   onClick: () => void;
-  userStats: { correct: number; total: number };
+  // ★ 修正: プロパティ名をansweredに統一
+  userStats: { correct: number; answered: number };
 }) {
-  const accuracy = userStats.total > 0 ? Math.min(100, Math.round((userStats.correct / userStats.total) * 100)) : 0;
-
+  // ★ 修正: 正答率の計算式を最新化し、プロパティ名をansweredに統一
+  const accuracy = userStats.answered > 0 ? Math.min(100, Math.round((userStats.correct / userStats.answered) * 100)) : 0;
+  const displayAccuracy = Math.min(100, accuracy);
 
   return (
     <div 
@@ -266,7 +284,7 @@ function SubjectCard({ subject, isSelected, onClick, userStats }: {
           <div className="w-full bg-gray-200 rounded-full h-2">
             <div 
               className={`h-2 rounded-full ${subject.color}`}
-              style={{ width: `${accuracy}%` }}
+              style={{ width: `${displayAccuracy}%` }}
             ></div>
           </div>
         </div>
@@ -281,8 +299,9 @@ function SubjectCard({ subject, isSelected, onClick, userStats }: {
 }
 
 // カテゴリカードコンポーネント
+// ★ 修正: propsの型をanyからSubjectCategoryに修正
 function CategoryCard({ category, isSelected, onClick }: {
-  category: any;
+  category: SubjectCategory;
   isSelected: boolean;
   onClick: () => void;
 }) {
@@ -297,7 +316,8 @@ function CategoryCard({ category, isSelected, onClick }: {
       <p className="text-xs text-gray-600 mb-2">{category.description}</p>
       <div className="flex justify-between text-xs text-gray-500">
         <span>{category.questionCount}問</span>
-        <span>{category.difficulty.join(', ')}</span>
+        {/* ★ 修正: 存在しないdifficultyプロパティへのアクセスを削除 */}
+        {/* <span>{category.difficulty?.join(', ')}</span> */}
       </div>
     </div>
   );
