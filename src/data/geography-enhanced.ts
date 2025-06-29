@@ -187,128 +187,134 @@ export const industrialRegions: IndustrialRegion[] = [
 export const geographyQuestions: GeographyQuestion[] = [
   // Prefecture Questions
   {
-    id: 1,
-    question: "北海道の県庁所在地はどこですか？",
-    options: ["函館市", "札幌市", "旭川市", "釧路市"],
-    correct: 1,
-    explanation: "北海道の県庁所在地は札幌市です。",
-    category: "regions",
-    difficulty: "easy",
-    type: "multiple-choice"
+    "id": 1,
+    "question": "フードマイレージの説明として、最も適切なものはどれですか？",
+    "options": [
+      "食料の輸送距離が長いほど環境負荷が大きいことを示す指標",
+      "食料の生産にかかるエネルギーを示す指標",
+      "食料の鮮度を輸送時間で示した指標",
+      "食料の輸入量と輸出量の差額を示す指標"
+    ],
+    "correct": 0,
+    "explanation": "フードマイレージは、食料の重さに輸送距離を掛け合わせたもので、数値が小さいほど環境負荷が小さいとされます。",
+    "category": "industry",
+    "difficulty": "normal",
+    "type": "multiple-choice",
+    "era": "地理"
   },
   {
-    id: 2,
-    question: "宮城県の県庁所在地はどこですか？",
-    options: ["仙台市", "石巻市", "大崎市", "宮城市"],
-    correct: 0,
-    explanation: "宮城県の県庁所在地は仙台市です。",
-    category: "regions",
-    difficulty: "easy",
-    type: "multiple-choice"
+    "id": 7,
+    "question": "日本の鉄鋼業について、鉄鉱石の最大の輸入相手国はどこですか？",
+    "options": ["オーストラリア", "ブラジル", "中国", "アメリカ"],
+    "correct": 0,
+    "explanation": "日本の鉄鋼業において、鉄鉱石を最も多く輸入している国はオーストラリアです。",
+    "category": "industry",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "era": "地理"
   },
   {
-    id: 3,
-    question: "神奈川県の県庁所在地はどこですか？",
-    options: ["川崎市", "相模原市", "横浜市", "藤沢市"],
-    correct: 2,
-    explanation: "神奈川県の県庁所在地は横浜市です。",
-    category: "regions",
-    difficulty: "easy",
-    type: "multiple-choice"
-  },
-
-  // Climate Questions
-  {
-    id: 4,
-    question: "日本海側の冬の気候の特徴は何ですか？",
-    options: ["乾燥している", "雪が多い", "台風が多い", "気温が高い"],
-    correct: 1,
-    explanation: "日本海側は冬に雪が多く降ります。これは日本海岸式気候の特徴です。",
-    category: "climate",
-    difficulty: "medium",
-    type: "multiple-choice"
+    "id": 8,
+    "question": "日本三名園の組み合わせとして、正しいものはどれですか？",
+    "options": [
+      "水戸市の偕楽園、金沢市の兼六園、岡山市の後楽園",
+      "水戸市の偕楽園、高松市の栗林公園、岡山市の後楽園",
+      "京都市の金閣寺、金沢市の兼六園、岡山市の後楽園",
+      "日光市の東照宮、水戸市の偕楽園、金沢市の兼六園"
+    ],
+    "correct": 0,
+    "explanation": "日本三名園は、水戸市の偕楽園、金沢市の兼六園、岡山市の後楽園です。",
+    "category": "regions",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "era": "地理"
   },
   {
-    id: 5,
-    question: "瀬戸内海沿岸の気候の特徴は何ですか？",
-    options: ["雨が多い", "雪が多い", "雨が少ない", "台風が多い"],
-    correct: 2,
-    explanation: "瀬戸内海沿岸は山に囲まれているため、年間を通じて雨が少ないです。",
-    category: "climate",
-    difficulty: "medium",
-    type: "multiple-choice"
+    "id": 9,
+    "question": "「きりたんぽ鍋」は、どの県の郷土料理ですか？",
+    "options": ["山形県", "秋田県", "岩手県", "宮城県"],
+    "correct": 1,
+    "explanation": "きりたんぽ鍋は秋田県の郷土料理で、きりたんぽと鶏肉、野菜などを煮込んだ鍋料理です。",
+    "category": "regions",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "era": "地理"
   },
-
-  // Agriculture Questions
   {
-    id: 6,
-    question: "日本の穀倉地帯として知られる地域はどこですか？",
-    options: ["関東平野", "東北地方", "九州地方", "四国地方"],
-    correct: 1,
-    explanation: "東北地方は米の生産が盛んで、日本の穀倉地帯と呼ばれています。",
-    category: "regions",
-    difficulty: "medium",
-    type: "multiple-choice"
+    "id": 10,
+    "question": "自動車産業が特に盛んな工業地帯はどこですか？",
+    "options": ["阪神工業地帯", "京葉工業地域", "中京工業地帯", "関東内陸工業地域"],
+    "correct": 2,
+    "explanation": "中京工業地帯は愛知県を中心とし、トヨタ自動車を始めとする多くの自動車関連企業が集積しています。",
+    "category": "industry",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "era": "地理"
   },
-
-  // Fishery Questions
   {
-    id: 7,
-    question: "日本三大漁港の一つはどこですか？",
-    options: ["函館港", "銚子港", "下関港", "境港"],
-    correct: 1,
-    explanation: "銚子港（千葉県）は日本三大漁港の一つです。他に焼津港、八戸港があります。",
-    category: "industry",
-    difficulty: "hard",
-    type: "multiple-choice"
+    "id": 11,
+    "question": "石油化学や鉄鋼業が盛んで、千葉県の東京湾沿岸に位置する工業地域は何ですか？",
+    "options": ["京浜工業地帯", "京葉工業地域", "鹿島臨海工業地域", "関東内陸工業地域"],
+    "correct": 1,
+    "explanation": "京葉工業地域は千葉県の東京湾沿岸に位置し、石油化学や鉄鋼業を中心とした重化学工業が盛んです。",
+    "category": "industry",
+    "difficulty": "normal",
+    "type": "multiple-choice",
+    "era": "地理"
   },
-
-  // Industry Questions
   {
-    id: 8,
-    question: "自動車工業で有名な工業地帯はどこですか？",
-    options: ["京浜工業地帯", "中京工業地帯", "阪神工業地帯", "北九州工業地帯"],
-    correct: 1,
-    explanation: "中京工業地帯はトヨタ自動車をはじめとする自動車工業の中心地です。",
-    category: "industry",
-    difficulty: "medium",
-    type: "multiple-choice"
+    "id": 12,
+    "question": "岡山県の県庁所在地である岡山市の特徴として、正しいものはどれですか？",
+    "options": [
+      "人口100万人を超える政令指定都市である",
+      "太田川が流れている",
+      "政令指定都市だが、人口は100万人を超えていない",
+      "ラムサール条約に登録されたカルスト地形がある"
+    ],
+    "correct": 2,
+    "explanation": "岡山市は政令指定都市ですが、人口は100万人を超えていません。",
+    "category": "regions",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "era": "地理"
   },
-
-  // Traditional Crafts Questions
   {
-    id: 9,
-    question: "京都の伝統工芸品は何ですか？",
-    options: ["南部鉄器", "西陣織", "津軽塗", "有田焼"],
-    correct: 1,
-    explanation: "西陣織は京都の代表的な伝統工芸品です。",
-    category: "industry",
-    difficulty: "medium",
-    type: "multiple-choice"
+    "id": 13,
+    "question": "日本三大急流に含まれない川はどれですか？",
+    "options": ["球磨川", "最上川", "富士川", "四万十川"],
+    "correct": 3,
+    "explanation": "日本三大急流は熊本県の球磨川、山形県の最上川、静岡県・山梨県の富士川です。 四万十川は資料に記載がありますが、三大急流には含まれません。",
+    "category": "regions",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "era": "地理"
   },
-
-  // Pollution Questions
   {
-    id: 10,
-    question: "四大公害病の一つである水俣病の原因物質は何ですか？",
-    options: ["カドミウム", "水銀", "硫黄酸化物", "窒素酸化物"],
-    correct: 1,
-    explanation: "水俣病は水銀による公害病です。",
-    category: "industry",
-    difficulty: "hard",
-    type: "multiple-choice"
+    "id": 14,
+    "question": "岩手県盛岡市や奥州市で生産される伝統工芸品は何ですか？",
+    "options": ["桐生織", "益子焼", "南部鉄器", "箱根寄木細工"],
+    "correct": 2,
+    "explanation": "南部鉄器は、岩手県盛岡市や奥州市で生産される伝統工芸品です。",
+    "category": "regions",
+    "difficulty": "normal",
+    "type": "multiple-choice",
+    "era": "地理"
   },
-
-  // Regional Questions
   {
-    id: 11,
-    question: "九州地方で最も人口が多い県はどこですか？",
-    options: ["熊本県", "鹿児島県", "福岡県", "長崎県"],
-    correct: 2,
-    explanation: "福岡県は九州地方で最も人口が多い県です。",
-    category: "regions",
-    difficulty: "medium",
-    type: "multiple-choice"
+    "id": 15,
+    "question": "東海道新幹線の窓から名古屋方面に向かう際、左側に見える景色として正しいものはどれですか？",
+    "options": [
+      "富士山",
+      "日本アルプス",
+      "太平洋側の海岸線",
+      "琵琶湖"
+    ],
+    "correct": 2,
+    "explanation": "東海道新幹線で名古屋方面に向かう場合、左側の車窓からは太平洋側であり、御前崎や伊豆大島などの海岸線が見えることがあります。",
+    "category": "regions",
+    "difficulty": "normal",
+    "type": "multiple-choice",
+    "era": "地理"
   }
 ];
 
