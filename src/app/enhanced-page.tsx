@@ -34,7 +34,7 @@ export default function EnhancedMainPage({ onStartQuiz }: MainPageProps) {
     : 100;
   
   // ★ 修正: 表示用に100%を上限とする変数を定義
-  const displayProgressPercentage = Math.min(100, progressPercentage);
+  const displayProgressPercentage = Math.min(1, progressPercentage);
 
   const handleSubjectSelect = (subjectId: string) => {
     if (selectedSubject === subjectId) {
