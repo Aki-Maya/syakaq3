@@ -336,7 +336,7 @@ const ShakaQuestHome = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {subjects.map((subject) => {
               const stats = userStats.subjectProgress[subject.id];
-              const accuracy = stats ? Math.round((stats.correct / stats.answered) * 100) : 0;
+              const accuracy = stats && stats.answered > 0  ? Math.round((stats.correct / stats.answered) * 100)  : 0;
 
               return (
                 <div key={subject.id} className="text-center p-4 bg-gray-50 rounded-lg">
