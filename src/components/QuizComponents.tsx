@@ -81,7 +81,7 @@ export default function EnhancedQuiz({ subject, category, onFinish, onBack }: En
       } else {
         fetchedQuestions = subjectQuestions;
       }
-      // 問題をシャッフルして、最大10問に制限
+      // 問題をシャッフルして、最大5問に制限
       fetchedQuestions = fetchedQuestions.sort(() => Math.random() - 0.5).slice(0, 10);
     }
 
