@@ -100,6 +100,7 @@ export interface SubjectCategory {
 }
 
 // Subject definitions
+// まず、questionCountとtotalQuestionsを初期値0で定義します。
 export const subjects: Subject[] = [
   {
     id: 'geography',
@@ -108,32 +109,32 @@ export const subjects: Subject[] = [
     icon: '🗾',
     color: 'bg-green-500',
     categories: [
-      { id: 'prefectures', name: '都道府県', description: '47都道府県と県庁所在地', questionCount: 3 },
-      { id: 'climate', name: '気候', description: '日本の6つの気候区分', questionCount: 2 },
-      { id: 'agriculture', name: '農業', description: '日本の農業と特産品', questionCount: 1 },
-      { id: 'fishery', name: '水産業', description: '漁業と主要港', questionCount: 1 },
-      { id: 'industry', name: '工業', description: '工業地帯と製造業', questionCount: 1 },
-      { id: 'traditional-crafts', name: '伝統工業', description: '各地の伝統工芸品', questionCount: 1 },
-      { id: 'pollution', name: '公害', description: '四大公害病と環境問題', questionCount: 1 },
-      { id: 'regions', name: '地方', description: '各地方の特色', questionCount: 1 }
+      { id: 'prefectures', name: '都道府県', description: '47都道府県と県庁所在地', questionCount: 0 },
+      { id: 'climate', name: '気候', description: '日本の6つの気候区分', questionCount: 0 },
+      { id: 'agriculture', name: '農業', description: '日本の農業と特産品', questionCount: 0 },
+      { id: 'fishery', name: '水産業', description: '漁業と主要港', questionCount: 0 },
+      { id: 'industry', name: '工業', description: '工業地帯と製造業', questionCount: 0 },
+      { id: 'traditional-crafts', name: '伝統工業', description: '各地の伝統工芸品', questionCount: 0 },
+      { id: 'pollution', name: '公害', description: '四大公害病と環境問題', questionCount: 0 },
+      { id: 'regions', name: '地方', description: '各地方の特色', questionCount: 0 }
     ],
-    totalQuestions: 11
+    totalQuestions: 0
   },
-{
+  {
     id: 'history',
     name: '歴史',
     description: '旧石器時代から現代まで日本の歴史',
     icon: '📜',
     color: 'bg-blue-500',
     categories: [
-      { id: 'primitive', name: '原始', description: '〜約2400年前', questionCount: 2 },
-      { id: 'ancient', name: '古代', description: '約2400年前〜1185年', questionCount: 3 },
-      { id: 'medieval', name: '中世', description: '1185年〜1573年', questionCount: 4 },
-      { id: 'early-modern', name: '近世', description: '1573年〜1867年', questionCount: 4 },
-      { id: 'modern', name: '近代', description: '1868年〜1945年', questionCount: 2 },
+      { id: 'primitive', name: '原始', description: '〜約2400年前', questionCount: 0 },
+      { id: 'ancient', name: '古代', description: '約2400年前〜1185年', questionCount: 0 },
+      { id: 'medieval', name: '中世', description: '1185年〜1573年', questionCount: 0 },
+      { id: 'early-modern', name: '近世', description: '1573年〜1867年', questionCount: 0 },
+      { id: 'modern', name: '近代', description: '1868年〜1945年', questionCount: 0 },
       { id: 'contemporary', name: '現代', description: '1945年〜現在', questionCount: 0 }
     ],
-    totalQuestions: 15
+    totalQuestions: 0
   },
   {
     id: 'civics',
@@ -142,18 +143,48 @@ export const subjects: Subject[] = [
     icon: '🏛️',
     color: 'bg-purple-500',
     categories: [
-      { id: 'constitution', name: '憲法', description: '日本国憲法の三大原則', questionCount: 3 },
-      { id: 'government', name: '政治制度', description: '三権分立と国会・内閣・裁判所', questionCount: 7 },
-      { id: 'human-rights', name: '人権', description: '基本的人権と新しい人権', questionCount: 2 },
-      { id: 'local-government', name: '地方自治', description: '地方公共団体の仕組み', questionCount: 2 },
-      { id: 'international', name: '国際関係', description: '国際連合と世界平和', questionCount: 3 },
-      { id: 'elections', name: '選挙', description: '選挙制度と参政権', questionCount: 1 },
-      { id: 'economics', name: '経済', description: '税制と経済の仕組み', questionCount: 1 },
-      { id: 'labor', name: '労働', description: '労働者の権利', questionCount: 1 }
+      { id: 'constitution', name: '憲法', description: '日本国憲法の三大原則', questionCount: 0 },
+      { id: 'government', name: '政治制度', description: '三権分立と国会・内閣・裁判所', questionCount: 0 },
+      { id: 'human-rights', name: '人権', description: '基本的人権と新しい人権', questionCount: 0 },
+      { id: 'local-government', name: '地方自治', description: '地方公共団体の仕組み', questionCount: 0 },
+      { id: 'international', name: '国際関係', description: '国際連合と世界平和', questionCount: 0 },
+      { id: 'elections', name: '選挙', description: '選挙制度と参政権', questionCount: 0 },
+      { id: 'economics', name: '経済', description: '税制と経済の仕組み', questionCount: 0 },
+      { id: 'labor', name: '労働', description: '労働者の権利', questionCount: 0 }
     ],
-    totalQuestions: 20
+    totalQuestions: 0
   }
 ];
+
+// ★★★ ここからが動的に問題数を計算するロジックです ★★★
+// subjects配列をループして、各カテゴリの問題数を計算し、questionCountを更新します。
+subjects.forEach(subject => {
+  let totalCountForSubject = 0;
+
+  subject.categories.forEach(category => {
+    let count = 0;
+    // 科目IDに応じて、適切な問題取得関数を呼び出します。
+    switch (subject.id) {
+      case 'geography':
+        count = getGeographyByCategory(category.id).length;
+        break;
+      case 'history':
+        count = getHistoryByCategory(category.id).length;
+        break;
+      case 'civics':
+        count = getCivicsByCategory(category.id).length;
+        break;
+    }
+    // 計算した問題数をカテゴリに設定します。
+    category.questionCount = count;
+    // 科目ごとの合計問題数に加算します。
+    totalCountForSubject += count;
+  });
+
+  // 科目の合計問題数を更新します。
+  subject.totalQuestions = totalCountForSubject;
+});
+
 
 // Badge system
 export interface Badge {
