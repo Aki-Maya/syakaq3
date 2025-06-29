@@ -1,8 +1,3 @@
-はい、承知いたしました。
-ご提示のソースコードから不要な改行を削除し、各処理の役割を説明するコメントを追加します。コードの動作ロジック自体は変更していません。
-
-TypeScript
-
 "use client";
 
 import { useState, useEffect, Suspense } from 'react';
