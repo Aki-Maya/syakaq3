@@ -79,7 +79,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["稲作が始まった", "縄文土器を使った", "古墳を作った", "仏教が伝来した"],
     correct: 1,
     explanation: "縄文時代は縄文土器を特徴とする時代です。",
-    category: "premitive",
+    category: "primitive",
     difficulty: "easy",
     type: "multiple-choice",
     era: "原始"
@@ -90,7 +90,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["狩猟", "採集", "稲作", "金属器"],
     correct: 2,
     explanation: "弥生時代に稲作が始まりました。",
-    category: "premitive",
+    category: "primitive",
     difficulty: "easy",
     type: "multiple-choice",
     era: "原始"
