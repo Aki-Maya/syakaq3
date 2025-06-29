@@ -35,15 +35,15 @@ const ShakaQuestHome = () => {
   // --- State定義 ---
   const [userStats, setUserStats] = useState<UserStats>({
     level: 1,
-    xp: 450,
-    coins: 180,
-    streak: 7,
-    totalAnswered: 45,
-    correctAnswers: 38,
+    xp: 0,
+    coins: 0,
+    streak: 0,
+    totalAnswered: 0,
+    correctAnswers: 0,
     subjectProgress: {
-      geography: { answered: 18, correct: 15, lastStudied: '' },
-      history: { answered: 15, correct: 12, lastStudied: '' },
-      civics: { answered: 12, correct: 11, lastStudied: '' }
+      geography: { answered: 0, correct: 0, lastStudied: '' },
+      history: { answered: 0, correct: 0, lastStudied: '' },
+      civics: { answered: 0, correct: 0, lastStudied: '' }
     }
   });
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
@@ -71,15 +71,15 @@ const ShakaQuestHome = () => {
     const currentDate = getCurrentDate();
     const initialStats = {
       level: 1,
-      xp: 450,
-      coins: 180,
-      streak: 7,
-      totalAnswered: 45,
-      correctAnswers: 38,
+      xp: 0,
+      coins: 0,
+      streak: 0,
+      totalAnswered: 0,
+      correctAnswers: 0,
       subjectProgress: {
-        geography: { answered: 18, correct: 15, lastStudied: currentDate },
-        history: { answered: 15, correct: 12, lastStudied: currentDate },
-        civics: { answered: 12, correct: 11, lastStudied: currentDate }
+        geography: { answered: 0, correct: 0, lastStudied: currentDate },
+        history: { answered: 0, correct: 0, lastStudied: currentDate },
+        civics: { answered: 0, correct: 0, lastStudied: currentDate }
       }
     };
     setUserStats(initialStats);
