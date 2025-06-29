@@ -315,7 +315,116 @@ export const civicsQuestions: CivicsQuestion[] = [
     category: "選挙制度",
     difficulty: "easy",
     explanation: "2016年から選挙権年齢は18歳に引き下げられました。"
-}
+},
+  {
+    "id": 22,
+    "question": "衆議院の総定数は何名ですか？",
+    "options": ["248名", "465名", "289名", "176名"],
+    "correct": 1,
+    [cite_start]"explanation": "衆議院の総定数は465名です。[cite: 1]",
+    "category": "elections",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 23,
+    "question": "参議院議員の任期は何年ですか？",
+    "options": ["4年", "6年", "10年", "解散があるまで"],
+    "correct": 1,
+    [cite_start]"explanation": "参議院議員の任期は6年で、解散はありません。[cite: 4]",
+    "category": "elections",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 24,
+    "question": "日本国憲法の改正を発議するために必要な、衆議院と参議院の賛成の割合はどれですか？",
+    "options": [
+      "各議院の出席議員の3分の2以上",
+      "各議院の総議員の3分の2以上",
+      "各議院の出席議員の過半数",
+      "各議院の総議員の過半数"
+    ],
+    "correct": 1,
+    [cite_start]"explanation": "憲法改正の発議には、衆参両院の総議員の3分の2以上の賛成が必要です（出席議員数ではない）。[cite: 4]",
+    "category": "elections",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 25,
+    "question": "国会の会期が150日間と定められ、毎年1月に召集される国会を何と呼びますか？",
+    "options": ["通常国会", "臨時国会", "特別国会", "緊急集会"],
+    "correct": 0,
+    [cite_start]"explanation": "通常国会は毎年1月に召集され、会期は150日間です。[cite: 4]",
+    "category": "elections",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 26,
+    "question": "衆議院が解散された後、総選挙の日から何日以内に国会を召集しなければなりませんか？",
+    "options": ["10日以内", "30日以内", "40日以内", "90日以内"],
+    "correct": 1,
+    [cite_start]"explanation": "衆議院が解散されたときは、解散の日から40日以内に総選挙を行い、その選挙の日から30日以内に国会を召集しなければなりません。[cite: 4]",
+    "category": "elections",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 27,
+    "question": "内閣が衆議院の不信任決議案を可決された場合、10日以内に衆議院を解散しない限り、何をしなければなりませんか？",
+    "options": ["内閣改造", "総辞職", "参議院との両院協議会", "法律の制定"],
+    "correct": 1,
+    [cite_start]"explanation": "内閣は、衆議院で不信任の決議案が可決されたときは、10日以内に衆議院が解散されない限り、総辞職をしなければなりません。[cite: 4]",
+    "category": "government",
+    "difficulty": "normal",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 28,
+    "question": "法律案の審議過程において、専門家などから意見を聞くために開かれる会を何と呼びますか？",
+    "options": ["本会議", "委員会", "公聴会", "両院協議会"],
+    "correct": 2,
+    [cite_start]"explanation": "法律案は委員会で審議される際、必要に応じて専門家を招いて意見を集める公聴会が開かれることがあります。[cite: 4]",
+    "category": "government",
+    "difficulty": "normal",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 29,
+    "question": "働く人が育児や家族の介護と仕事を両立できるよう、育児休業などの制度を定めた法律は何ですか？",
+    "options": [
+      "男女共同参画社会基本法",
+      "男女雇用機会均等法",
+      "労働基準法",
+      "育児・介護休業法"
+    ],
+    "correct": 3,
+    [cite_start]"explanation": "育児・介護休業法は、働く人が育児や家族の介護と仕事を両立できるよう、育児休業や介護休業などの制度を定めた法律です。[cite: 4]",
+    "category": "labor",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "era": "現代"
+  },
+  {
+    "id": 30,
+    "question": "「疑わしきは被告人の利益に」という原則に基づき、有罪の証拠が本人の自白のみの場合には有罪にできない、という内容が関わる権利は何ですか？",
+    "options": ["黙秘権", "裁判を受ける権利", "弁護人依頼権", "生存権"],
+    "correct": 1,
+    [cite_start]"explanation": "裁判を受ける権利に関連し、「疑わしきは被告人の利益に」の原則から、被告人に不利益な証拠が本人の自白のみの場合には有罪にできません。[cite: 4]",
+    "category": "human-rights",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "era": "現代"
+  }
 ];
 
 // Utility functions
