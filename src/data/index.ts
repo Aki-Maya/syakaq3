@@ -109,13 +109,8 @@ export const subjects: Subject[] = [
     icon: '🗾',
     color: 'bg-green-500',
     categories: [
-      { id: 'prefectures', name: '都道府県', description: '47都道府県と県庁所在地', questionCount: 0 },
-      { id: 'climate', name: '気候', description: '日本の6つの気候区分', questionCount: 0 },
-      { id: 'agriculture', name: '農業', description: '日本の農業と特産品', questionCount: 0 },
-      { id: 'fishery', name: '水産業', description: '漁業と主要港', questionCount: 0 },
-      { id: 'industry', name: '工業', description: '工業地帯と製造業', questionCount: 0 },
-      { id: 'traditional-crafts', name: '伝統工業', description: '各地の伝統工芸品', questionCount: 0 },
-      { id: 'pollution', name: '公害', description: '四大公害病と環境問題', questionCount: 0 },
+      { id: 'climate', name: '気候', description: '日本の気候区分', questionCount: 0 },
+      { id: 'industry', name: '産業', description: '日本の産業', questionCount: 0 },
       { id: 'regions', name: '地方', description: '各地方の特色', questionCount: 0 }
     ],
     totalQuestions: 0
