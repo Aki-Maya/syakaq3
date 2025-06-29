@@ -240,7 +240,8 @@ function SubjectCard({ subject, isSelected, onClick, userStats }: {
   onClick: () => void;
   userStats: { correct: number; total: number };
 }) {
-  const accuracy = userStats.total > 0 ? Math.round((userStats.correct / userStats.total) * 100) : 0;
+  const accuracy = userStats.total > 0 ? Math.min(100, Math.round((userStats.correct / userStats.total) * 100)) : 0;
+
 
   return (
     <div 
