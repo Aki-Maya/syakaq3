@@ -128,51 +128,64 @@ const ShakaQuestHome = () => {
   const xpForNext = getXPForNextLevel(userStats.xp);
   const progressPercent = ((userStats.xp - currentLevel.minXP) / (currentLevel.maxXP - currentLevel.minXP)) * 100;
 
-  // Subject Card Component
-  const SubjectCard = ({ subject }: { subject: Subject }) => {
-    const subjectStats = userStats.subjectProgress[subject.id];
-    const accuracy = subjectStats && subjectStats.answered > 0 
+// 科目カードコンポーネント
+const SubjectCard = ({ subject }: { subject: Subject }) => {
+  // ★ 修正1: 進捗データがない場合に備え、安全なデフォルト値を設定します
+  const subjectStats = userStats.subjectProgress[subject.id] || { answered: 0, correct: 0 };
+
+  // 正答率の計算（こちらは既に修正済みです）
+  const accuracy = subjectStats.answered > 0
     ? Math.min(100, Math.round((subjectStats.correct / subjectStats.answered) * 100))
     : 0;
-    const progress = subjectStats ? Math.round((subjectStats.answered / subject.totalQuestions) * 100) : 0;
+    
+  // ★ 修正2: 進捗計算に使う「回答数」の上限を、総問題数に設定します
+  const cappedAnswered = Math.min(subjectStats.answered, subject.totalQuestions);
 
-    return (
-      <div 
-        className={`${subject.color} rounded-xl p-6 text-white cursor-pointer transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl`}
-        onClick={() => {
-          setSelectedSubject(subject.id);
-          // 🔄 分野選択時に学習日を更新
-          updateLastStudied(subject.id);
-        }}
-      >
-        <div className="flex items-center justify-between mb-4">
-          <div className="text-4xl">{subject.icon}</div>
-          <div className="text-right">
-            <div className="text-sm opacity-90">進捗</div>
-            <div className="text-xl font-bold">{progress}%</div>
-          </div>
-        </div>
-        <h3 className="text-2xl font-bold mb-2">{subject.name}</h3>
-        <p className="text-sm opacity-90 mb-4">{subject.description}</p>
-        <div className="space-y-2">
-          <div className="flex justify-between text-sm">
-            <span>問題数</span>
-            <span>{subjectStats?.answered || 0}/{subject.totalQuestions}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span>正答率</span>
-            <span>{accuracy}%</span>
-          </div>
-          <div className="w-full bg-white bg-opacity-20 rounded-full h-2">
-            <div 
-              className="bg-white rounded-full h-2 transition-all duration-300" 
-              style={{ width: `${progress}%` }}
-            />
-          </div>
+  // ★ 修正3: 上限を設定した回答数を使って進捗率を計算します。これにより、この`progress`が100%を超えることはなくなります。
+  const progress = subject.totalQuestions > 0
+    ? Math.round((cappedAnswered / subject.totalQuestions) * 100)
+    : 0;
+
+  return (
+    <div 
+      className={`${subject.color} rounded-xl p-6 text-white cursor-pointer transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl`}
+      onClick={() => {
+        setSelectedSubject(subject.id);
+        // 🔄 分野選択時に学習日を更新
+        updateLastStudied(subject.id);
+      }}
+    >
+      <div className="flex items-center justify-between mb-4">
+        <div className="text-4xl">{subject.icon}</div>
+        <div className="text-right">
+          <div className="text-sm opacity-90">進捗</div>
+          {/* このprogressは100%を超えないので、安心して表示できます */}
+          <div className="text-xl font-bold">{progress}%</div>
         </div>
       </div>
-    );
-  };
+      <h3 className="text-2xl font-bold mb-2">{subject.name}</h3>
+      <p className="text-sm opacity-90 mb-4">{subject.description}</p>
+      <div className="space-y-2">
+        <div className="flex justify-between text-sm">
+          <span>問題数</span>
+          {/* ★ 修正4: 表示も上限を設定した回答数(cappedAnswered)を使い、「18/11」のような表示を防ぎます */}
+          <span>{cappedAnswered}/{subject.totalQuestions}</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span>正答率</span>
+          <span>{accuracy}%</span>
+        </div>
+        <div className="w-full bg-white bg-opacity-20 rounded-full h-2">
+          <div 
+            className="bg-white rounded-full h-2 transition-all duration-300" 
+            // このprogressは100%を超えないので、安心してwidthに設定できます
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
   // Category Card Component
   const CategoryCard = ({ category, subjectId }: { category: any; subjectId: string }) => {
