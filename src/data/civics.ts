@@ -326,7 +326,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'easy'
   },
   {
-    id: 22,
+    id: 30,
     question: '参議院議員の任期は何年ですか？',
     options: ['4年', '6年', '10年', '解散があるまで'],
     correct: 1,
@@ -408,7 +408,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'hard'
   },
   {
-    id: 30,
+    id: 31,
     question: '現在の義務教育期間は何年間ですか？',
     options: ['6年間', '9年間', '12年間', '法律で定められていない'],
     correct: 1,
