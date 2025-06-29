@@ -192,7 +192,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ["函館市", "札幌市", "旭川市", "釧路市"],
     correct: 1,
     explanation: "北海道の県庁所在地は札幌市です。",
-    category: "prefectures",
+    category: "regions",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -202,7 +202,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ["仙台市", "石巻市", "大崎市", "宮城市"],
     correct: 0,
     explanation: "宮城県の県庁所在地は仙台市です。",
-    category: "prefectures",
+    category: "regions",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -212,7 +212,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ["川崎市", "相模原市", "横浜市", "藤沢市"],
     correct: 2,
     explanation: "神奈川県の県庁所在地は横浜市です。",
-    category: "prefectures",
+    category: "regions",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -246,7 +246,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ["関東平野", "東北地方", "九州地方", "四国地方"],
     correct: 1,
     explanation: "東北地方は米の生産が盛んで、日本の穀倉地帯と呼ばれています。",
-    category: "agriculture",
+    category: "regions",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -258,7 +258,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ["函館港", "銚子港", "下関港", "境港"],
     correct: 1,
     explanation: "銚子港（千葉県）は日本三大漁港の一つです。他に焼津港、八戸港があります。",
-    category: "fishery",
+    category: "industry",
     difficulty: "hard",
     type: "multiple-choice"
   },
@@ -282,7 +282,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ["南部鉄器", "西陣織", "津軽塗", "有田焼"],
     correct: 1,
     explanation: "西陣織は京都の代表的な伝統工芸品です。",
-    category: "traditional-crafts",
+    category: "industry",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -294,7 +294,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ["カドミウム", "水銀", "硫黄酸化物", "窒素酸化物"],
     correct: 1,
     explanation: "水俣病は水銀による公害病です。",
-    category: "pollution",
+    category: "industry",
     difficulty: "hard",
     type: "multiple-choice"
   },
