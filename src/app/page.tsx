@@ -132,7 +132,7 @@ const ShakaQuestHome = () => {
   const SubjectCard = ({ subject }: { subject: Subject }) => {
     const subjectStats = userStats.subjectProgress[subject.id];
     const accuracy = subjectStats && subjectStats.answered > 0 
-    ? Math.round((subjectStats.correct / subjectStats.answered) * 100) 
+    ? Math.min(100, Math.round((subjectStats.correct / subjectStats.answered) * 100))
     : 0;
     const progress = subjectStats ? Math.round((subjectStats.answered / subject.totalQuestions) * 100) : 0;
 
@@ -336,7 +336,9 @@ const ShakaQuestHome = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {subjects.map((subject) => {
               const stats = userStats.subjectProgress[subject.id];
-              const accuracy = stats && stats.answered > 0  ? Math.round((stats.correct / stats.answered) * 100)  : 0;
+              const accuracy = stats && stats.answered > 0 
+              ? Math.min(100, Math.round((stats.correct / stats.answered) * 100)) 
+              : 0;
 
               return (
                 <div key={subject.id} className="text-center p-4 bg-gray-50 rounded-lg">
