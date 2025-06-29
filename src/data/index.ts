@@ -119,22 +119,19 @@ export const subjects: Subject[] = [
     ],
     totalQuestions: 11
   },
-  {
+{
     id: 'history',
     name: '歴史',
-    description: '旧石器時代から昭和時代まで日本の歴史',
+    description: '旧石器時代から現代まで日本の歴史',
     icon: '📜',
     color: 'bg-blue-500',
     categories: [
-      { id: 'prehistoric', name: '先史時代', description: '旧石器・縄文・弥生時代', questionCount: 2 },
-      { id: 'ancient', name: '古代', description: '飛鳥・奈良時代', questionCount: 2 },
-      { id: 'classical', name: '古典', description: '平安時代', questionCount: 1 },
-      { id: 'medieval', name: '中世', description: '鎌倉・室町時代', questionCount: 3 },
-      { id: 'warring-states', name: '戦国', description: '戦国時代', questionCount: 1 },
-      { id: 'unification', name: '統一', description: '安土桃山時代', questionCount: 1 },
-      { id: 'edo', name: '江戸', description: '江戸時代', questionCount: 2 },
-      { id: 'end-of-edo', name: '幕末', description: '江戸時代後期', questionCount: 1 },
-      { id: 'meiji', name: '明治', description: '明治時代', questionCount: 2 }
+      { id: 'primitive', name: '原始', description: '〜約2400年前', questionCount: 2 },
+      { id: 'ancient', name: '古代', description: '約2400年前〜1185年', questionCount: 3 },
+      { id: 'medieval', name: '中世', description: '1185年〜1573年', questionCount: 4 },
+      { id: 'early-modern', name: '近世', description: '1573年〜1867年', questionCount: 4 },
+      { id: 'modern', name: '近代', description: '1868年〜1945年', questionCount: 2 },
+      { id: 'contemporary', name: '現代', description: '1945年〜現在', questionCount: 0 }
     ],
     totalQuestions: 15
   },
