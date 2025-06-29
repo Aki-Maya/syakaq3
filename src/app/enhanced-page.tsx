@@ -68,7 +68,7 @@ export default function EnhancedMainPage({ onStartQuiz }: MainPageProps) {
         {/* ヘッダー */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
-            🎓 ShakaQuest - 中学受験学習アプリ
+            🎓 ShakaQuest3 - 中学受験学習アプリ
           </h1>
           <p className="text-gray-600">中学受験の勉強をゲーム感覚で楽しく学習！</p>
         </div>
