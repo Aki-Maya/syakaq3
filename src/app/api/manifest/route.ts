@@ -1,8 +1,8 @@
 export async function GET() {
   const manifest = {
-    name: "ShakaQuest - 中学受験社会学習アプリ",
+    name: "ShakaQuest - 中学受験学習アプリ",
     short_name: "ShakaQuest",
-    description: "社会を楽しく学習する中学受験対応アプリ",
+    description: "楽しく学習する中学受験対応アプリ",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
