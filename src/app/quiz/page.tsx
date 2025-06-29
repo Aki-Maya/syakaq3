@@ -141,7 +141,7 @@ const QuizComponent = () => {
   // 問題データが読み込まれていない場合はローディング画面を表示
   if (quizState.questions.length === 0) {
     return (
-      <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+      <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-start">
         <div className="text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500 mx-auto mb-4"></div>
           <p className="text-gray-600">問題を読み込み中...</p>
@@ -153,7 +153,7 @@ const QuizComponent = () => {
   // クイズが完了した場合は結果画面を表示
   if (quizState.isCompleted) {
     return (
-      <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 flex items-center justify-center">
+      <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 flex items-center justify-start">
         <div className="max-w-2xl mx-auto w-full">
           <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center">
             <div className="text-5xl mb-2">🎉</div>
@@ -220,7 +220,7 @@ const QuizComponent = () => {
 
   // クイズ進行中のメイン画面を表示
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-2 sm:p-4 flex flex-col justify-center">
+    <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-2 sm:p-4 flex flex-col justify-start">
       <div className="max-w-2xl mx-auto w-full flex flex-col">
         {/* ヘッダーエリア: 科目、問題番号、残り時間 */}
         <div className="bg-white rounded-xl shadow-lg p-4 mb-2">
@@ -331,7 +331,7 @@ const QuizPage = () => {
   return (
     // Suspenseは、内部のコンポーネントがデータを読み込んでいる間にフォールバックUIを表示する
     <Suspense fallback={
-      <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+      <div className="h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-start">
         <div className="text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500 mx-auto mb-4"></div>
           <p className="text-gray-600">読み込み中...</p>
