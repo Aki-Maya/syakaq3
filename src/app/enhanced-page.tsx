@@ -254,12 +254,19 @@ function SubjectCard({ subject, isSelected, onClick, userStats }: {
   subject: Subject;
   isSelected: boolean;
   onClick: () => void;
-  // ★ 修正: プロパティ名をansweredに統一
   userStats: { correct: number; answered: number };
 }) {
-  // ★ 修正: 正答率の計算式を最新化し、プロパティ名をansweredに統一
+  // --- 正答率の計算 ---
   const accuracy = userStats.answered > 0 ? Math.min(100, Math.round((userStats.correct / userStats.answered) * 100)) : 0;
-  const displayAccuracy = Math.min(100, accuracy);
+
+  // ★ 修正: 進捗率の計算を追加・修正します
+  // 1. まず、実際の進捗率を計算します (データ上は100%を超えてもOK)
+  const progress = subject.totalQuestions > 0 
+    ? Math.round((userStats.answered / subject.totalQuestions) * 100) 
+    : 0;
+  
+  // 2. 次に、グラフ表示用に100%を上限とする変数を用意します
+  const displayProgress = Math.min(100, progress);
 
   return (
     <div 
@@ -268,36 +275,43 @@ function SubjectCard({ subject, isSelected, onClick, userStats }: {
       }`}
       onClick={onClick}
     >
-      <div className="text-center">
-        <div className="text-4xl mb-3">{subject.icon}</div>
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">{subject.name}</h3>
-        <p className="text-sm text-gray-600 mb-4">{subject.description}</p>
-        <div className="space-y-2">
-          <div className="flex justify-between text-sm">
-            <span>問題数:</span>
-            <span className="font-semibold">{subject.totalQuestions}問</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span>正答率:</span>
-            <span className="font-semibold">{accuracy}%</span>
-          </div>
-          <div className="w-full bg-gray-200 rounded-full h-2">
-            <div 
-              className={`h-2 rounded-full ${subject.color}`}
-              style={{ width: `${displayAccuracy}%` }}
-            ></div>
-          </div>
+      <div className="flex items-center justify-between mb-4">
+        <div className="text-4xl">{subject.icon}</div>
+        <div className="text-right">
+          <div className="text-sm text-gray-500">進捗</div>
+          {/* ★ 修正: テキストには100%を超える可能性のある実際の進捗(progress)を表示 */}
+          <div className="text-xl font-bold text-gray-800">{progress}%</div>
         </div>
-        {isSelected && (
-          <div className="mt-4 text-blue-600 font-semibold">
-            ✓ 選択中
-          </div>
-        )}
       </div>
+      <div className="text-left">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">{subject.name}</h3>
+        <p className="text-sm text-gray-600 mb-4 h-10">{subject.description}</p>
+      </div>
+      <div className="space-y-2">
+        <div className="flex justify-between text-sm text-gray-600">
+          <span>問題数</span>
+          <span className="font-semibold">{userStats.answered}/{subject.totalQuestions}問</span>
+        </div>
+        <div className="flex justify-between text-sm text-gray-600">
+          <span>正答率</span>
+          <span className="font-semibold">{accuracy}%</span>
+        </div>
+        <div className="w-full bg-gray-200 rounded-full h-2">
+          <div 
+            className={`h-2 rounded-full ${subject.color}`}
+            // ★ 修正: グラフの幅には、上限を設定した表示用の変数(displayProgress)を渡す
+            style={{ width: `${displayProgress}%` }}
+          ></div>
+        </div>
+      </div>
+      {isSelected && (
+        <div className="mt-4 text-center text-blue-600 font-semibold">
+          ✓ 選択中
+        </div>
+      )}
     </div>
   );
 }
-
 // カテゴリカードコンポーネント
 // ★ 修正: propsの型をanyからSubjectCategoryに修正
 function CategoryCard({ category, isSelected, onClick }: {
