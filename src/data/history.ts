@@ -79,7 +79,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["稲作が始まった", "縄文土器を使った", "古墳を作った", "仏教が伝来した"],
     correct: 1,
     explanation: "縄文時代は縄文土器を特徴とする時代です。",
-    category: "prehistoric",
+    category: "premitive",
     difficulty: "easy",
     type: "multiple-choice",
     era: "原始"
@@ -90,7 +90,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["狩猟", "採集", "稲作", "金属器"],
     correct: 2,
     explanation: "弥生時代に稲作が始まりました。",
-    category: "prehistoric",
+    category: "premitive",
     difficulty: "easy",
     type: "multiple-choice",
     era: "原始"
@@ -123,7 +123,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["清少納言", "紫式部", "和泉式部", "赤染衛門"],
     correct: 1,
     explanation: "源氏物語の作者は紫式部です。",
-    category: "classical",
+    category: "ancient",
     difficulty: "medium",
     type: "multiple-choice",
     era: "古代"
@@ -167,7 +167,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["豊臣秀吉", "徳川家康", "織田信長", "武田信玄"],
     correct: 2,
     explanation: "織田信長が桶狭間の戦いで今川義元を破りました。",
-    category: "warring-states",
+    category: "medieval",
     difficulty: "medium",
     type: "multiple-choice",
     era: "中世"
@@ -178,7 +178,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["織田信長", "豊臣秀吉", "徳川家康", "武田信玄"],
     correct: 1,
     explanation: "豊臣秀吉が天下統一を果たしました。",
-    category: "unification",
+    category: "medieval",
     difficulty: "medium",
     type: "multiple-choice",
     era: "中世"
@@ -189,7 +189,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["織田信長", "豊臣秀吉", "徳川家康", "徳川秀忠"],
     correct: 2,
     explanation: "徳川家康が江戸幕府を開きました。",
-    category: "edo",
+    category: "early-modern",
     difficulty: "easy",
     type: "multiple-choice",
     era: "近世"
@@ -200,7 +200,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["徳川家康", "徳川秀忠", "徳川家光", "徳川家綱"],
     correct: 2,
     explanation: "徳川家光が鎖国を完成させました。",
-    category: "edo",
+    category: "early-modern",
     difficulty: "medium",
     type: "multiple-choice",
     era: "近世"
@@ -211,7 +211,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["ペリー", "ハリス", "ヘボン", "フェノロサ"],
     correct: 0,
     explanation: "ペリー提督が黒船で来航しました。",
-    category: "end-of-edo",
+    category: "early-modern",
     difficulty: "easy",
     type: "multiple-choice",
     era: "近世"
@@ -222,7 +222,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["廃藩置県", "地租改正", "学制", "大政奉還"],
     correct: 3,
     explanation: "大政奉還は明治維新の原因であり、三大改革ではありません。",
-    category: "meiji",
+    category: "modern",
     difficulty: "hard",
     type: "multiple-choice",
     era: "近代"
@@ -233,7 +233,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["東郷平八郎", "乃木希典", "大山巌", "児玉源太郎"],
     correct: 0,
     explanation: "東郷平八郎は日本海海戦で活躍した提督です。",
-    category: "meiji",
+    category: "modern",
     difficulty: "medium",
     type: "multiple-choice",
     era: "近代"
@@ -246,7 +246,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["三国干渉への報復", "シベリア出兵のため", "日英同盟", "国際連盟の設立"],
     correct: 2,
     explanation: "日本は日英同盟に基づき、連合国側として第一次世界大戦に参戦しました。",
-    category: "taisho",
+    category: "modern",
     difficulty: "medium",
     type: "multiple-choice",
     era: "近代"
@@ -257,7 +257,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["治安維持法", "普通選挙法", "大日本帝国憲法", "五箇条の御誓文"],
     correct: 1,
     explanation: "普通選挙法により、納税額に関わらず25歳以上の全男子が選挙権を持つことになりました。ただし、女性の参政権はまだ認められませんでした。",
-    category: "taisho",
+    category: "modern",
     difficulty: "hard",
     type: "multiple-choice",
     era: "近代"
@@ -268,7 +268,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["盧溝橋事件", "柳条湖事件", "二・二六事件", "五・一五事件"],
     correct: 1,
     explanation: "1931年、関東軍が南満州鉄道の線路を爆破した柳条湖事件をきっかけに満州事変が始まりました。",
-    category: "showa-prewar",
+    category: "modern",
     difficulty: "medium",
     type: "multiple-choice",
     era: "近代"
@@ -279,7 +279,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["満州国の建国を非難されたため", "日独伊三国同盟を締結したため", "真珠湾攻撃を行ったため", "ワシントン海軍軍縮条約に不満だったため"],
     correct: 0,
     explanation: "リットン調査団の報告に基づき、国際連盟が満州国の独立を認めなかったため、日本はこれに反発し脱退しました。",
-    category: "showa-prewar",
+    category: "modern",
     difficulty: "hard",
     type: "multiple-choice",
     era: "近代"
@@ -290,7 +290,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["開戦の詔勅", "玉音放送", "大政奉還の上奏", "人間宣言"],
     correct: 1,
     explanation: "1945年8月15日、昭和天皇自らがラジオでポツダム宣言の受諾を国民に伝えた放送を玉音放送といいます。",
-    category: "showa-war",
+    category: "modern",
     difficulty: "easy",
     type: "multiple-choice",
     era: "近代"
@@ -323,7 +323,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["平清盛", "菅原道真", "藤原頼長", "藤原道長"],
     correct: 3,
     explanation: "摂関政治の全盛期を築いた藤原道長が、自分の権勢を満月に例えて詠んだ有名な歌です。",
-    category: "classical",
+    category: "ancient",
     difficulty: "medium",
     type: "multiple-choice",
     era: "古代"
@@ -356,7 +356,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["スペイン", "ポルトガル", "オランダ", "イギリス"],
     correct: 1,
     explanation: "中国船に乗っていたポルトガル人が種子島に漂着し、鉄砲を伝えたことが日本の戦国時代の戦術に大きな影響を与えました。",
-    category: "warring-states",
+    category: "medieval",
     difficulty: "easy",
     type: "multiple-choice",
     era: "中世"
@@ -367,7 +367,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["徳川家康", "徳川家光", "徳川吉宗", "徳川慶喜"],
     correct: 2,
     explanation: "江戸幕府第8代将軍の徳川吉宗は、幕府財政の再建と政治の安定を目指し、享保の改革を断行しました。",
-    category: "edo",
+    category: "early-modern",
     difficulty: "medium",
     type: "multiple-choice",
     era: "近代"
@@ -378,7 +378,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["元禄文化", "化政文化", "北山文化", "桃山文化"],
     correct: 1,
     explanation: "19世紀初頭、江戸を中心に栄えた町人文化を化政文化と呼びます。皮肉やユーモアを交えた作品が多く生まれました。",
-    category: "edo",
+    category: "early-modern",
     difficulty: "medium",
     type: "multiple-choice",
     era: "近代"
@@ -389,7 +389,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["五箇条の御誓文", "十七条憲法", "大日本帝国憲法", "日本国憲法"],
     correct: 2,
     explanation: "大日本帝国憲法は、天皇が主権を持つプロイセン（ドイツ）の憲法を参考に作られ、帝国議会の開設などを定めました。",
-    category: "meiji",
+    category: "modern",
     difficulty: "medium",
     type: "multiple-choice",
     era: "近代"
@@ -400,7 +400,7 @@ export const historyQuestions: HistoryQuestion[] = [
     options: ["東京オリンピック", "大阪万国博覧会", "札幌冬季オリンピック", "愛知万博"],
     correct: 0,
     explanation: "1964年の東京オリンピック開催は、日本が敗戦から復興し、国際社会に復帰したことを世界に示す一大イベントでした。",
-    category: "showa-postwar",
+    category: "contemporary",
     difficulty: "easy",
     type: "multiple-choice",
     era: "現代"
