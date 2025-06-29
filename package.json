@@ -1,7 +1,7 @@
 {
   "name": "shakaquest",
   "version": "1.0.0",
-  "description": "中学受験対応の社会学習アプリ",
+  "description": "中学受験対応の学習アプリ",
   "private": true,
   "scripts": {
     "dev": "next dev",
