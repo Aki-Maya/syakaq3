@@ -123,7 +123,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["国民が政治家を選ぶこと", "国の政治の最終決定権が国民にあること", "国民が法律を作ること", "国民が裁判を行うこと"],
     correct: 1,
     explanation: "国民主権とは、国の政治の在り方を最終的に決める力が国民にあることです。",
-    category: "constitution",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -133,7 +133,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["立法権", "行政権", "司法権", "選挙権"],
     correct: 3,
     explanation: "三権分立は立法権（国会）、行政権（内閣）、司法権（裁判所）の三つです。",
-    category: "government",
+    category: "politics",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -143,7 +143,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["法律の制定", "予算の審議", "内閣総理大臣の指名", "違憲立法審査"],
     correct: 3,
     explanation: "違憲立法審査権は裁判所の権限です。",
-    category: "government",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -153,7 +153,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["内閣官房長官", "内閣総理大臣", "国会議長", "最高裁判所長官"],
     correct: 1,
     explanation: "内閣の長は内閣総理大臣です。",
-    category: "government",
+    category: "politics",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -163,7 +163,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["国民主権", "基本的人権", "戦争放棄", "三権分立"],
     correct: 2,
     explanation: "憲法第9条では戦争放棄（平和主義）が定められています。",
-    category: "constitution",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -183,7 +183,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["衆議院", "参議院", "同じ", "場合による"],
     correct: 0,
     explanation: "衆議院の優越により、衆議院の方が強い権限を持ちます。",
-    category: "government",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -193,7 +193,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["法律の制定", "予算の作成", "違憲立法審査", "外交の実施"],
     correct: 2,
     explanation: "最高裁判所は違憲立法審査権を持ちます。",
-    category: "government",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -203,7 +203,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["中央集権", "住民自治と団体自治", "官僚制", "君主制"],
     correct: 1,
     explanation: "地方自治は住民自治と団体自治が基本原則です。",
-    category: "local-government",
+    category: "politics",
     difficulty: "hard",
     type: "multiple-choice"
   },
@@ -213,7 +213,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["ロンドン", "パリ", "ニューヨーク", "ジュネーブ"],
     correct: 2,
     explanation: "国際連合の本部はアメリカのニューヨークにあります。",
-    category: "international",
+    category: "politics",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -223,7 +223,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["3カ国", "5カ国", "7カ国", "10カ国"],
     correct: 1,
     explanation: "安全保障理事会の常任理事国は5カ国（米・露・中・英・仏）です。",
-    category: "international",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -233,7 +233,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["16歳", "18歳", "20歳", "25歳"],
     correct: 1,
     explanation: "2016年から選挙権年齢は18歳に引き下げられました。",
-    category: "elections",
+    category: "politics",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -253,7 +253,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["団結権", "団体交渉権", "争議権", "参政権"],
     correct: 3,
     explanation: "労働三権は団結権、団体交渉権、争議権です。",
-    category: "labor",
+    category: "economics",
     difficulty: "hard",
     type: "multiple-choice"
   },
@@ -263,7 +263,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["一院制", "二院制", "三院制", "四院制"],
     correct: 1,
     explanation: "日本の国会は衆議院と参議院からなる二院制です。",
-    category: "government",
+    category: "politics",
     difficulty: "easy",
     type: "multiple-choice"
   },
@@ -283,7 +283,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["衆議院", "参議院", "最高裁判所", "内閣"],
     correct: 0,
     explanation: "内閣不信任決議案は衆議院のみが提出できます。",
-    category: "government",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -293,7 +293,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["都道府県と市町村", "都府県と市区町村", "都道府県と市区町村", "都道府県と市"],
     correct: 0,
     explanation: "地方公共団体は都道府県と市町村に分かれます。",
-    category: "local-government",
+    category: "politicst",
     difficulty: "medium",
     type: "multiple-choice"
   },
@@ -303,7 +303,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ["1945年", "1948年", "1950年", "1951年"],
     correct: 1,
     explanation: "世界人権宣言は1948年に国際連合で採択されました。",
-    category: "international",
+    category: "politics",
     difficulty: "hard",
     type: "multiple-choice"
   },
@@ -312,7 +312,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     question: "選挙権を得られる年齢は？",
     options: ["16歳", "18歳", "20歳", "25歳"],
     correct: 1,
-    category: "選挙制度",
+    category: "politics",
     difficulty: "easy",
     explanation: "2016年から選挙権年齢は18歳に引き下げられました。"
 },
@@ -322,7 +322,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ['248名', '465名', '289名', '176名'],
     correct: 1,
     explanation: '衆議院の総定数は465名です。',
-    category: 'elections',
+    category: 'politics',
     difficulty: 'easy'
   },
   {
@@ -331,7 +331,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ['4年', '6年', '10年', '解散があるまで'],
     correct: 1,
     explanation: '参議院議員の任期は6年で、解散はありません。 ',
-    category: 'elections',
+    category: 'politics',
     difficulty: 'easy'
   },
   {
@@ -345,7 +345,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     ],
     correct: 1,
     explanation: '憲法改正の発議には、衆参両院の総議員の3分の2以上の賛成が必要です（出席議員数ではない）。 ',
-    category: 'constitution',
+    category: 'politics',
     difficulty: 'hard'
   },
   {
@@ -354,7 +354,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ['通常国会', '臨時国会', '特別国会', '緊急集会'],
     correct: 0,
     explanation: '通常国会は毎年1月に召集され、会期は150日間です。',
-    category: 'government',
+    category: 'politics',
     difficulty: 'easy'
   },
   {
@@ -363,7 +363,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ['10日以内', '30日以内', '40日以内', '90日以内'],
     correct: 1,
     explanation: '衆議院が解散されたときは、解散の日から40日以内に総選挙を行い、その選挙の日から30日以内に国会を召集しなければなりません。',
-    category: 'government',
+    category: 'politics',
     difficulty: 'hard'
   },
   {
@@ -372,7 +372,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ['内閣改造', '総辞職', '参議院との両院協議会', '法律の制定'],
     correct: 1,
     explanation: '内閣は、衆議院で不信任の決議案が可決されたときは、10日以内に衆議院が解散されない限り、総辞職をしなければなりません。',
-    category: 'government',
+    category: 'politics',
     difficulty: 'normal'
   },
   {
@@ -381,7 +381,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     options: ['本会議', '委員会', '公聴会', '両院協議会'],
     correct: 2,
     explanation: '法律案は委員会で審議される際、必要に応じて専門家を招いて意見を集める公聴会が開かれることがあります。',
-    category: 'government',
+    category: 'politics',
     difficulty: 'normal'
   },
   {
@@ -395,7 +395,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     ],
     correct: 3,
     explanation: '育児・介護休業法は、働く人が育児や家族の介護と仕事を両立できるよう、育児休業や介護休業などの制度を定めた法律です。',
-    category: 'labor',
+    category: 'economics',
     difficulty: 'easy'
   },
   {
