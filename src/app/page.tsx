@@ -131,7 +131,9 @@ const ShakaQuestHome = () => {
   // Subject Card Component
   const SubjectCard = ({ subject }: { subject: Subject }) => {
     const subjectStats = userStats.subjectProgress[subject.id];
-    const accuracy = subjectStats ? Math.round((subjectStats.correct / subjectStats.answered) * 100) : 0;
+    const accuracy = subjectStats && subjectStats.answered > 0 
+    ? Math.round((subjectStats.correct / subjectStats.answered) * 100) 
+    : 0;
     const progress = subjectStats ? Math.round((subjectStats.answered / subject.totalQuestions) * 100) : 0;
 
     return (
