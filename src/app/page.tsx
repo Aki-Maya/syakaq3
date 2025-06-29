@@ -195,7 +195,7 @@ const ShakaQuestHome = () => {
         className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow cursor-pointer border-2 border-gray-200 hover:border-blue-300"
         onClick={() => setSelectedCategory(category.id)}
       >
-        <h4 className="font-bold text-lg text-gray-800 mb-2">{category.name}</h4>
+        <h4 className="font-bold text-lg text-gray-900 mb-2">{category.name}</h4>
         <p className="text-gray-600 text-sm mb-3">{category.description}</p>
         <div className="flex justify-between items-center">
           <span className="text-sm text-gray-500">{category.questionCount}問</span>
