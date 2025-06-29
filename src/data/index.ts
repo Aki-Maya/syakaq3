@@ -136,14 +136,9 @@ export const subjects: Subject[] = [
     icon: '🏛️',
     color: 'bg-purple-500',
     categories: [
-      { id: 'constitution', name: '憲法', description: '日本国憲法の三大原則', questionCount: 0 },
-      { id: 'government', name: '政治制度', description: '三権分立と国会・内閣・裁判所', questionCount: 0 },
+      { id: 'politics', name: '政治制度', description: '政治、法律、選挙、地方自治、国際関係', questionCount: 0 },
       { id: 'human-rights', name: '人権', description: '基本的人権と新しい人権', questionCount: 0 },
-      { id: 'local-government', name: '地方自治', description: '地方公共団体の仕組み', questionCount: 0 },
-      { id: 'international', name: '国際関係', description: '国際連合と世界平和', questionCount: 0 },
-      { id: 'elections', name: '選挙', description: '選挙制度と参政権', questionCount: 0 },
-      { id: 'economics', name: '経済', description: '税制と経済の仕組み', questionCount: 0 },
-      { id: 'labor', name: '労働', description: '労働者の権利', questionCount: 0 }
+      { id: 'economics', name: '経済', description: '掲載、労働', questionCount: 0 },
     ],
     totalQuestions: 0
   }
