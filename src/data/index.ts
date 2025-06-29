@@ -1,9 +1,3 @@
-はい、承知いたしました。
-ご提示のコードから、不要な空行を削除して全体的にスッキリと整形します。コードのロジック自体は変更していません。
-
-【整形後】のコード
-TypeScript
-
 // Unified Data Index for ShakaQuest Complete Edition
 import { 
   prefectures, 
