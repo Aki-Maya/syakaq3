@@ -281,7 +281,7 @@ const ShakaQuestHome = () => {
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
             ShakaQuest
           </h1>
-          <p className="text-gray-600">中学受験社会学習アプリ</p>
+          <p className="text-gray-600">中学受験学習アプリ</p>
         </div>
 
         {/* User Stats */}
