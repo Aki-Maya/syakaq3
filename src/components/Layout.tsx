@@ -13,11 +13,11 @@ const Layout: React.FC<LayoutProps> = ({ children, title = "ShakaQuest" }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-blue-600">🏯 ShakaQuest</h1>
+              <h1 className="text-2xl font-bold text-blue-600">💯 ShakaQuest</h1>
             </div>
             <div className="flex items-center space-x-4">
               <div className="text-sm text-gray-600">
-                中学受験社会
+                中学受験
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = "ShakaQuest" }) => {
       <footer className="bg-gray-50 border-t border-gray-200 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>© 2024 ShakaQuest - 中学受験社会学習アプリ</p>
+            <p>© 2024 ShakaQuest - 中学受験学習アプリ</p>
             <p className="text-sm mt-2">楽しく学んで、目標校合格を目指そう！</p>
           </div>
         </div>
