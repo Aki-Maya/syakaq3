@@ -1,9 +1,3 @@
-はい、承知いたしました。
-ご提示いただいたShakaQuestHomeコンポーネントのコードから、不要な改行を削除して全体を整形します。
-
-【整形後】のコード
-TypeScript
-
 "use client";
 
 import { useState, useEffect } from 'react';
