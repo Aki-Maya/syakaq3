@@ -100,7 +100,12 @@ const QuizComponent = () => {
     }
   }, [quizState.timeRemaining, quizState.showExplanation, quizState.isCompleted]);
 
-  // ★★★ クイズ完了時の統計更新ロジック ★★★
+  // ★★★ ここからが修正箇所です ★★★
+  const correctAnswers = quizState.answers.filter((answer, index) => answer !== null && answer === quizState.questions[index]?.correct).length;
+  const totalQuestions = quizState.questions.length;
+  const earnedXP = calculateXPFromScore(correctAnswers, totalQuestions, 'medium', true);
+  
+  // クイズ完了時の統計更新ロジック
   useEffect(() => {
     if (quizState.isCompleted && totalQuestions > 0) {
       const savedStatsJSON = localStorage.getItem('shakaquest_userStats');
@@ -134,7 +139,8 @@ const QuizComponent = () => {
       localStorage.setItem('shakaquest_userStats', JSON.stringify(userStats));
       console.log("更新された統計情報:", userStats);
     }
-  }, [quizState.isCompleted]);
+  // ★ 修正: 依存配列を正しく設定し、副作用が意図通りに実行されるようにします
+  }, [quizState.isCompleted, totalQuestions, correctAnswers, earnedXP, subject]);
 
   const handleTimeUp = () => handleAnswerSelect(null);
   const handleAnswerSelect = (answerIndex: number | null) => {
@@ -153,10 +159,7 @@ const QuizComponent = () => {
 
   const currentQuestion = quizState.questions[quizState.currentIndex];
   const progress = totalQuestions > 0 ? ((quizState.currentIndex + 1) / totalQuestions) * 100 : 0;
-  const correctAnswers = quizState.answers.filter((answer, index) => answer !== null && answer === quizState.questions[index]?.correct).length;
-  const totalQuestions = quizState.questions.length;
   const accuracy = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
-  const earnedXP = calculateXPFromScore(correctAnswers, totalQuestions, 'medium', true);
 
   // --- レンダリング ---
   if (!currentQuestion) {
