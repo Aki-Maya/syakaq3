@@ -20,146 +20,57 @@ export interface HistoricalEra {
   majorEvents: string[];
 }
 
-// Historical Eras Data (17 periods)
+// Historical Eras Data (6 periods)
 export const historicalEras: HistoricalEra[] = [
   {
     id: 1,
-    name: "旧石器時代",
-    period: "約1万2千年前まで",
-    keyFeatures: ["狩猟・採集生活", "打製石器の使用", "氷河期の終わり"],
+    name: "原始",
+    period: "〜約2400年前",
+    keyFeatures: ["狩猟・採集・漁労", "打製石器・縄文土器の使用", "定住生活の始まり"],
     importantPeople: [],
-    majorEvents: ["日本列島への人類到来"]
+    majorEvents: ["日本列島への人類到来", "土器の製作開始"]
   },
   {
     id: 2,
-    name: "縄文時代",
-    period: "約1万2千年前〜約2400年前",
-    keyFeatures: ["縄文土器", "竪穴住居", "狩猟・採集・漁労"],
-    importantPeople: [],
-    majorEvents: ["土器の製作開始", "定住生活の始まり"]
+    name: "古代",
+    period: "約2400年前〜1185年",
+    keyFeatures: ["稲作の開始と普及", "前方後円墳と大和朝廷", "仏教伝来と律令国家の形成", "摂関政治と国風文化"],
+    importantPeople: ["卑弥呼", "聖徳太子", "聖武天皇", "桓武天皇", "藤原道長", "紫式部"],
+    majorEvents: ["邪馬台国の成立", "大化の改新", "大仏建立", "平安京遷都", "源平合戦"]
   },
   {
     id: 3,
-    name: "弥生時代",
-    period: "約2400年前〜約1700年前",
-    keyFeatures: ["稲作の伝来", "弥生土器", "金属器の使用"],
-    importantPeople: ["卑弥呼"],
-    majorEvents: ["稲作の始まり", "邪馬台国の成立"]
+    name: "中世",
+    period: "1185年〜1573年",
+    keyFeatures: ["武家政権の成立（幕府）", "封建制度（御恩と奉公）", "禅宗などの武家文化", "応仁の乱と下克上"],
+    importantPeople: ["源頼朝", "北条政子", "足利尊氏", "足利義満", "雪舟", "フランシスコ・ザビエル"],
+    majorEvents: ["鎌倉幕府成立", "元寇（蒙古襲来）", "南北朝の動乱", "応仁の乱", "鉄砲・キリスト教の伝来"]
   },
   {
     id: 4,
-    name: "古墳時代",
-    period: "約1700年前〜約1400年前",
-    keyFeatures: ["古墳の建設", "大和朝廷の成立", "渡来人の来日"],
-    importantPeople: ["応神天皇", "仁徳天皇"],
-    majorEvents: ["大和朝廷の統一", "大仙陵古墳の建設"]
+    name: "近世",
+    period: "1573年〜1867年",
+    keyFeatures: ["天下統一事業", "幕藩体制と参勤交代", "鎖国政策", "町人文化の発展（元禄・化政文化）"],
+    importantPeople: ["織田信長", "豊臣秀吉", "徳川家康", "徳川吉宗", "ペリー", "坂本龍馬"],
+    majorEvents: ["関ヶ原の戦い", "江戸幕府開府", "鎖国完成", "享保・寛政・天保の改革", "黒船来航", "大政奉還"]
   },
   {
     id: 5,
-    name: "飛鳥時代",
-    period: "593年〜710年",
-    keyFeatures: ["仏教の伝来", "律令制度", "遣隋使・遣唐使"],
-    importantPeople: ["聖徳太子", "蘇我馬子", "中大兄皇子", "中臣鎌足"],
-    majorEvents: ["十七条憲法制定", "大化の改新", "壬申の乱"]
+    name: "近代",
+    period: "1868年〜1945年",
+    keyFeatures: ["明治維新と中央集権化", "富国強兵・殖産興業", "大正デモクラシー", "二度の大戦（日清・日露・第一次・第二次）"],
+    importantPeople: ["明治天皇", "伊藤博文", "大久保利通", "原敬", "東條英機"],
+    majorEvents: ["明治維新", "大日本帝国憲法発布", "日清戦争", "日露戦争", "第一次世界大戦", "太平洋戦争"]
   },
   {
     id: 6,
-    name: "奈良時代",
-    period: "710年〜794年",
-    keyFeatures: ["平城京", "大仏建立", "万葉集"],
-    importantPeople: ["聖武天皇", "行基", "鑑真"],
-    majorEvents: ["平城京遷都", "東大寺大仏開眼", "万葉集成立"]
-  },
-  {
-    id: 7,
-    name: "平安時代",
-    period: "794年〜1185年",
-    keyFeatures: ["平安京", "藤原氏の摂関政治", "源氏物語"],
-    importantPeople: ["桓武天皇", "藤原道長", "紫式部", "清少納言"],
-    majorEvents: ["平安京遷都", "藤原氏全盛期", "源平合戦"]
-  },
-  {
-    id: 8,
-    name: "鎌倉時代",
-    period: "1185年〜1333年",
-    keyFeatures: ["武士の政治", "鎌倉幕府", "御恩と奉公"],
-    importantPeople: ["源頼朝", "源義経", "北条政子", "北条泰時"],
-    majorEvents: ["鎌倉幕府成立", "承久の乱", "蒙古襲来（元寇）"]
-  },
-  {
-    id: 9,
-    name: "室町時代",
-    period: "1336年〜1573年",
-    keyFeatures: ["足利氏の政治", "南北朝の分裂", "勘合貿易"],
-    importantPeople: ["足利尊氏", "足利義満", "雪舟"],
-    majorEvents: ["室町幕府成立", "南北朝統一", "応仁の乱"]
-  },
-  {
-    id: 10,
-    name: "戦国時代",
-    period: "1467年〜1590年頃",
-    keyFeatures: ["戦国大名の争い", "鉄砲の伝来", "キリスト教の伝来"],
-    importantPeople: ["織田信長", "武田信玄", "上杉謙信", "フランシスコ・ザビエル"],
-    majorEvents: ["鉄砲伝来", "キリスト教伝来", "桶狭間の戦い"]
-  },
-  {
-    id: 11,
-    name: "安土桃山時代",
-    period: "1573年〜1603年",
-    keyFeatures: ["織田・豊臣政権", "天下統一", "朝鮮出兵"],
-    importantPeople: ["織田信長", "豊臣秀吉", "徳川家康"],
-    majorEvents: ["本能寺の変", "太閤検地", "朝鮮出兵", "関ヶ原の戦い"]
-  },
-  {
-    id: 12,
-    name: "江戸時代前期",
-    period: "1603年〜1700年頃",
-    keyFeatures: ["徳川幕府成立", "参勤交代", "鎖国"],
-    importantPeople: ["徳川家康", "徳川家光", "徳川綱吉"],
-    majorEvents: ["江戸幕府開府", "島原の乱", "鎖国完成"]
-  },
-  {
-    id: 13,
-    name: "江戸時代中期",
-    period: "1700年頃〜1800年頃",
-    keyFeatures: ["享保の改革", "田沼政治", "寛政の改革"],
-    importantPeople: ["徳川吉宗", "田沼意次", "松平定信"],
-    majorEvents: ["享保の改革", "田沼政治", "寛政の改革"]
-  },
-  {
-    id: 14,
-    name: "江戸時代後期",
-    period: "1800年頃〜1867年",
-    keyFeatures: ["天保の改革", "黒船来航", "尊王攘夷運動"],
-    importantPeople: ["水野忠邦", "ペリー", "坂本龍馬", "西郷隆盛"],
-    majorEvents: ["黒船来航", "日米和親条約", "大政奉還"]
-  },
-  {
-    id: 15,
-    name: "明治時代",
-    period: "1868年〜1912年",
-    keyFeatures: ["明治維新", "富国強兵", "文明開化"],
-    importantPeople: ["明治天皇", "大久保利通", "木戸孝允", "伊藤博文"],
-    majorEvents: ["明治維新", "廃藩置県", "日清戦争", "日露戦争"]
-  },
-  {
-    id: 16,
-    name: "大正時代",
-    period: "1912年〜1926年",
-    keyFeatures: ["大正デモクラシー", "第一次世界大戦", "大正文化"],
-    importantPeople: ["大正天皇", "原敬", "吉野作造"],
-    majorEvents: ["第一次世界大戦参戦", "米騒動", "関東大震災"]
-  },
-  {
-    id: 17,
-    name: "昭和時代",
-    period: "1926年〜1989年",
-    keyFeatures: ["軍国主義", "第二次世界大戦", "戦後復興"],
-    importantPeople: ["昭和天皇", "東條英機", "マッカーサー"],
-    majorEvents: ["満州事変", "日中戦争", "太平洋戦争", "終戦"]
+    name: "現代",
+    period: "1945年〜現在",
+    keyFeatures: ["戦後改革と民主化", "高度経済成長", "国際社会への復帰", "バブル経済と安定成長"],
+    importantPeople: ["昭和天皇", "マッカーサー", "吉田茂"],
+    majorEvents: ["終戦", "日本国憲法公布", "サンフランシスコ平和条約", "東京オリンピック開催（1964年）", "石油危機（オイルショック）"]
   }
 ];
-
 // History Questions
 export const historyQuestions: HistoryQuestion[] = [
   {
@@ -171,7 +82,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "prehistoric",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "縄文時代"
+    era: "原始時代"
   },
   {
     id: 2,
@@ -182,7 +93,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "prehistoric",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "弥生時代"
+    era: "原始時代"
   },
   {
     id: 3,
@@ -193,7 +104,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "ancient",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "飛鳥時代"
+    era: "古代"
   },
   {
     id: 4,
@@ -204,7 +115,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "ancient",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "奈良時代"
+    era: "古代"
   },
   {
     id: 5,
@@ -215,7 +126,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "classical",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "平安時代"
+    era: "古代"
   },
   {
     id: 6,
@@ -226,7 +137,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "medieval",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "鎌倉時代"
+    era: "中世"
   },
   {
     id: 7,
@@ -237,7 +148,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "medieval",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "鎌倉時代"
+    era: "中世"
   },
   {
     id: 8,
@@ -248,7 +159,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "medieval",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "室町時代"
+    era: "中世"
   },
   {
     id: 9,
@@ -259,7 +170,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "warring-states",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "戦国時代"
+    era: "中世"
   },
   {
     id: 10,
@@ -270,7 +181,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "unification",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "安土桃山時代"
+    era: "中世"
   },
   {
     id: 11,
@@ -281,7 +192,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "edo",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "江戸時代前期"
+    era: "近世"
   },
   {
     id: 12,
@@ -292,7 +203,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "edo",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "江戸時代前期"
+    era: "近世"
   },
   {
     id: 13,
@@ -303,7 +214,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "end-of-edo",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "江戸時代後期"
+    era: "近世"
   },
   {
     id: 14,
@@ -314,7 +225,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "meiji",
     difficulty: "hard",
     type: "multiple-choice",
-    era: "明治時代"
+    era: "近代"
   },
   {
     id: 15,
@@ -325,7 +236,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "meiji",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "明治時代"
+    era: "近代"
   },
 
   // === ここから追加した問題 (15問) ===
@@ -338,7 +249,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "taisho",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "大正時代"
+    era: "近代"
   },
   {
     id: 17,
@@ -349,7 +260,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "taisho",
     difficulty: "hard",
     type: "multiple-choice",
-    era: "大正時代"
+    era: "近代"
   },
   {
     id: 18,
@@ -360,7 +271,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "showa-prewar",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "昭和時代"
+    era: "近代"
   },
   {
     id: 19,
@@ -371,7 +282,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "showa-prewar",
     difficulty: "hard",
     type: "multiple-choice",
-    era: "昭和時代"
+    era: "近代"
   },
   {
     id: 20,
@@ -382,7 +293,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "showa-war",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "昭和時代"
+    era: "近代"
   },
   {
     id: 21,
@@ -393,7 +304,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "ancient",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "飛鳥時代"
+    era: "古代"
   },
   {
     id: 22,
@@ -404,7 +315,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "ancient",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "奈良時代"
+    era: "古代"
   },
   {
     id: 23,
@@ -415,7 +326,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "classical",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "平安時代"
+    era: "古代"
   },
   {
     id: 24,
@@ -426,7 +337,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "medieval",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "鎌倉時代"
+    era: "中世"
   },
   {
     id: 25,
@@ -437,7 +348,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "medieval",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "室町時代"
+    era: "中世"
   },
   {
     id: 26,
@@ -448,7 +359,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "warring-states",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "戦国時代"
+    era: "中世"
   },
   {
     id: 27,
@@ -459,7 +370,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "edo",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "江戸時代中期"
+    era: "近代"
   },
   {
     id: 28,
@@ -470,7 +381,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "edo",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "江戸時代後期"
+    era: "近代"
   },
   {
     id: 29,
@@ -481,7 +392,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "meiji",
     difficulty: "medium",
     type: "multiple-choice",
-    era: "明治時代"
+    era: "近代"
   },
   {
     id: 30,
@@ -492,7 +403,7 @@ export const historyQuestions: HistoryQuestion[] = [
     category: "showa-postwar",
     difficulty: "easy",
     type: "multiple-choice",
-    era: "昭和時代"
+    era: "現代"
   }
 ];
 
