@@ -136,6 +136,47 @@ const QuizComponent = () => {
   // 獲得XPを計算
   const earnedXP = calculateXPFromScore(correctAnswers, totalQuestions, 'medium', true);
 
+  // 副作用フック: クイズ完了時にユーザー統計を更新する
+  useEffect(() => {
+    // クイズが完了したときにのみ、この処理を一度だけ実行
+    if (quizState.isCompleted) {
+      console.log("クイズ完了。統計の更新処理を開始します。");
+
+      // 1. localStorageから既存のユーザー統計を読み込む
+      const savedStatsJSON = localStorage.getItem('shakaquest_userStats');
+      // 既存のデータがなければ処理を中断
+      if (!savedStatsJSON) {
+        console.error("ユーザー統計データが見つかりません。");
+        return; 
+      }
+
+      const userStats = JSON.parse(savedStatsJSON);
+
+      // 2. 今回のクイズ結果を使って統計を更新
+      // URLパラメータから取得したsubject、またはランダムクイズ用の'mixed'をIDとして使用
+      const subjectId = subject || 'mixed'; 
+      const subjectProgress = userStats.subjectProgress[subjectId] || { answered: 0, correct: 0, lastStudied: '' };
+
+      userStats.xp += earnedXP; // 獲得XPを加算
+      userStats.totalAnswered += totalQuestions;
+      userStats.correctAnswers += correctAnswers;
+
+      // 科目別の進捗も更新
+      // 'mixed' の場合は科目別進捗を更新しない、または別途考慮する
+      if (subject && userStats.subjectProgress[subjectId]) {
+         userStats.subjectProgress[subjectId] = {
+          answered: subjectProgress.answered + totalQuestions,
+          correct: subjectProgress.correct + correctAnswers,
+          lastStudied: new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit'})
+        };
+      }
+     
+      // 3. 更新した統計をlocalStorageに再保存
+      localStorage.setItem('shakaquest_userStats', JSON.stringify(userStats));
+      console.log("更新された統計情報:", userStats);
+    }
+  }, [quizState.isCompleted, earnedXP, correctAnswers, totalQuestions, subject]);
+
   // --- レンダリング ---
 
   // 問題データが読み込まれていない場合はローディング画面を表示
