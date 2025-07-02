@@ -121,11 +121,11 @@ export const historyQuestions: HistoryQuestion[] = [
   {
     id: 6,
     question: '645年に中大兄皇子らによって暗殺された、聖徳太子の死後に強い権力を持った人物は誰ですか？',
-    options: ['蘇我馬子', '蘇我蝦夷', '蘇我入鹿', '物部守屋'],
-    correct: 2,
+    options: ['蘇我入鹿', '物部守屋', '蘇我馬子', '蘇我蝦夷'], // 順序を変更
+    correct: 0, // 正解のインデックスを更新
     category: 'ancient',
     difficulty: 'normal',
-    explanation: '蘇我馬子の孫である蘇我入鹿は、聖徳太子の死後に権力を持ちましたが、645年に中大兄皇子らによって暗殺されました。'
+    [cite_start]explanation: '蘇我馬子の孫である蘇我入鹿は、聖徳太子の死後に権力を持ちましたが、645年に中大兄皇子らによって暗殺されました。[cite: 11]'
   },
   {
     id: 7,
@@ -324,11 +324,11 @@ export const historyQuestions: HistoryQuestion[] = [
   {
     id: 28,
     question: '江戸幕府の三大改革のうち、目安箱の設置や公事方御定書の制定が行われたのはどの改革ですか？',
-    options: ['享保の改革', '寛政の改革', '天保の改革', '文政の改革'],
-    correct: 0,
+    options: ['寛政の改革', '天保の改革', '享保の改革', '文政の改革'], // 順序を変更
+    correct: 2, // 正解のインデックスを更新
     category: 'early-modern',
     difficulty: 'normal',
-    explanation: '目安箱の設置や公事方御定書の制定は、徳川吉宗による享保の改革で行われた政策です。'
+    [cite_start]explanation: '目安箱の設置や公事方御定書の制定は、徳川吉宗による享保の改革で行われた政策です。[cite: 5]'
   },
   {
     id: 29,
