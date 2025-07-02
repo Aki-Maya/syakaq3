@@ -482,8 +482,8 @@ export const historyQuestions: HistoryQuestion[] = [
   {
     id: 45,
     question: '五・一五事件で海軍将校らによって暗殺された、当時の内閣総理大臣は誰ですか？',
-    options: ['浜口雄幸', '犬養毅', '高橋是清', '斎藤実'],
-    correct: 1,
+    options: ['高橋是清', '斎藤実', '浜口雄幸', '犬養毅'], // 順序を変更
+    correct: 3, // 正解のインデックスを更新
     category: 'modern',
     difficulty: 'normal',
     explanation: '犬養毅は、五・一五事件で海軍将校らによって暗殺されました。'
@@ -605,6 +605,47 @@ export const historyQuestions: HistoryQuestion[] = [
     category: 'primitive',
     difficulty: 'hard',
     explanation: '銅鐸は弥生時代を代表する青銅器で、主に祭りに使われたと考えられています。土偶は縄文時代、埴輪は古墳時代、和同開珎は奈良時代のものです。'
+  },
+  {
+    id: 58, 
+    question: '九州に置かれた外交・防衛の役所の名称として、歴史的に正しい漢字表記はどれですか？',
+    options: ['太宰府', '大宰府', '大在府', '太在府'],
+    correct: 1,
+    category: 'ancient',
+    difficulty: 'hard',
+    [cite_start]explanation: '現在の地名や神社の名称は「太宰府」ですが、歴史上の役所の名称としては「大宰府」が正しい表記です。[cite: 1]'
+  },
+  {
+    id: 59,
+    question: '1232年に、武士の社会での慣習や道徳を基準とした最初の武家法である「御成敗式目」を制定した人物は誰ですか？',
+    options: ['源頼朝', '北条時宗', '足利義満', '北条泰時'],
+    correct: 3,
+    category: 'medieval',
+    difficulty: 'normal',
+    [cite_start]explanation: '御成敗式目は、鎌倉幕府の三代目執権である北条泰時によって定められました。[cite: 11]'
+  },
+  {
+    id: 60,
+    question: '豊臣秀吉が1588年に行った刀狩令の主な目的は何でしたか？',
+    options: [
+      '農民から武器を取り上げ、一揆を防ぐため',
+      '外国からの侵略に備えるため',
+      '武士の身分を廃止するため',
+      '刀を輸出して利益を得るため'
+    ],
+    correct: 0,
+    category: 'early-modern',
+    difficulty: 'normal',
+    [cite_start]explanation: '刀狩令は、農民が武器を持つことを禁じ、一揆を防止するとともに、武士と農民の身分を明確に分ける（兵農分離）目的がありました。[cite: 11]'
+  },
+  {
+    id: 61,
+    question: '江戸時代、対馬藩の宗氏の尽力によって、将軍の代替わりごとに朝鮮から日本へ派遣された使節団を何と呼びますか？',
+    options: ['遣唐使', '勘合貿易船', '朝鮮通信使', '琉球使節'],
+    correct: 2,
+    category: 'early-modern',
+    difficulty: 'normal',
+    [cite_start]explanation: '朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。[cite: 7, 23]'
   }
 ];
 
