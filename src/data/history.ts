@@ -125,7 +125,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0, // 正解のインデックスを更新
     category: 'ancient',
     difficulty: 'normal',
-    [cite_start]explanation: '蘇我馬子の孫である蘇我入鹿は、聖徳太子の死後に権力を持ちましたが、645年に中大兄皇子らによって暗殺されました。[cite: 11]'
+    explanation: '蘇我馬子の孫である蘇我入鹿は、聖徳太子の死後に権力を持ちましたが、645年に中大兄皇子らによって暗殺されました。'
   },
   {
     id: 7,
@@ -328,7 +328,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2, // 正解のインデックスを更新
     category: 'early-modern',
     difficulty: 'normal',
-    [cite_start]explanation: '目安箱の設置や公事方御定書の制定は、徳川吉宗による享保の改革で行われた政策です。[cite: 5]'
+    explanation: '目安箱の設置や公事方御定書の制定は、徳川吉宗による享保の改革で行われた政策です。'
   },
   {
     id: 29,
@@ -613,7 +613,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'hard',
-    [cite_start]explanation: '現在の地名や神社の名称は「太宰府」ですが、歴史上の役所の名称としては「大宰府」が正しい表記です。[cite: 1]'
+    explanation: '現在の地名や神社の名称は「太宰府」ですが、歴史上の役所の名称としては「大宰府」が正しい表記です。'
   },
   {
     id: 59,
@@ -622,7 +622,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'medieval',
     difficulty: 'normal',
-    [cite_start]explanation: '御成敗式目は、鎌倉幕府の三代目執権である北条泰時によって定められました。[cite: 11]'
+    explanation: '御成敗式目は、鎌倉幕府の三代目執権である北条泰時によって定められました。'
   },
   {
     id: 60,
@@ -636,7 +636,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'early-modern',
     difficulty: 'normal',
-    [cite_start]explanation: '刀狩令は、農民が武器を持つことを禁じ、一揆を防止するとともに、武士と農民の身分を明確に分ける（兵農分離）目的がありました。[cite: 11]'
+    explanation: '刀狩令は、農民が武器を持つことを禁じ、一揆を防止するとともに、武士と農民の身分を明確に分ける（兵農分離）目的がありました。'
   },
   {
     id: 61,
@@ -645,7 +645,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'normal',
-    [cite_start]explanation: '朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。[cite: 7, 23]'
+    explanation: '朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。'
   }
 ];
 
