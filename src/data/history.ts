@@ -654,7 +654,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'medieval',
     difficulty: 'normal',
-    [cite_start]explanation: '鎌倉幕府の二代将軍である源頼家が病に倒れた後、弟の源実朝が三代将軍につきました。 [cite: 1]'
+    explanation: '鎌倉幕府の二代将軍である源頼家が病に倒れた後、弟の源実朝が三代将軍につきました。'
   },
   {
     id: 63, // 既存のIDと重複しないように設定してください
@@ -663,7 +663,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'modern',
     difficulty: 'normal',
-    [cite_start]explanation: '板垣退助は、国会開設の準備のために1881年に自由党を結成しました。 [cite: 1]'
+    explanation: '板垣退助は、国会開設の準備のために1881年に自由党を結成しました。'
   },
   {
     id: 64, // 既存のIDと重複しないように設定してください
@@ -677,7 +677,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'easy',
-    [cite_start]explanation: '古代の中国などでは貝が貨幣として用いられていたため、お金や財産に関する漢字の部首に「貝」が多く使われています。 [cite: 1]'
+    explanation: '古代の中国などでは貝が貨幣として用いられていたため、お金や財産に関する漢字の部首に「貝」が多く使われています。'
   },
   {
     id: 65, // 既存のIDと重複しないように設定してください
@@ -691,7 +691,7 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'early-modern',
     difficulty: 'hard',
-    [cite_start]explanation: '東洲斎写楽は「市川鰕蔵の竹村定之進」を描いた江戸時代の浮世絵師です。 [cite: 1] [cite_start]「見返り美人図」は菱川師宣、「風神雷神図屏風」は俵屋宗達の作品で、雪舟は室町時代の水墨画家です。 [cite: 1]'
+    explanation: '東洲斎写楽は「市川鰕蔵の竹村定之進」を描いた江戸時代の浮世絵師です。 「見返り美人図」は菱川師宣、「風神雷神図屏風」は俵屋宗達の作品で、雪舟は室町時代の水墨画家です。 '
   }
 ];
 
