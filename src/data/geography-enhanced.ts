@@ -358,7 +358,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 3,
     category: 'industry',
     difficulty: 'normal',
-    [cite_start]explanation: '2022年度のブロッコリー生産量は、1位が北海道、2位が埼玉県、3位が愛知県です。 [cite: 1]'
+    explanation: '2022年度のブロッコリー生産量は、1位が北海道、2位が埼玉県、3位が愛知県です。'
   },
   {
     id: 17, // 既存のIDと重複しないように設定してください
@@ -367,7 +367,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 1,
     category: 'climate',
     difficulty: 'normal',
-    [cite_start]explanation: '太平洋側の気候は、梅雨や台風の影響で6月〜9月の降水量が多く、冬の降水量は少ないという特徴があります。 [cite: 1]'
+    explanation: '太平洋側の気候は、梅雨や台風の影響で6月〜9月の降水量が多く、冬の降水量は少ないという特徴があります。'
   },
   {
     id: 18, // 既存のIDと重複しないように設定してください
@@ -376,7 +376,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     category: 'regions',
     difficulty: 'hard',
-    [cite_start]explanation: '秋吉台は山口県の中西部に位置する、日本最大級のカルスト台地です。 [cite: 1]'
+    explanation: '秋吉台は山口県の中西部に位置する、日本最大級のカルスト台地です。 '
   }
 ];
 
