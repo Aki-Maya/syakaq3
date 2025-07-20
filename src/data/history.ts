@@ -646,6 +646,52 @@ export const historyQuestions: HistoryQuestion[] = [
     category: 'early-modern',
     difficulty: 'normal',
     explanation: '朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。'
+  },
+  {
+    id: 62, // 既存のIDと重複しないように設定してください
+    question: '鎌倉幕府の三代将軍・源実朝の兄にあたり、病に倒れた二代将軍は誰ですか？',
+    options: ['源頼家', '源義経', '北条泰時', '源頼朝'],
+    correct: 0,
+    category: 'medieval',
+    difficulty: 'normal',
+    [cite_start]explanation: '鎌倉幕府の二代将軍である源頼家が病に倒れた後、弟の源実朝が三代将軍につきました。 [cite: 1]'
+  },
+  {
+    id: 63, // 既存のIDと重複しないように設定してください
+    question: '1881年に、来るべき国会開設に備えて自由党を結成した中心人物は誰ですか？',
+    options: ['大隈重信', '伊藤博文', '板垣退助', '原敬'],
+    correct: 2,
+    category: 'modern',
+    difficulty: 'normal',
+    [cite_start]explanation: '板垣退助は、国会開設の準備のために1881年に自由党を結成しました。 [cite: 1]'
+  },
+  {
+    id: 64, // 既存のIDと重複しないように設定してください
+    question: '漢字の「買」や「財」の部首に「貝」が使われている理由として、最も適切なものはどれですか？',
+    options: [
+      '貝が神聖なものと考えられていたから',
+      '古代中国などで、貝が貨幣として使われていたから',
+      '貝の形が数字の単位に似ていたから',
+      '貝が最も重要な輸出品だったから'
+    ],
+    correct: 1,
+    category: 'ancient',
+    difficulty: 'easy',
+    [cite_start]explanation: '古代の中国などでは貝が貨幣として用いられていたため、お金や財産に関する漢字の部首に「貝」が多く使われています。 [cite: 1]'
+  },
+  {
+    id: 65, // 既存のIDと重複しないように設定してください
+    question: '江戸時代の絵師とその作品の組み合わせとして、正しいものはどれですか？',
+    options: [
+      '雪舟 - 「見返り美人図」',
+      '菱川師宣 - 「風神雷神図屏風」',
+      '俵屋宗達 - 「秋冬山水図」',
+      '東洲斎写楽 - 「市川鰕蔵の竹村定之進」'
+    ],
+    correct: 3,
+    category: 'early-modern',
+    difficulty: 'hard',
+    [cite_start]explanation: '東洲斎写楽は「市川鰕蔵の竹村定之進」を描いた江戸時代の浮世絵師です。 [cite: 1] [cite_start]「見返り美人図」は菱川師宣、「風神雷神図屏風」は俵屋宗達の作品で、雪舟は室町時代の水墨画家です。 [cite: 1]'
   }
 ];
 
