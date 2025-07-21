@@ -71,16 +71,6 @@ export const historicalEras: HistoricalEra[] = [
     majorEvents: ["終戦", "日本国憲法公布", "サンフランシスコ平和条約", "東京オリンピック開催（1964年）", "石油危機（オイルショック）"]
   }
 ];
-はい、承知いたしました。
-既存の問題リストの質を向上させるため、問題の表現をより深く、かつ分かりやすく修正し、さらにhistoricalErasの情報を参考に学習範囲のバランスが良くなるような新しい問題を追加します。
-
-変更点はファクトチェック済みですので、ご安心ください。
-
-以下が、ブラッシュアップしたhistoryQuestionsのデータです。この内容で既存の配列をそのまま置き換えることができます。
-
-【修正案】歴史問題データ
-JavaScript
-
 // History Questions
 export const historyQuestions: HistoryQuestion[] = [
   {
