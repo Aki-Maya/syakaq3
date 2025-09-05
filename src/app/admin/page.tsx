@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { SheetsService, SheetQuestion } from '@/lib/sheets';
 import { GenSparkAIService, GeneratedQuestion } from '@/lib/genspark-ai';
+import { shuffleQuestionOptions } from '@/utils/questionUtils';
 
 const AdminDashboard = () => {
   const [sheetQuestions, setSheetQuestions] = useState<SheetQuestion[]>([]);
@@ -78,6 +79,9 @@ const AdminDashboard = () => {
 
   // 問題をアプリに追加
   const addToApp = (question: GeneratedQuestion) => {
+    // 🎲 選択肢シャッフル機能のテスト用デモ
+    const shuffledQuestion = shuffleQuestionOptions(question);
+    
     // データファイルに追加するロジック
     const questionCode = `{
   id: "${Date.now()}",
@@ -88,11 +92,21 @@ const AdminDashboard = () => {
   difficulty: "${question.difficulty}",
   subject: "${question.subject}",
   category: "${question.category}"
-},`;
+},
+
+// 🎲 選択肢シャッフル機能付きバージョン（参考）
+// 実際のアプリでは実行時に自動でシャッフルされます
+/*
+シャッフル例:
+元の選択肢: ${JSON.stringify(question.options)}
+元の正解: ${question.options[question.correct]} (位置: ${question.correct})
+シャッフル後: ${JSON.stringify(shuffledQuestion.options)}
+新しい正解: ${shuffledQuestion.options[shuffledQuestion.correct]} (位置: ${shuffledQuestion.correct})
+*/`;
 
     // クリップボードにコピー
     navigator.clipboard.writeText(questionCode).then(() => {
-      alert('問題コードをクリップボードにコピーしました！\nデータファイルに貼り付けてください。');
+      alert('問題コードをクリップボードにコピーしました！\n\n📋 内容：\n- 基本の問題コード\n- シャッフル機能の説明コメント\n\nデータファイルに貼り付けてください。');
     });
   };
 

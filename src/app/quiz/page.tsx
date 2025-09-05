@@ -10,6 +10,7 @@ import {
 } from '@/data/index';
 import { useUserStats } from '@/hooks/useUserStats';
 import { QuizQuestion, QuizResult } from '@/components';
+import { shuffleAllQuestionOptions, validateShuffledQuestion, logShuffleResult } from '@/utils/questionUtils';
 
 // --- 型定義 ---
 interface QuizState {
@@ -58,13 +59,35 @@ const QuizComponent = () => {
       console.log(`取得したランダム問題数: ${questions.length}`);
     }
 
-    const shuffled = [...questions].sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
-    console.log(`最終的な問題数: ${shuffled.length}`);
+    // 問題をランダムにシャッフル
+    const shuffledQuestions = [...questions].sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
+    
+    // 🎲 各問題の選択肢をランダムにシャッフル
+    const questionsWithShuffledOptions = shuffleAllQuestionOptions(shuffledQuestions);
+    
+    // 開発環境でシャッフル結果をログ出力
+    if (process.env.NODE_ENV === 'development') {
+      questionsWithShuffledOptions.forEach((shuffledQ, index) => {
+        const originalQ = shuffledQuestions[index];
+        logShuffleResult(originalQ, shuffledQ);
+      });
+    }
+    
+    // 問題の妥当性をチェック
+    const validQuestions = questionsWithShuffledOptions.filter(q => {
+      const isValid = validateShuffledQuestion(q);
+      if (!isValid) {
+        console.error('❌ 無効な問題をスキップ:', q.question);
+      }
+      return isValid;
+    });
+    
+    console.log(`✅ 最終的な有効問題数: ${validQuestions.length}`);
 
     setQuizState(prev => ({
       ...prev, 
-      questions: shuffled, 
-      answers: new Array(shuffled.length).fill(null)
+      questions: validQuestions, 
+      answers: new Array(validQuestions.length).fill(null)
     }));
   }, [subject, category, countParam]);
 
