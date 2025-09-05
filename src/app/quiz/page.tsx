@@ -10,12 +10,11 @@ import {
 } from '@/data/index';
 import { useUserStats } from '@/hooks/useUserStats';
 import { QuizQuestion, QuizResult } from '@/components';
-import { shuffleAllQuestionOptions, validateShuffledQuestion, logShuffleResult } from '@/utils/questionUtils';
+import { shuffleAllQuestionOptions, validateShuffledQuestion } from '@/utils/questionUtils';
 
 // --- 型定義 ---
 interface QuizState {
   questions: UnifiedQuestion[];
-  originalQuestions: UnifiedQuestion[]; // シャッフル前の問題を保存
   currentIndex: number;
   selectedAnswer: number | null;
   answers: (number | null)[];
@@ -37,7 +36,6 @@ const QuizComponent = () => {
 
   const [quizState, setQuizState] = useState<QuizState>({
     questions: [], 
-    originalQuestions: [], 
     currentIndex: 0, 
     selectedAnswer: null, 
     answers: [],
@@ -67,14 +65,6 @@ const QuizComponent = () => {
     // 🎲 各問題の選択肢をランダムにシャッフル
     const questionsWithShuffledOptions = shuffleAllQuestionOptions(shuffledQuestions);
     
-    // 開発環境でシャッフル結果をログ出力
-    if (process.env.NODE_ENV === 'development') {
-      questionsWithShuffledOptions.forEach((shuffledQ, index) => {
-        const originalQ = shuffledQuestions[index];
-        logShuffleResult(originalQ, shuffledQ);
-      });
-    }
-    
     // 問題の妥当性をチェック
     const validQuestions = questionsWithShuffledOptions.filter(q => {
       const isValid = validateShuffledQuestion(q);
@@ -89,7 +79,6 @@ const QuizComponent = () => {
     setQuizState(prev => ({
       ...prev, 
       questions: validQuestions,
-      originalQuestions: shuffledQuestions, // シャッフル前を保存
       answers: new Array(validQuestions.length).fill(null)
     }));
   }, [subject, category, countParam]);
@@ -156,7 +145,6 @@ const QuizComponent = () => {
   };
 
   const currentQuestion = quizState.questions[quizState.currentIndex];
-  const originalQuestion = quizState.originalQuestions[quizState.currentIndex];
 
   // --- レンダリング ---
   if (!currentQuestion && !quizState.isCompleted) {
@@ -188,7 +176,6 @@ const QuizComponent = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
       <QuizQuestion
         question={currentQuestion}
-        originalQuestion={originalQuestion}
         currentIndex={quizState.currentIndex}
         totalQuestions={totalQuestions}
         selectedAnswer={quizState.selectedAnswer}

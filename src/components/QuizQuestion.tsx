@@ -8,13 +8,6 @@ interface QuizQuestionProps {
     explanation?: string;
     id?: string;
   };
-  originalQuestion?: {
-    question: string;
-    options: string[];
-    correct: number;
-    explanation?: string;
-    id?: string;
-  };
   currentIndex: number;
   totalQuestions: number;
   selectedAnswer: number | null;
@@ -24,11 +17,10 @@ interface QuizQuestionProps {
   onNext: () => void;
 }
 
-import { ShuffleIndicator } from './ShuffleIndicator';
+
 
 export const QuizQuestion = ({
   question,
-  originalQuestion,
   currentIndex,
   totalQuestions,
   selectedAnswer,
@@ -69,16 +61,7 @@ export const QuizQuestion = ({
           {question.question}
         </h2>
 
-        {/* シャッフルインジケーター */}
-        {originalQuestion && (
-          <ShuffleIndicator
-            originalOptions={originalQuestion.options}
-            shuffledOptions={question.options}
-            originalCorrect={originalQuestion.correct}
-            shuffledCorrect={question.correct}
-            questionId={question.id || `q-${currentIndex}`}
-          />
-        )}
+
 
         {/* 選択肢 */}
         <div className="space-y-3">
