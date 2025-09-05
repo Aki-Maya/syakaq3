@@ -5,3 +5,4 @@ export { CategoryCard } from './CategoryCard';
 export { LearningStats } from './LearningStats';
 export { QuizResult } from './QuizResult';
 export { QuizQuestion } from './QuizQuestion';
+export { ShuffleIndicator } from './ShuffleIndicator';

@@ -15,6 +15,7 @@ import { shuffleAllQuestionOptions, validateShuffledQuestion, logShuffleResult }
 // --- 型定義 ---
 interface QuizState {
   questions: UnifiedQuestion[];
+  originalQuestions: UnifiedQuestion[]; // シャッフル前の問題を保存
   currentIndex: number;
   selectedAnswer: number | null;
   answers: (number | null)[];
@@ -36,6 +37,7 @@ const QuizComponent = () => {
 
   const [quizState, setQuizState] = useState<QuizState>({
     questions: [], 
+    originalQuestions: [], 
     currentIndex: 0, 
     selectedAnswer: null, 
     answers: [],
@@ -86,7 +88,8 @@ const QuizComponent = () => {
 
     setQuizState(prev => ({
       ...prev, 
-      questions: validQuestions, 
+      questions: validQuestions,
+      originalQuestions: shuffledQuestions, // シャッフル前を保存
       answers: new Array(validQuestions.length).fill(null)
     }));
   }, [subject, category, countParam]);
@@ -153,6 +156,7 @@ const QuizComponent = () => {
   };
 
   const currentQuestion = quizState.questions[quizState.currentIndex];
+  const originalQuestion = quizState.originalQuestions[quizState.currentIndex];
 
   // --- レンダリング ---
   if (!currentQuestion && !quizState.isCompleted) {
@@ -184,6 +188,7 @@ const QuizComponent = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
       <QuizQuestion
         question={currentQuestion}
+        originalQuestion={originalQuestion}
         currentIndex={quizState.currentIndex}
         totalQuestions={totalQuestions}
         selectedAnswer={quizState.selectedAnswer}
