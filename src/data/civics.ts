@@ -112,7 +112,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     question: "日本国憲法の三大原則は何ですか？",
     options: ["国民主権、基本的人権の尊重、平和主義", "民主主義、自由主義、平和主義", "国民主権、法の支配、平和主義", "基本的人権、法の下の平等、平和主義"],
     correct: 0,
-    explanation: "日本国憲法の三大原則は「国民主権」「基本的人権の尊重」「平和主義」です。",
+    explanation: "日本国憲法（1946年制定、1947年施行）の三大原則は、第二次世界大戦の反省を踏まえて定められました。「国民主権」は政治の最終決定権が国民にあること、「基本的人権の尊重」は人間の尊厳や自由を保障すること、「平和主義」は戦争を放棄し国際平和を維持することを意味します。",
     category: "constitution",
     difficulty: "easy",
     type: "multiple-choice"
@@ -122,7 +122,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     question: "国民主権とは何ですか？",
     options: ["国民が政治家を選ぶこと", "国の政治の最終決定権が国民にあること", "国民が法律を作ること", "国民が裁判を行うこと"],
     correct: 1,
-    explanation: "国民主権とは、国の政治の在り方を最終的に決める力が国民にあることです。",
+    explanation: "国民主権とは、国の政治の在り方を最終的に決定する最高の権力が国民にあるという原則です。具体的には選挙によって代表者を選び、憲法改正の国民投票で最終的な意思を示すなどで実現されます。これは明治憲法の天皇主権（統治権が天皇にある）とは対照的な民主主義の基本原理です。",
     category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
@@ -132,7 +132,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     question: "三権分立の「三権」に含まれないものはどれですか？",
     options: ["立法権", "行政権", "司法権", "選挙権"],
     correct: 3,
-    explanation: "三権分立は立法権（国会）、行政権（内閣）、司法権（裁判所）の三つです。",
+    explanation: "三権分立は、政治権力を三つの機関に分けて相互に牛制させることで、権力の集中や暴走を防ぐ制度です。立法権（国会）は法律を制定し、行政権（内閣）は法律を実行し、司法権（裁判所）は法律を解釈し適用します。選挙権は国民が持つ政治参加の権利で、三権とは別の概念です。",
     category: "politics",
     difficulty: "easy",
     type: "multiple-choice"
@@ -142,7 +142,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     question: "国会の権限でないものはどれですか？",
     options: ["法律の制定", "予算の審議", "内閣総理大臣の指名", "違憲立法審査"],
     correct: 3,
-    explanation: "違憲立法審査権は裁判所の権限です。",
+    explanation: "違憲立法審査権は、法律や行政行為が憲法に違反していないかを審査する裁判所の重要な権限です。これにより裁判所は憲法の最高法性を维持し、国会や内閣が憲法に反することを防いでいます。国会の権限は法律の制定、予算の審議、内閣総理大臣の指名などです。",
     category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
@@ -152,7 +152,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     question: "内閣の長は誰ですか？",
     options: ["内閣官房長官", "内閣総理大臣", "国会議長", "最高裁判所長官"],
     correct: 1,
-    explanation: "内閣の長は内閣総理大臣です。",
+    explanation: "内閣は行政権を担う最高機関で、その長である内閣総理大臣は国会議員の中から国会の指名によって天皇が任命します。総理大臣は各省庁を総括し、国務大臣を任命し、内閣を代表して政策を立案し実行します。また、国会に対して連帯責任を負います。",
     category: "politics",
     difficulty: "easy",
     type: "multiple-choice"
