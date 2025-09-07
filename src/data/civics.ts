@@ -415,6 +415,166 @@ export const civicsQuestions: CivicsQuestion[] = [
     explanation: '1872年の学制公布当初、義務教育は4年でしたが、その後延長され、現在では小学校6年間と中学校3年間の合計9年間となっています。',
     category: 'human-rights',
     difficulty: 'easy'
+  },
+  {
+    id: 232,
+    question: 'トレーサビリティに関する記述として適切なものはどれですか。',
+    options: ['トレーサビリティ', '亜熱帯', '北海道', '野菜'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'トレーサビリティについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 233,
+    question: '禁中並公家諸法度について正しい説明を選んでください。',
+    options: ['禁中並公家諸法度', '九州', '大陸性気候', '沖縄'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '禁中並公家諸法度について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 234,
+    question: 'ヤングケアラーに関する記述として適切なものはどれですか。',
+    options: ['ヤングケアラー', '北海道', '九州', 'とうもろこし'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'ヤングケアラーについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 235,
+    question: '令和の子育て支援に関する記述として適切なものはどれですか。',
+    options: ['令和の子育て支援', 'とうもろこし', '山地', '温帯'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '令和の子育て支援について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 236,
+    question: 'ODAについて正しい説明を選んでください。',
+    options: ['ODA', '川', '大豆', '平野'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'ODAについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 237,
+    question: '次のうち、爆買いについて正しいものを選びなさい。',
+    options: ['爆買い', '小麦', '温帯', '東京都'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '爆買いについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 238,
+    question: '長州藩出身の政治家について正しい説明を選んでください。',
+    options: ['長州藩出身の政治家', '法の支配', '自由', '市場経済'],
+    correct: 0,
+    category: 'politics',
+    difficulty: 'medium',
+    explanation: '長州藩出身の政治家について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 239,
+    question: '次のうち、エコツーリズムについて正しいものを選びなさい。',
+    options: ['エコツーリズム', '熱帯', '大阪府', '野菜'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'エコツーリズムについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 240,
+    question: '次のうち、憲法改正の手続きについて正しいものを選びなさい。',
+    options: ['憲法改正の手続き', '人権', '民主主義', '立憲主義'],
+    correct: 0,
+    category: 'politics',
+    difficulty: 'medium',
+    explanation: '憲法改正の手続きについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 241,
+    question: 'インフォームドコンセントに関する記述として適切なものはどれですか。',
+    options: ['インフォームドコンセント', '大陸性気候', '四国', '湾'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'インフォームドコンセントについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 242,
+    question: '高齢化の問題点について正しい説明を選んでください。',
+    options: ['高齢化の問題点', '半島', '温帯', '北海道'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '高齢化の問題点について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 243,
+    question: '法律案の議決手続きに関する記述として適切なものはどれですか。',
+    options: ['法律案の議決手続き', '大阪府', '福岡県', '漁業'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '法律案の議決手続きについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 244,
+    question: '地方交付税に関する記述として適切なものはどれですか。',
+    options: ['地方交付税', '公正', '憲法', '財政'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '地方交付税について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 245,
+    question: 'アメリカの選挙制度に関する記述として適切なものはどれですか。',
+    options: ['アメリカの選挙制度', '選挙', '裁判所', '市場経済'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'アメリカの選挙制度について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 246,
+    question: '刑事訴訟法に関する記述として適切なものはどれですか。',
+    options: ['刑事訴訟法', '川', '東京都', '沖縄'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '刑事訴訟法について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 247,
+    question: '普通選挙法について正しい説明を選んでください。',
+    options: ['普通選挙法', '温帯', '熱帯', '湾'],
+    correct: 0,
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '普通選挙法について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
   }
 ];
 

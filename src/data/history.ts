@@ -728,7 +728,260 @@ export const historyQuestions: HistoryQuestion[] = [
     category: 'contemporary',
     difficulty: 'easy',
     explanation: '1955年頃から1973年の石油危機（オイルショック）まで続いた、日本の経済が世界でも有数の速さで成長した期間を高度経済成長と呼びます。'
-  }
+  },
+  {
+    id: 170,
+    question: '次のうち、藤原不比等について正しいものを選びなさい。',
+    options: ['藤原不比等', '近世', '大久保利通', '室町時代'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '藤原不比等について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 171,
+    question: '藤原定家について正しい説明を選んでください。',
+    options: ['藤原定家', '織田信長', '中世', '室町時代'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '藤原定家について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 172,
+    question: '次のうち、桂園時代について正しいものを選びなさい。',
+    options: ['桂園時代', '古代', '中世', '西郷隆盛'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '桂園時代について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 173,
+    question: '人形浄瑠璃について正しい説明を選んでください。',
+    options: ['人形浄瑠璃', '畜産業', '平野', '果物'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '人形浄瑠璃について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 174,
+    question: '次のうち、征夷大将軍について正しいものを選びなさい。',
+    options: ['征夷大将軍', '古代', '近代', '明治維新'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '征夷大将軍について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 175,
+    question: '次のうち、藤原京について正しいものを選びなさい。',
+    options: ['藤原京', '古代', '織田信長', '中世'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '藤原京について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 176,
+    question: '壇ノ浦の戦いについて正しい説明を選んでください。',
+    options: ['壇ノ浦の戦い', '北海道', '野菜', '温帯'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '壇ノ浦の戦いについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 177,
+    question: 'バカンスの由来に関する記述として適切なものはどれですか。',
+    options: ['バカンスの由来', '東京都', '大阪府', '湾'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'バカンスの由来について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 178,
+    question: '大正デモクラシーに関する記述として適切なものはどれですか。',
+    options: ['大正デモクラシー', '徳川家康', '近世', '中世'],
+    correct: 0,
+    era: 'modern',
+    category: 'modern',
+    difficulty: 'medium',
+    explanation: '大正デモクラシーについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 179,
+    question: '平城京について正しい説明を選んでください。',
+    options: ['平城京', '文明開化', '近代', '源頼朝'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '平城京について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 180,
+    question: '琉球王国に関する記述として適切なものはどれですか。',
+    options: ['琉球王国', '大陸性気候', '湖', '盆地'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '琉球王国について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 181,
+    question: '卑弥呼について正しい説明を選んでください。',
+    options: ['卑弥呼', '湿潤気候', '沖縄', '九州'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '卑弥呼について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 182,
+    question: '藤原清衡に関する記述として適切なものはどれですか。',
+    options: ['藤原清衡', '現代', '古代', '坂本龍馬'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '藤原清衡について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 183,
+    question: '北条時宗に関する記述として適切なものはどれですか。',
+    options: ['北条時宗', '古代', '明治維新', '豊臣秀吉'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '北条時宗について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 184,
+    question: '松尾芭蕉に関する記述として適切なものはどれですか。',
+    options: ['松尾芭蕉', '大阪府', '北海道', '盆地'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '松尾芭蕉について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 185,
+    question: '八幡製鉄所に関する記述として適切なものはどれですか。',
+    options: ['八幡製鉄所', '野菜', '大豆', '大阪府'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '八幡製鉄所について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 186,
+    question: '次のうち、GHQについて正しいものを選びなさい。',
+    options: ['GHQ', '大豆', '北海道', '大阪府'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: 'GHQについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 187,
+    question: '奈良時代の特徴について正しい説明を選んでください。',
+    options: ['奈良時代の特徴', '中世', '現代', '大政奉還'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '奈良時代の特徴について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 188,
+    question: '平安時代の特徴について正しい説明を選んでください。',
+    options: ['平安時代の特徴', '大久保利通', '豊臣秀吉', '織田信長'],
+    correct: 0,
+    era: 'ancient',
+    category: 'ancient',
+    difficulty: 'medium',
+    explanation: '平安時代の特徴について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 189,
+    question: '室町時代の特徴に関する記述として適切なものはどれですか。',
+    options: ['室町時代の特徴', '鎌倉時代', '中世', '文明開化'],
+    correct: 0,
+    era: 'medieval',
+    category: 'medieval',
+    difficulty: 'medium',
+    explanation: '室町時代の特徴について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 190,
+    question: '明治時代の留学について正しい説明を選んでください。',
+    options: ['明治時代の留学', '古代', '中世', '徳川家康'],
+    correct: 0,
+    era: 'modern',
+    category: 'modern',
+    difficulty: 'medium',
+    explanation: '明治時代の留学について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 191,
+    question: '藤原頼通について正しい説明を選んでください。',
+    options: ['藤原頼通', '古代', '坂本龍馬', '中世'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '藤原頼通について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 192,
+    question: '平将門について正しい説明を選んでください。',
+    options: ['平将門', '室町時代', '現代', '江戸時代'],
+    correct: 0,
+    era: 'general',
+    category: 'general',
+    difficulty: 'medium',
+    explanation: '平将門について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  }
 ];
 // Utility functions
 export const getQuestionsByEra = (era: string): HistoryQuestion[] => {

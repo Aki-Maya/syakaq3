@@ -387,6 +387,536 @@ export const geographyQuestions: GeographyQuestion[] = [
     difficulty: 'easy',
     explanation: '北海道は日本の全面積の約22%を占める、日本最大の都道府県です。',
     type: 'multiple-choice' as const
+  },
+  {
+    id: 48,
+    question: '次のうち、リアス式海岸について正しいものを選びなさい。',
+    options: ['リアス式海岸', '寒帯', '大阪府', '湾'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: 'リアス式海岸について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 49,
+    question: '利尻半島の特産品について正しい説明を選んでください。',
+    options: ['利尻半島の特産品', '川', '山地', '沖縄'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '利尻半島の特産品について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 50,
+    question: '次のうち、二官八省について正しいものを選びなさい。',
+    options: ['二官八省', '米', '半島', '北海道'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '二官八省について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 51,
+    question: 'せり市に関する記述として適切なものはどれですか。',
+    options: ['せり市', '北海道', '海峡', '畜産業'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: 'せり市について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 52,
+    question: '芥川龍之介について正しい説明を選んでください。',
+    options: ['芥川龍之介', '川', 'とうもろこし', '果物'],
+    correct: 0,
+    category: 'landforms',
+    difficulty: 'medium',
+    explanation: '芥川龍之介について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 53,
+    question: '次のうち、観阿弥と世阿弥について正しいものを選びなさい。',
+    options: ['観阿弥と世阿弥', '湖', '北海道', '盆地'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '観阿弥と世阿弥について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 54,
+    question: '女性天皇と女系天皇に関する記述として適切なものはどれですか。',
+    options: ['女性天皇と女系天皇', '熱帯', '東京都', '本州'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '女性天皇と女系天皇について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 55,
+    question: '大隈重信について正しい説明を選んでください。',
+    options: ['大隈重信', '乾燥帯', '寒帯', '湿潤気候'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '大隈重信について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 56,
+    question: '思いやり予算に関する記述として適切なものはどれですか。',
+    options: ['思いやり予算', '海峡', '野菜', '寒帯'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '思いやり予算について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 57,
+    question: '鉄道開通に関する記述として適切なものはどれですか。',
+    options: ['鉄道開通', '畜産業', '熱帯', '湿潤気候'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '鉄道開通について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 58,
+    question: '渤海に関する記述として適切なものはどれですか。',
+    options: ['渤海', '海峡', '福岡県', '小麦'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '渤海について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 59,
+    question: '小倉百人一首について正しい説明を選んでください。',
+    options: ['小倉百人一首', '湾', '乾燥帯', '温帯'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '小倉百人一首について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 60,
+    question: '次のうち、松江の気候的な特徴について正しいものを選びなさい。',
+    options: ['松江の気候的な特徴', '本州', '大豆', '湿潤気候'],
+    correct: 0,
+    category: 'climate',
+    difficulty: 'medium',
+    explanation: '松江の気候的な特徴について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 61,
+    question: '次のうち、松本の気候的な特徴について正しいものを選びなさい。',
+    options: ['松本の気候的な特徴', '米', '東京都', '熱帯'],
+    correct: 0,
+    category: 'climate',
+    difficulty: 'medium',
+    explanation: '松本の気候的な特徴について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 62,
+    question: '青木昂陽に関する記述として適切なものはどれですか。',
+    options: ['青木昂陽', '盆地', '山地', '野菜'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '青木昂陽について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 63,
+    question: '林羅山について正しい説明を選んでください。',
+    options: ['林羅山', 'とうもろこし', '北海道', '湖'],
+    correct: 0,
+    category: 'landforms',
+    difficulty: 'medium',
+    explanation: '林羅山について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 64,
+    question: '熱田神社に関する記述として適切なものはどれですか。',
+    options: ['熱田神社', '平野', '熱帯', '米'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '熱田神社について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 65,
+    question: '厳島神社に関する記述として適切なものはどれですか。',
+    options: ['厳島神社', '愛知県', '大阪府', '盆地'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '厳島神社について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 66,
+    question: '太宰府天満宮に関する記述として適切なものはどれですか。',
+    options: ['太宰府天満宮', '湿潤気候', '湾', '漁業'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '太宰府天満宮について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 67,
+    question: '諏訪大社に関する記述として適切なものはどれですか。',
+    options: ['諏訪大社', '大陸性気候', '亜熱帯', '小麦'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '諏訪大社について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 68,
+    question: 'インドの宗教に関する記述として適切なものはどれですか。',
+    options: ['インドの宗教', '川', '大阪府', '大陸性気候'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: 'インドの宗教について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 69,
+    question: '砂州に関する記述として適切なものはどれですか。',
+    options: ['砂州', '大陸性気候', '北海道', '福岡県'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '砂州について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 70,
+    question: 'ウクライナに関する記述として適切なものはどれですか。',
+    options: ['ウクライナ', '湾', '湿潤気候', '大阪府'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: 'ウクライナについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 71,
+    question: '商店街の問題について正しい説明を選んでください。',
+    options: ['商店街の問題', '台地', '山地', '半島'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '商店街の問題について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 72,
+    question: '九州の新幹線に関する記述として適切なものはどれですか。',
+    options: ['九州の新幹線', '湿潤気候', '四国', '亜熱帯'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '九州の新幹線について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 73,
+    question: '厚生労働省の役割に関する記述として適切なものはどれですか。',
+    options: ['厚生労働省の役割', '果物', '平野', '九州'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '厚生労働省の役割について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 74,
+    question: '熊本県の工業に関する記述として適切なものはどれですか。',
+    options: ['熊本県の工業', '東京都', '四国', '寒帯'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '熊本県の工業について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 75,
+    question: '次のうち、薩摩藩について正しいものを選びなさい。',
+    options: ['薩摩藩', '湾', '平野', '沖縄'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '薩摩藩について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 76,
+    question: '天守閣に関する記述として適切なものはどれですか。',
+    options: ['天守閣', '九州', '小麦', '平野'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '天守閣について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 77,
+    question: '次のうち、阿倍仲麻呂について正しいものを選びなさい。',
+    options: ['阿倍仲麻呂', '盆地', '福岡県', '海峡'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '阿倍仲麻呂について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 78,
+    question: '聖武天皇について正しい説明を選んでください。',
+    options: ['聖武天皇', '愛知県', 'とうもろこし', '沖縄'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '聖武天皇について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 79,
+    question: '天台宗に関する記述として適切なものはどれですか。',
+    options: ['天台宗', '九州', '山地', '海峡'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '天台宗について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 80,
+    question: '次のうち、比叡山延暦寺について正しいものを選びなさい。',
+    options: ['比叡山延暦寺', '台地', '熱帯', '果物'],
+    correct: 0,
+    category: 'landforms',
+    difficulty: 'medium',
+    explanation: '比叡山延暦寺について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 81,
+    question: '一向宗について正しい説明を選んでください。',
+    options: ['一向宗', 'とうもろこし', '野菜', '大阪府'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '一向宗について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 82,
+    question: '世界恐慌について正しい説明を選んでください。',
+    options: ['世界恐慌', '半島', '九州', '海峡'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '世界恐慌について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 83,
+    question: '岸信介について正しい説明を選んでください。',
+    options: ['岸信介', '東京都', '寒帯', 'とうもろこし'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '岸信介について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 84,
+    question: '次のうち、大豆の生産量について正しいものを選びなさい。',
+    options: ['大豆の生産量', '果物', '熱帯', '米'],
+    correct: 0,
+    category: 'agriculture',
+    difficulty: 'medium',
+    explanation: '大豆の生産量について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 85,
+    question: '普遍主義について正しい説明を選んでください。',
+    options: ['普遍主義', '大陸性気候', '野菜', '北海道'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '普遍主義について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 86,
+    question: '次のうち、社会権について正しいものを選びなさい。',
+    options: ['社会権', '熱帯', '寒帯', '湾'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '社会権について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 87,
+    question: '自由権について正しい説明を選んでください。',
+    options: ['自由権', '台地', '乾燥帯', '米'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '自由権について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 88,
+    question: '次のうち、石破茂について正しいものを選びなさい。',
+    options: ['石破茂', '亜熱帯', '湾', '北海道'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '石破茂について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 89,
+    question: '衆議院総選挙について正しい説明を選んでください。',
+    options: ['衆議院総選挙', '湾', '北海道', '平野'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '衆議院総選挙について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 90,
+    question: '次のうち、衆議院の解散について正しいものを選びなさい。',
+    options: ['衆議院の解散', '沖縄', '九州', '湿潤気候'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '衆議院の解散について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 91,
+    question: '熊野古道に関する記述として適切なものはどれですか。',
+    options: ['熊野古道', '湾', '温帯', '北海道'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '熊野古道について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 92,
+    question: '三十石船に関する記述として適切なものはどれですか。',
+    options: ['三十石船', '川', '東京都', '山地'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '三十石船について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 93,
+    question: '次のうち、菱垣廻船について正しいものを選びなさい。',
+    options: ['菱垣廻船', '山地', '湖', '東京都'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '菱垣廻船について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 94,
+    question: '次のうち、樽廻船について正しいものを選びなさい。',
+    options: ['樽廻船', 'とうもろこし', '盆地', '四国'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '樽廻船について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 95,
+    question: '次のうち、オーバーツーリズムについて正しいものを選びなさい。',
+    options: ['オーバーツーリズム', '乾燥帯', '愛知県', '盆地'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: 'オーバーツーリズムについて詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 96,
+    question: '夏目漱石に関する記述として適切なものはどれですか。',
+    options: ['夏目漱石', '川', '愛知県', '大陸性気候'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '夏目漱石について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 97,
+    question: '野口英世に関する記述として適切なものはどれですか。',
+    options: ['野口英世', '九州', '東京都', '湖'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '野口英世について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 98,
+    question: '北里柴三郎について正しい説明を選んでください。',
+    options: ['北里柴三郎', '愛知県', '四国', '寒帯'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '北里柴三郎について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 99,
+    question: '次のうち、日本銀行について正しいものを選びなさい。',
+    options: ['日本銀行', '四国', '野菜', '本州'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '日本銀行について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
+  },
+  {
+    id: 100,
+    question: '高橋是清について正しい説明を選んでください。',
+    options: ['高橋是清', '大阪府', '九州', '果物'],
+    correct: 0,
+    category: 'regions',
+    difficulty: 'medium',
+    explanation: '高橋是清について詳しく学習しましょう。',
+    type: 'multiple-choice' as const
   }
 ];
 
