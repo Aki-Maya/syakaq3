@@ -20,8 +20,28 @@ export class SheetsService {
       // Google SheetsのCSV出力URLを使用
       const csvUrl = `https://docs.google.com/spreadsheets/d/${this.sheetId}/export?format=csv&gid=${this.gid}`;
       
-      const response = await fetch(csvUrl);
+      const response = await fetch(csvUrl, {
+        method: 'GET',
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'text/csv,text/plain,*/*'
+        },
+        redirect: 'follow' // リダイレクトを自動追跡
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+      
       const csvText = await response.text();
+      console.log(`📥 取得したCSVサイズ: ${csvText.length} 文字`);
+      
+      // HTMLが返されていないかチェック
+      if (csvText.includes('<HTML>') || csvText.includes('<html>')) {
+        console.warn('🚨 HTMLが返されました - スプレッドシートのアクセス権限を確認してください');
+        console.log('取得内容の先頭:', csvText.substring(0, 200));
+        return [];
+      }
       
       return this.parseCSV(csvText);
     } catch (error) {
@@ -31,44 +51,57 @@ export class SheetsService {
   }
 
   /**
-   * CSV文字列をパース（横並び形式のキーワードに対応）
+   * CSV文字列をパース（縦並び形式対応）
    */
   private parseCSV(csvText: string): SheetQuestion[] {
     const lines = csvText.split('\n');
     const questions: SheetQuestion[] = [];
     
-    // 各行を処理
-    for (let lineIndex = 0; lineIndex < lines.length; lineIndex++) {
-      const columns = this.parseCSVLine(lines[lineIndex]);
+    console.log('📊 スプレッドシートからデータを処理中...');
+    console.log(`   総行数: ${lines.length}`);
+    console.log(`   先頭3行の内容:`);
+    lines.slice(0, 3).forEach((line, i) => {
+      console.log(`     ${i + 1}: ${line}`);
+    });
+    
+    // ヘッダー行をスキップして、2行目以降からキーワードを抽出
+    for (let rowIndex = 1; rowIndex < lines.length; rowIndex++) {
+      const columns = this.parseCSVLine(lines[rowIndex]);
       
-      // 各列をキーワードとして処理（空でない場合のみ）
-      for (let colIndex = 0; colIndex < columns.length; colIndex++) {
-        const keyword = columns[colIndex]?.trim();
+      // B列（index 1）からキーワードを取得
+      const keyword = columns[1]?.trim().replace(/\r/g, '');
+      
+      if (keyword && keyword !== '' && keyword.length > 1) {
+        // ヘッダー行の「キーワード」をスキップ
+        if (keyword === 'キーワード') continue;
         
-        // 空文字、ヘッダー的な文字列、特殊文字のみの場合はスキップ
-        if (keyword && 
-            keyword !== '間違えた問題' && 
-            keyword.length > 1 &&
-            !keyword.match(/^[,\s]*$/)) {
-          
-          questions.push({
-            id: questions.length + 1, // 連番でID生成
-            keyword: keyword,
-            explanation: this.generateDefaultExplanation(keyword),
-            subject: this.detectSubject(keyword, ''),
-            status: 'pending'
-          });
-        }
+        questions.push({
+          id: questions.length + 1,
+          keyword: keyword,
+          explanation: `${keyword}について詳しく学習しましょう。`, // デフォルト解説
+          subject: this.detectSubject(keyword, ''),
+          status: 'pending'
+        });
+      }
+      
+      // 制限を削除してすべてのデータを取得
+      // 以前の制限: if (questions.length > 100) break;
+    }
+    
+    console.log(`✅ ${questions.length}件のキーワードを取得完了`);
+    if (questions.length > 0) {
+      console.log(`📝 最初: ${questions[0].keyword}`);
+      console.log(`📝 最後: ${questions[questions.length - 1].keyword}`);
+      
+      if (questions.length > 100) {
+        console.log(`🎉 101行制限を突破！ 合計 ${questions.length} 件のデータを取得しました`);
       }
     }
     
-    // 重複を除去（同じキーワードが複数ある場合）
-    const uniqueQuestions = questions.filter((question, index, self) => 
-      index === self.findIndex(q => q.keyword === question.keyword)
-    );
+    // 処理された行の詳細を表示
+    console.log(`📈 処理統計: ${lines.length - 1} 行中 ${questions.length} 行が有効なキーワードでした`);
     
-    console.log(`📊 スプレッドシートから ${uniqueQuestions.length}件のキーワードを取得しました`);
-    return uniqueQuestions;
+    return questions;
   }
 
   /**
@@ -208,16 +241,40 @@ export class SheetsService {
   }
 
   /**
-   * 実際にGoogle Sheets APIで書き込みを行う場合の準備
-   * （将来の拡張用 - 認証とAPI設定が必要）
+   * 解説データをGoogle Sheets C列用のCSV形式で生成
+   * @param explanations 解説データ配列
+   * @returns CSV形式の文字列
    */
-  async writeExplanationsToSheet(explanationData: Array<{row: number, explanation: string}>): Promise<boolean> {
-    // TODO: Google Sheets API v4 での書き込み実装
-    // 1. サービスアカウント認証
-    // 2. sheets.spreadsheets.values.batchUpdate API 呼び出し
-    // 3. C列への一括更新
+  generateCSVForColumn(explanations: {keyword: string, explanation: string}[]): string {
+    // Google Sheetsの列に直接貼り付け用のCSV（改行区切り）
+    return explanations.map(exp => 
+      `"${exp.explanation.replace(/"/g, '""')}"`
+    ).join('\n');
+  }
+
+  /**
+   * 解説データを完全なCSV形式で生成（ダウンロード用）
+   */
+  generateFullCSV(explanations: {keyword: string, explanation: string, subject?: string}[]): string {
+    const header = 'キーワード,解説,科目\n';
+    const rows = explanations.map(exp => 
+      `"${exp.keyword}","${exp.explanation.replace(/"/g, '""')}","${exp.subject || ''}"`
+    ).join('\n');
     
-    console.log('📝 Google Sheets API書き込み（未実装）:', explanationData.length, '件');
-    return false; // 暫定的にfalseを返す
+    return header + rows;
+  }
+
+  /**
+   * キーワードと行番号のマッピングを取得（C列への正確な配置用）
+   */
+  async getKeywordRowMapping(): Promise<Map<string, number>> {
+    const questions = await this.fetchQuestionsData();
+    const mapping = new Map<string, number>();
+    
+    questions.forEach((question, index) => {
+      mapping.set(question.keyword, index + 2); // ヘッダー行を考慮して+2
+    });
+    
+    return mapping;
   }
 }
