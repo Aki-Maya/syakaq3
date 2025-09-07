@@ -20,8 +20,28 @@ export class SheetsService {
       // Google SheetsのCSV出力URLを使用
       const csvUrl = `https://docs.google.com/spreadsheets/d/${this.sheetId}/export?format=csv&gid=${this.gid}`;
       
-      const response = await fetch(csvUrl);
+      const response = await fetch(csvUrl, {
+        method: 'GET',
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'text/csv,text/plain,*/*'
+        },
+        redirect: 'follow' // リダイレクトを自動追跡
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+      
       const csvText = await response.text();
+      console.log(`📥 取得したCSVサイズ: ${csvText.length} 文字`);
+      
+      // HTMLが返されていないかチェック
+      if (csvText.includes('<HTML>') || csvText.includes('<html>')) {
+        console.warn('🚨 HTMLが返されました - スプレッドシートのアクセス権限を確認してください');
+        console.log('取得内容の先頭:', csvText.substring(0, 200));
+        return [];
+      }
       
       return this.parseCSV(csvText);
     } catch (error) {
@@ -38,6 +58,11 @@ export class SheetsService {
     const questions: SheetQuestion[] = [];
     
     console.log('📊 スプレッドシートからデータを処理中...');
+    console.log(`   総行数: ${lines.length}`);
+    console.log(`   先頭3行の内容:`);
+    lines.slice(0, 3).forEach((line, i) => {
+      console.log(`     ${i + 1}: ${line}`);
+    });
     
     // ヘッダー行をスキップして、2行目以降からキーワードを抽出
     for (let rowIndex = 1; rowIndex < lines.length; rowIndex++) {
@@ -59,14 +84,22 @@ export class SheetsService {
         });
       }
       
-      // 十分なキーワードが見つかったら終了（パフォーマンス最適化）
-      if (questions.length > 100) break;
+      // 制限を削除してすべてのデータを取得
+      // 以前の制限: if (questions.length > 100) break;
     }
     
     console.log(`✅ ${questions.length}件のキーワードを取得完了`);
     if (questions.length > 0) {
-      console.log(`📝 範囲: ${questions[0].keyword} ～ ${questions[Math.min(questions.length - 1, 2)].keyword} など`);
+      console.log(`📝 最初: ${questions[0].keyword}`);
+      console.log(`📝 最後: ${questions[questions.length - 1].keyword}`);
+      
+      if (questions.length > 100) {
+        console.log(`🎉 101行制限を突破！ 合計 ${questions.length} 件のデータを取得しました`);
+      }
     }
+    
+    // 処理された行の詳細を表示
+    console.log(`📈 処理統計: ${lines.length - 1} 行中 ${questions.length} 行が有効なキーワードでした`);
     
     return questions;
   }
