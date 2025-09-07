@@ -198,7 +198,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 0,
     explanation: 'フードマイレージは、食料の重さに輸送距離を掛け合わせたもので、数値が小さいほど環境負荷が小さいとされます。',
     category: 'industry',
-    difficulty: 'normal'
+    difficulty: 'medium'
   },
   {
     id: 2,
@@ -229,7 +229,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ['山形県', '秋田県', '岩手県', '宮城県'],
     correct: 1,
     explanation: 'きりたんぽ鍋は秋田県の郷土料理で、きりたんぽと鶏肉、野菜などを煮込んだ鍋料理です。',
-    category: 'regions',
+    category: 'prefecture',
     difficulty: 'easy'
   },
   {
@@ -248,7 +248,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 1,
     explanation: '京葉工業地域は千葉県の東京湾沿岸に位置し、石油化学や鉄鋼業を中心とした重化学工業が盛んです。',
     category: 'industry',
-    difficulty: 'normal'
+    difficulty: 'medium'
   },
   {
     id: 7,
@@ -261,7 +261,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     ],
     correct: 2,
     explanation: '岡山市は政令指定都市ですが、人口は100万人を超えていません。',
-    category: 'regions',
+    category: 'prefecture',
     difficulty: 'hard'
   },
   {
@@ -279,8 +279,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     options: ['桐生織', '益子焼', '南部鉄器', '箱根寄木細工'],
     correct: 2,
     explanation: '南部鉄器は、岩手県盛岡市や奥州市で生産される伝統工芸品です。',
-    category: 'regions',
-    difficulty: 'normal'
+    category: 'prefecture',
+    difficulty: 'medium'
   },
   {
     id: 10,
@@ -294,7 +294,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     explanation: '東海道新幹線で名古屋方面に向かう場合、左側の車窓からは太平洋側であり、御前崎や伊豆大島などの海岸線が見えることがあります。',
     category: 'regions',
-    difficulty: 'normal'
+    difficulty: 'medium'
   },
   {
     id: 11,
@@ -326,7 +326,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 1,
     explanation: '夏には、太平洋の小笠原気団から、暖かく湿った南東の季節風が吹くため、太平洋側では晴れて蒸し暑い日が多くなります。',
     category: 'climate',
-    difficulty: 'normal'
+    difficulty: 'medium'
   },
   {
     id: 14,
@@ -340,7 +340,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 3,
     explanation: '北海道は梅雨の影響がほとんどなく、夏は涼しく、冬の寒さが厳しいのが特徴です。台風は通常、沖縄や九州に上陸することが多いです。',
     category: 'climate',
-    difficulty: 'normal'
+    difficulty: 'medium'
   },
   {
     id: 15,
@@ -352,25 +352,25 @@ export const geographyQuestions: GeographyQuestion[] = [
     difficulty: 'easy'
   },
   {
-    id: 16, // 既存のIDと重複しないように設定してください
+    id: 16
     question: '2022年度の日本のブロッコリー生産量で、1位の都道府県はどこですか？',
     options: ['愛知県', '埼玉県', '宮崎県', '北海道'],
     correct: 3,
     category: 'industry',
-    difficulty: 'normal',
+    difficulty: 'medium',
     explanation: '2022年度のブロッコリー生産量は、1位が北海道、2位が埼玉県、3位が愛知県です。'
   },
   {
-    id: 17, // 既存のIDと重複しないように設定してください
+    id: 17
     question: '多くの月で降水量が100mmを下回り、冬の降水量が少なく、梅雨や台風の影響で夏に降水量が多くなる気候は、主に日本のどの地域の特徴ですか？',
     options: ['日本海側', '太平洋側', '内陸部', '北海道'],
     correct: 1,
     category: 'climate',
-    difficulty: 'normal',
+    difficulty: 'medium',
     explanation: '太平洋側の気候は、梅雨や台風の影響で6月〜9月の降水量が多く、冬の降水量は少ないという特徴があります。'
   },
   {
-    id: 18, // 既存のIDと重複しないように設定してください
+    id: 18
     question: '日本最大級のカルスト台地として知られ、国の特別天然記念物にも指定されている「秋吉台」がある都道府県はどこですか？',
     options: ['鳥取県', '島根県', '山口県', '広島県'],
     correct: 2,

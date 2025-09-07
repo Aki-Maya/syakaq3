@@ -108,7 +108,7 @@ export const governmentBranches: GovernmentBranch[] = [
 // Civics Questions
 export const civicsQuestions: CivicsQuestion[] = [
   {
-    id: 1,
+    id: 201,
     question: "日本国憲法の三大原則は何ですか？",
     options: ["国民主権、基本的人権の尊重、平和主義", "民主主義、自由主義、平和主義", "国民主権、法の支配、平和主義", "基本的人権、法の下の平等、平和主義"],
     correct: 0,
@@ -118,7 +118,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 2,
+    id: 202,
     question: "国民主権とは何ですか？",
     options: ["国民が政治家を選ぶこと", "国の政治の最終決定権が国民にあること", "国民が法律を作ること", "国民が裁判を行うこと"],
     correct: 1,
@@ -128,7 +128,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 3,
+    id: 203,
     question: "三権分立の「三権」に含まれないものはどれですか？",
     options: ["立法権", "行政権", "司法権", "選挙権"],
     correct: 3,
@@ -138,7 +138,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 4,
+    id: 204,
     question: "国会の権限でないものはどれですか？",
     options: ["法律の制定", "予算の審議", "内閣総理大臣の指名", "違憲立法審査"],
     correct: 3,
@@ -148,7 +148,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 5,
+    id: 205,
     question: "内閣の長は誰ですか？",
     options: ["内閣官房長官", "内閣総理大臣", "国会議長", "最高裁判所長官"],
     correct: 1,
@@ -158,7 +158,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 6,
+    id: 206,
     question: "日本国憲法第9条で定められているのは何ですか？",
     options: ["国民主権", "基本的人権", "戦争放棄", "三権分立"],
     correct: 2,
@@ -168,7 +168,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 7,
+    id: 207,
     question: "基本的人権に含まれないものはどれですか？",
     options: ["自由権", "平等権", "社会権", "国家権"],
     correct: 3,
@@ -178,7 +178,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 8,
+    id: 208,
     question: "衆議院と参議院のうち、より強い権限を持つのはどちらですか？",
     options: ["衆議院", "参議院", "同じ", "場合による"],
     correct: 0,
@@ -188,7 +188,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 9,
+    id: 209,
     question: "最高裁判所の権限として正しいものはどれですか？",
     options: ["法律の制定", "予算の作成", "違憲立法審査", "外交の実施"],
     correct: 2,
@@ -198,7 +198,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 10,
+    id: 210,
     question: "地方自治の基本原則として正しいものはどれですか？",
     options: ["中央集権", "住民自治と団体自治", "官僚制", "君主制"],
     correct: 1,
@@ -208,7 +208,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 11,
+    id: 211,
     question: "国際連合の本部はどこにありますか？",
     options: ["ロンドン", "パリ", "ニューヨーク", "ジュネーブ"],
     correct: 2,
@@ -218,7 +218,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 12,
+    id: 212,
     question: "国際連合安全保障理事会の常任理事国の数は？",
     options: ["3カ国", "5カ国", "7カ国", "10カ国"],
     correct: 1,
@@ -228,7 +228,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 13,
+    id: 213,
     question: "日本の選挙権年齢は何歳からですか？",
     options: ["16歳", "18歳", "20歳", "25歳"],
     correct: 1,
@@ -238,7 +238,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 14,
+    id: 214,
     question: "消費税は何税に分類されますか？",
     options: ["直接税", "間接税", "地方税", "特別税"],
     correct: 1,
@@ -248,7 +248,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 15,
+    id: 215,
     question: "労働三権に含まれないものはどれですか？",
     options: ["団結権", "団体交渉権", "争議権", "参政権"],
     correct: 3,
@@ -258,7 +258,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 16,
+    id: 216,
     question: "日本の国会は何院制ですか？",
     options: ["一院制", "二院制", "三院制", "四院制"],
     correct: 1,
@@ -268,7 +268,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 17,
+    id: 217,
     question: "環境権は新しい人権の一つですが、これが重要視される理由は？",
     options: ["経済発展のため", "公害問題の発生", "国際化の進展", "情報化社会の発達"],
     correct: 1,
@@ -278,7 +278,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 18,
+    id: 218,
     question: "内閣不信任決議案を提出できるのはどこですか？",
     options: ["衆議院", "参議院", "最高裁判所", "内閣"],
     correct: 0,
@@ -288,17 +288,17 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 19,
+    id: 219,
     question: "日本の地方公共団体の種類として正しいものはどれですか？",
     options: ["都道府県と市町村", "都府県と市区町村", "都道府県と市区町村", "都道府県と市"],
     correct: 0,
     explanation: "地方公共団体は都道府県と市町村に分かれます。",
-    category: "politicst",
+    category: "politics",
     difficulty: "medium",
     type: "multiple-choice"
   },
   {
-    id: 20,
+    id: 220,
     question: "世界人権宣言が採択されたのはいつですか？",
     options: ["1945年", "1948年", "1950年", "1951年"],
     correct: 1,
@@ -308,7 +308,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     type: "multiple-choice"
   },
   {
-    id: 21,
+    id: 221,
     question: "選挙権を得られる年齢は？",
     options: ["16歳", "18歳", "20歳", "25歳"],
     correct: 1,
@@ -317,7 +317,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     explanation: "2016年から選挙権年齢は18歳に引き下げられました。"
 },
     {
-    id: 22,
+    id: 222,
     question: '衆議院の総定数は何名ですか？',
     options: ['248名', '465名', '289名', '176名'],
     correct: 1,
@@ -326,7 +326,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'easy'
   },
   {
-    id: 30,
+    id: 223,
     question: '参議院議員の任期は何年ですか？',
     options: ['4年', '6年', '10年', '解散があるまで'],
     correct: 1,
@@ -335,7 +335,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'easy'
   },
   {
-    id: 23,
+    id: 224,
     question: '日本国憲法の改正を発議するために必要な、衆議院と参議院の賛成の割合はどれですか？',
     options: [
       '各議院の出席議員の3分の2以上',
@@ -349,7 +349,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'hard'
   },
   {
-    id: 24,
+    id: 225,
     question: '国会の会期が150日間と定められ、毎年1月に召集される国会を何と呼びますか？',
     options: ['通常国会', '臨時国会', '特別国会', '緊急集会'],
     correct: 0,
@@ -358,7 +358,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'easy'
   },
   {
-    id: 25,
+    id: 226,
     question: '衆議院が解散された後、総選挙の日から何日以内に国会を召集しなければなりませんか？',
     options: ['10日以内', '30日以内', '40日以内', '90日以内'],
     correct: 1,
@@ -367,25 +367,25 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'hard'
   },
   {
-    id: 26,
+    id: 227,
     question: '内閣が衆議院の不信任決議案を可決された場合、10日以内に衆議院を解散しない限り、何をしなければなりませんか？',
     options: ['内閣改造', '総辞職', '参議院との両院協議会', '法律の制定'],
     correct: 1,
     explanation: '内閣は、衆議院で不信任の決議案が可決されたときは、10日以内に衆議院が解散されない限り、総辞職をしなければなりません。',
     category: 'politics',
-    difficulty: 'normal'
+    difficulty: 'medium'
   },
   {
-    id: 27,
+    id: 228,
     question: '法律案の審議過程において、専門家などから意見を聞くために開かれる会を何と呼びますか？',
     options: ['本会議', '委員会', '公聴会', '両院協議会'],
     correct: 2,
     explanation: '法律案は委員会で審議される際、必要に応じて専門家を招いて意見を集める公聴会が開かれることがあります。',
     category: 'politics',
-    difficulty: 'normal'
+    difficulty: 'medium'
   },
   {
-    id: 28,
+    id: 229,
     question: '働く人が育児や家族の介護と仕事を両立できるよう、育児休業などの制度を定めた法律は何ですか？',
     options: [
       '男女共同参画社会基本法',
@@ -399,7 +399,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'easy'
   },
   {
-    id: 29,
+    id: 230,
     question: '「疑わしきは被告人の利益に」という原則に基づき、有罪の証拠が本人の自白のみの場合には有罪にできない、という内容が関わる権利は何ですか？',
     options: ['黙秘権', '裁判を受ける権利', '弁護人依頼権', '生存権'],
     correct: 1,
@@ -408,7 +408,7 @@ export const civicsQuestions: CivicsQuestion[] = [
     difficulty: 'hard'
   },
   {
-    id: 31,
+    id: 231,
     question: '現在の義務教育期間は何年間ですか？',
     options: ['6年間', '9年間', '12年間', '法律で定められていない'],
     correct: 1,
