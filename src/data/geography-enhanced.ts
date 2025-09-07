@@ -243,7 +243,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     explanation: '中京工業地帯は愛知県を中心とし、トヨタ自動車を始めとする多くの自動車関連企業が集積しています。',
     category: 'industry',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 6,
@@ -252,7 +253,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 1,
     explanation: '京葉工業地域は千葉県の東京湾沿岸に位置し、石油化学や鉄鋼業を中心とした重化学工業が盛んです。',
     category: 'industry',
-    difficulty: 'medium'
+    difficulty: 'medium',
+    type: 'multiple-choice'
   },
   {
     id: 7,
@@ -266,7 +268,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     explanation: '岡山市は政令指定都市ですが、人口は100万人を超えていません。',
     category: 'prefecture',
-    difficulty: 'hard'
+    difficulty: 'hard',
+    type: 'multiple-choice'
   },
   {
     id: 8,
@@ -275,7 +278,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 3,
     explanation: '日本三大急流は熊本県の球磨川、山形県の最上川、静岡県・山梨県の富士川です。 四万十川は資料に記載がありますが、三大急流には含まれません。',
     category: 'regions',
-    difficulty: 'hard'
+    difficulty: 'hard',
+    type: 'multiple-choice'
   },
   {
     id: 9,
@@ -284,7 +288,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     explanation: '南部鉄器は、岩手県盛岡市や奥州市で生産される伝統工芸品です。',
     category: 'prefecture',
-    difficulty: 'medium'
+    difficulty: 'medium',
+    type: 'multiple-choice'
   },
   {
     id: 10,
@@ -298,7 +303,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     explanation: '東海道新幹線で名古屋方面に向かう場合、左側の車窓からは太平洋側であり、御前崎や伊豆大島などの海岸線が見えることがあります。',
     category: 'regions',
-    difficulty: 'medium'
+    difficulty: 'medium',
+    type: 'multiple-choice'
   },
   {
     id: 11,
@@ -307,7 +313,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 0,
     explanation: '日本の初夏には、オホーツク海気団と小笠原気団がぶつかり合って梅雨前線ができ、くもりや雨の日が多くなる「梅雨」という時期があります。',
     category: 'climate',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 12,
@@ -321,7 +328,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 1,
     explanation: '冬には、シベリアからの冷たく乾いた季節風が、対馬海流が流れる日本海の上空で水分を多く含み、日本の山地にぶつかって日本海側に大雪を降らせます。',
     category: 'climate',
-    difficulty: 'hard'
+    difficulty: 'hard',
+    type: 'multiple-choice'
   },
   {
     id: 13,
@@ -330,7 +338,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 1,
     explanation: '夏には、太平洋の小笠原気団から、暖かく湿った南東の季節風が吹くため、太平洋側では晴れて蒸し暑い日が多くなります。',
     category: 'climate',
-    difficulty: 'medium'
+    difficulty: 'medium',
+    type: 'multiple-choice'
   },
   {
     id: 14,
@@ -344,7 +353,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 3,
     explanation: '北海道は梅雨の影響がほとんどなく、夏は涼しく、冬の寒さが厳しいのが特徴です。台風は通常、沖縄や九州に上陸することが多いです。',
     category: 'climate',
-    difficulty: 'medium'
+    difficulty: 'medium',
+    type: 'multiple-choice'
   },
   {
     id: 15,
@@ -353,7 +363,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     explanation: '夏から秋にかけて、日本の南の海上で発生した熱帯低気圧のうち、最大風速が約17m/s以上になったものを台風と呼び、日本に大きな影響を与えます。',
     category: 'climate',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 16,
@@ -362,7 +373,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 3,
     category: 'industry',
     difficulty: 'medium',
-    explanation: '2022年度のブロッコリー生産量は、1位が北海道、2位が埼玉県、3位が愛知県です。'
+    explanation: '2022年度のブロッコリー生産量は、1位が北海道、2位が埼玉県、3位が愛知県です。',
+    type: 'multiple-choice'
   },
   {
     id: 17,
@@ -371,7 +383,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 1,
     category: 'climate',
     difficulty: 'medium',
-    explanation: '太平洋側の気候は、梅雨や台風の影響で6月〜9月の降水量が多く、冬の降水量は少ないという特徴があります。'
+    explanation: '太平洋側の気候は、梅雨や台風の影響で6月〜9月の降水量が多く、冬の降水量は少ないという特徴があります。',
+    type: 'multiple-choice'
   },
   {
     id: 18,
@@ -380,7 +393,8 @@ export const geographyQuestions: GeographyQuestion[] = [
     correct: 2,
     category: 'regions',
     difficulty: 'hard',
-    explanation: '秋吉台は山口県の中西部に位置する、日本最大級のカルスト台地です。 '
+    explanation: '秋吉台は山口県の中西部に位置する、日本最大級のカルスト台地です。 ',
+    type: 'multiple-choice'
   },
   {
     id: 19,
@@ -939,7 +953,7 @@ export const getRandomQuestions = (count: number = 5): GeographyQuestion[] => {
 };
 
 export const getCategories = (): string[] => {
-  return [...new Set(geographyQuestions.map(q => q.category))];
+  return Array.from(new Set(geographyQuestions.map(q => q.category)));
 };
 
 export const getDifficulties = (): string[] => {

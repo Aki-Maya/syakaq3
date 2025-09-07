@@ -3762,6 +3762,6 @@ export const searchQuestions = (keyword: string) =>
 
 // 品質でフィルタ
 export const getHighQualityQuestions = (minScore: number = 7) =>
-  unifiedQuestions.filter(q => q.qualityScore >= minScore);
+  unifiedQuestions.filter(q => q.qualityScore !== undefined && q.qualityScore >= minScore);
 
 export default unifiedQuestions;

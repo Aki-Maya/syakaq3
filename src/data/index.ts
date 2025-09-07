@@ -285,7 +285,7 @@ export const badges: Badge[] = [
   { id: 'all-rounder', name: 'オールラウンダー', description: '全分野で10問ずつ正解', icon: '🌟', condition: 'all_subjects_10', rarity: 'legendary' }
 ];
 
-// Level system (unchanged)
+// Level system (updated with missing properties)
 export interface Level {
   level: number;
   name: string;
@@ -293,20 +293,22 @@ export interface Level {
   maxXP: number;
   rewards: string[];
   badge?: string;
+  xpRequired: number;  // Added for enhanced-page.tsx compatibility
+  color: string;       // Added for enhanced-page.tsx compatibility
 }
 
 export const levels: Level[] = [
-  { level: 1, name: '初心者', minXP: 0, maxXP: 99, rewards: ['基本バッジ解放'], badge: '🔰' },
-  { level: 2, name: '見習い', minXP: 100, maxXP: 249, rewards: ['新しい問題形式解放'], badge: '📚' },
-  { level: 3, name: '学習者', minXP: 250, maxXP: 499, rewards: ['ヒント機能解放'], badge: '💡' },
-  { level: 4, name: '努力家', minXP: 500, maxXP: 999, rewards: ['カスタムクイズ作成'], badge: '💪' },
-  { level: 5, name: '研究生', minXP: 1000, maxXP: 1999, rewards: ['詳細統計表示'], badge: '🔍' },
-  { level: 6, name: '上級者', minXP: 2000, maxXP: 3999, rewards: ['友達対戦機能'], badge: '🏆' },
-  { level: 7, name: '専門家', minXP: 4000, maxXP: 7999, rewards: ['特別テーマ解放'], badge: '🎯' },
-  { level: 8, name: '博士候補', minXP: 8000, maxXP: 15999, rewards: ['プレミアム問題'], badge: '🎓' },
-  { level: 9, name: '博士', minXP: 16000, maxXP: 31999, rewards: ['オリジナル問題投稿'], badge: '👨‍🎓' },
-  { level: 10, name: '教授', minXP: 32000, maxXP: 63999, rewards: ['教える機能解放'], badge: '👨‍🏫' },
-  { level: 11, name: '達人', minXP: 64000, maxXP: 999999, rewards: ['全機能完全解放'], badge: '🧙‍♂️' }
+  { level: 1, name: '初心者', minXP: 0, maxXP: 99, rewards: ['基本バッジ解放'], badge: '🔰', xpRequired: 0, color: '#10b981' },
+  { level: 2, name: '見習い', minXP: 100, maxXP: 249, rewards: ['新しい問題形式解放'], badge: '📚', xpRequired: 100, color: '#3b82f6' },
+  { level: 3, name: '学習者', minXP: 250, maxXP: 499, rewards: ['ヒント機能解放'], badge: '💡', xpRequired: 250, color: '#8b5cf6' },
+  { level: 4, name: '努力家', minXP: 500, maxXP: 999, rewards: ['カスタムクイズ作成'], badge: '💪', xpRequired: 500, color: '#f59e0b' },
+  { level: 5, name: '研究生', minXP: 1000, maxXP: 1999, rewards: ['詳細統計表示'], badge: '🔍', xpRequired: 1000, color: '#ef4444' },
+  { level: 6, name: '上級者', minXP: 2000, maxXP: 3999, rewards: ['友達対戦機能'], badge: '🏆', xpRequired: 2000, color: '#06b6d4' },
+  { level: 7, name: '専門家', minXP: 4000, maxXP: 7999, rewards: ['特別テーマ解放'], badge: '🎯', xpRequired: 4000, color: '#84cc16' },
+  { level: 8, name: '博士候補', minXP: 8000, maxXP: 15999, rewards: ['プレミアム問題'], badge: '🎓', xpRequired: 8000, color: '#f97316' },
+  { level: 9, name: '博士', minXP: 16000, maxXP: 31999, rewards: ['オリジナル問題投稿'], badge: '👨‍🎓', xpRequired: 16000, color: '#ec4899' },
+  { level: 10, name: '教授', minXP: 32000, maxXP: 63999, rewards: ['教える機能解放'], badge: '👨‍🏫', xpRequired: 32000, color: '#6366f1' },
+  { level: 11, name: '達人', minXP: 64000, maxXP: 999999, rewards: ['全機能完全解放'], badge: '🧙‍♂️', xpRequired: 64000, color: '#d946ef' }
 ];
 
 // User Progress system
@@ -333,6 +335,16 @@ export interface UserProgress {
     subjects: string[];
     dailyGoal: number;
   };
+  // Added for enhanced-page.tsx compatibility
+  totalCorrect: number;
+  currentStreak: number;
+  longestStreak: number;
+  subjectStats: Record<string, {
+    correct: number;
+    answered: number;
+    total: number;
+    accuracy: number;
+  }>;
 }
 
 // Initialize default user progress
@@ -347,7 +359,16 @@ export const initializeUserProgress = (): UserProgress => ({
   },
   achievements: [],
   studyStreaks: { current: 0, longest: 0, lastStudyDate: new Date() },
-  preferences: { difficulty: 'mixed', subjects: ['geography', 'history', 'civics'], dailyGoal: 10 }
+  preferences: { difficulty: 'mixed', subjects: ['geography', 'history', 'civics'], dailyGoal: 10 },
+  // Added for enhanced-page.tsx compatibility
+  totalCorrect: 0,
+  currentStreak: 0,
+  longestStreak: 0,
+  subjectStats: {
+    geography: { correct: 0, answered: 0, total: 0, accuracy: 0 },
+    history: { correct: 0, answered: 0, total: 0, accuracy: 0 },
+    civics: { correct: 0, answered: 0, total: 0, accuracy: 0 }
+  }
 });
 
 // Utility functions
@@ -363,9 +384,9 @@ export const getXPForNextLevel = (currentXP: number): number => {
   return nextLevel ? nextLevel.minXP - currentXP : 0;
 };
 
-export const getNextLevel = (currentXP: number) => {
-  const currentLevel = getPlayerLevel(currentXP);
-  return levels.find(level => level.level === currentLevel.level + 1);
+export const getNextLevel = (currentLevel: number | Level) => {
+  const level = typeof currentLevel === 'number' ? currentLevel : currentLevel.level;
+  return levels.find(l => l.level === level + 1);
 };
 
 export const calculateXPFromScore = (correct: number, total: number, difficulty: 'easy' | 'medium' | 'hard', timeBonus: boolean = false): number => {
