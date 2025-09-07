@@ -27,14 +27,7 @@ const nextConfig = {
   },
 
   // Next.jsの実験的な（Experimental）機能に関する設定
-  experimental: {
-    /**
-     * `true`にすると、Next.js 13で導入された `app` ディレクトリ（App Router）を有効にします。
-     * App Routerを有効にすることで、React Server ComponentsやLayoutsなどの新機能が利用できます。
-     * (補足: Next.js v13.4で安定版になったため、新しいプロジェクトではこの設定はデフォルトで有効です)
-     */
-    appDir: true,
-  },
+  // 注意: appDirはNext.js 14では削除されました（App Routerはデフォルトで有効）
 
   /**
    * HTTPレスポンスヘッダーをカスタマイズするための非同期関数です。

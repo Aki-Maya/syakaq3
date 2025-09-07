@@ -352,7 +352,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     difficulty: 'easy'
   },
   {
-    id: 16
+    id: 16,
     question: '2022年度の日本のブロッコリー生産量で、1位の都道府県はどこですか？',
     options: ['愛知県', '埼玉県', '宮崎県', '北海道'],
     correct: 3,
@@ -361,7 +361,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     explanation: '2022年度のブロッコリー生産量は、1位が北海道、2位が埼玉県、3位が愛知県です。'
   },
   {
-    id: 17
+    id: 17,
     question: '多くの月で降水量が100mmを下回り、冬の降水量が少なく、梅雨や台風の影響で夏に降水量が多くなる気候は、主に日本のどの地域の特徴ですか？',
     options: ['日本海側', '太平洋側', '内陸部', '北海道'],
     correct: 1,
@@ -370,7 +370,7 @@ export const geographyQuestions: GeographyQuestion[] = [
     explanation: '太平洋側の気候は、梅雨や台風の影響で6月〜9月の降水量が多く、冬の降水量は少ないという特徴があります。'
   },
   {
-    id: 18
+    id: 18,
     question: '日本最大級のカルスト台地として知られ、国の特別天然記念物にも指定されている「秋吉台」がある都道府県はどこですか？',
     options: ['鳥取県', '島根県', '山口県', '広島県'],
     correct: 2,
