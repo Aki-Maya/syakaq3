@@ -3,15 +3,18 @@
 import { useState, useEffect } from 'react';
 import { SheetsService, SheetQuestion } from '@/lib/sheets';
 import { GenSparkAIService, GeneratedQuestion } from '@/lib/genspark-ai';
+import { ExplanationGenerator, GeneratedExplanation } from '@/lib/explanation-generator';
 import { shuffleQuestionOptions } from '@/utils/questionUtils';
 
 const AdminDashboard = () => {
   const [sheetQuestions, setSheetQuestions] = useState<SheetQuestion[]>([]);
   const [generatedQuestions, setGeneratedQuestions] = useState<GeneratedQuestion[]>([]);
+  const [generatedExplanations, setGeneratedExplanations] = useState<GeneratedExplanation[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedQuestions, setSelectedQuestions] = useState<Set<number>>(new Set());
   const sheetsService = new SheetsService();
   const genSparkAIService = new GenSparkAIService();
+  const explanationGenerator = new ExplanationGenerator();
 
   // スプレッドシートからデータを取得
   const fetchSheetData = async () => {
@@ -51,6 +54,69 @@ const AdminDashboard = () => {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  // 改善された解説を一括生成
+  const generateExplanations = async () => {
+    const selectedData = sheetQuestions.filter(q => selectedQuestions.has(q.id));
+    if (selectedData.length === 0) {
+      alert('解説を生成するキーワードを選択してください');
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      // 改善された解説生成システムを使用
+      const keywords = selectedData.map(q => q.keyword);
+      const explanations = await explanationGenerator.generateMultipleExplanations(keywords);
+      
+      setGeneratedExplanations(explanations);
+      alert(`${explanations.length}件の高品質解説を生成しました！\n\n✅ 記憶テクニック含有\n✅ 試験パターン分析\n✅ 構造化表記\n✅ 学習特化型内容`);
+    } catch (error) {
+      console.error('解説生成エラー:', error);
+      alert('解説生成に失敗しました。再度お試しください。');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // CSV形式で解説データを出力（C列専用）
+  const exportExplanationsForCColumn = () => {
+    if (generatedExplanations.length === 0) {
+      alert('まず解説を生成してください');
+      return;
+    }
+
+    // C列専用：解説のみを改行区切りで出力
+    const columnData = sheetsService.generateCSVForColumn(generatedExplanations);
+    
+    // クリップボードにコピー
+    navigator.clipboard.writeText(columnData).then(() => {
+      alert(`C列用データをクリップボードにコピーしました！\n\n📋 Google Sheetsでの使用方法：\n1. スプレッドシートを開く\n2. C1セル（または該当する最初のセル）を選択\n3. Ctrl+V で貼り付け\n\n✨ ${generatedExplanations.length}件の高品質解説が正確に配置されます！`);
+    });
+  };
+
+  // 完全なCSVファイルをダウンロード
+  const exportExplanationsAsFullCSV = () => {
+    if (generatedExplanations.length === 0) {
+      alert('まず解説を生成してください');
+      return;
+    }
+
+    const fullCSV = sheetsService.generateFullCSV(generatedExplanations);
+
+    // CSVファイルとしてダウンロード
+    const blob = new Blob([fullCSV], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    link.setAttribute('href', url);
+    link.setAttribute('download', `shakaquest_explanations_${new Date().toISOString().split('T')[0]}.csv`);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    alert('完全なCSVファイルをダウンロードしました！\n\n📁 バックアップや分析用としてご活用ください。');
   };
 
   // 開発用モック問題生成
@@ -178,6 +244,13 @@ const AdminDashboard = () => {
             >
               🚀 GenSpark AIで生成 ({selectedQuestions.size}件)
             </button>
+            <button
+              onClick={generateExplanations}
+              disabled={isLoading || selectedQuestions.size === 0}
+              className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors disabled:opacity-50"
+            >
+              📝 高品質解説生成 ({selectedQuestions.size}件)
+            </button>
           </div>
 
           <div className="space-y-3 max-h-96 overflow-y-auto">
@@ -259,6 +332,102 @@ const AdminDashboard = () => {
                     <button
                       onClick={() => setGeneratedQuestions(prev => prev.filter((_, i) => i !== index))}
                       className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+                    >
+                      🗑️ 削除
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 生成された解説 */}
+        {generatedExplanations.length > 0 && (
+          <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-gray-800">✨ 高品質解説 ({generatedExplanations.length}件)</h2>
+              <div className="flex gap-2">
+                <button
+                  onClick={exportExplanationsForCColumn}
+                  className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-bold"
+                >
+                  📋 C列にコピー
+                </button>
+                <button
+                  onClick={exportExplanationsAsFullCSV}
+                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                >
+                  📊 CSV出力
+                </button>
+                <button
+                  onClick={() => setGeneratedExplanations([])}
+                  className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
+                >
+                  🗑️ クリア
+                </button>
+              </div>
+            </div>
+            
+            <div className="bg-green-50 border-l-4 border-green-400 p-4 mb-4">
+              <p className="text-green-700 text-sm">
+                <strong>📋 スプレッドシート直接反映:</strong> 
+                「C列にコピー」ボタンで解説データを一発コピー → Google SheetsのC列に Ctrl+V で貼り付け完了！
+                記憶テクニック・試験パターン・構造化表記が含まれた学習特化型解説が正確に配置されます。
+              </p>
+            </div>
+            
+            <div className="space-y-4 max-h-96 overflow-y-auto">
+              {generatedExplanations.map((explanation, index) => (
+                <div key={index} className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className={`px-2 py-1 rounded text-xs font-bold text-white ${
+                      explanation.subject === 'geography' ? 'bg-green-500' :
+                      explanation.subject === 'history' ? 'bg-blue-500' : 'bg-purple-500'
+                    }`}>
+                      {explanation.subject === 'geography' ? '地理' :
+                       explanation.subject === 'history' ? '歴史' : '公民'}
+                    </span>
+                    <h3 className="font-bold text-gray-800">{explanation.keyword}</h3>
+                    <span className={`px-2 py-1 rounded text-xs ${
+                      explanation.difficulty === 'easy' ? 'bg-green-100 text-green-800' :
+                      explanation.difficulty === 'medium' ? 'bg-yellow-100 text-yellow-800' :
+                      'bg-red-100 text-red-800'
+                    }`}>
+                      {explanation.difficulty === 'easy' ? '易' :
+                       explanation.difficulty === 'medium' ? '中' : '難'}
+                    </span>
+                  </div>
+                  
+                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-4 mb-3">
+                    <p className="text-gray-800 leading-relaxed">{explanation.explanation}</p>
+                  </div>
+                  
+                  {explanation.tags && explanation.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-1 mb-3">
+                      {explanation.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => {
+                        const csvLine = `"${explanation.keyword}","${explanation.explanation.replace(/"/g, '""')}"`;
+                        navigator.clipboard.writeText(csvLine).then(() => {
+                          alert('この解説をクリップボードにコピーしました！');
+                        });
+                      }}
+                      className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 transition-colors"
+                    >
+                      📋 コピー
+                    </button>
+                    <button
+                      onClick={() => setGeneratedExplanations(prev => prev.filter((_, i) => i !== index))}
+                      className="px-3 py-1 bg-red-500 text-white text-sm rounded hover:bg-red-600 transition-colors"
                     >
                       🗑️ 削除
                     </button>

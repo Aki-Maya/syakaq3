@@ -31,25 +31,52 @@ export class SheetsService {
   }
 
   /**
-   * CSV文字列をパース
+   * CSV文字列をパース（横並び形式対応）
    */
   private parseCSV(csvText: string): SheetQuestion[] {
     const lines = csvText.split('\n');
     const questions: SheetQuestion[] = [];
     
-    for (let i = 1; i < lines.length; i++) { // ヘッダー行をスキップ
-      const columns = this.parseCSVLine(lines[i]);
-      
-      // B列（キーワード）とC列（解説）が両方存在する場合のみ
-      if (columns[1] && columns[2]) {
-        questions.push({
-          id: i,
-          keyword: columns[1].trim(),
-          explanation: columns[2].trim(),
-          subject: this.detectSubject(columns[1], columns[2]),
-          status: 'pending'
-        });
+    // デバッグ用ログ
+    console.log('📊 CSV行数:', lines.length);
+    if (lines.length > 0) {
+      console.log('📋 1行目:', lines[0]);
+      if (lines.length > 1) {
+        console.log('📋 2行目:', lines[1]);
       }
+    }
+    
+    // 複数行をチェックして、キーワードが含まれている行を探す
+    for (let rowIndex = 0; rowIndex < Math.min(lines.length, 5); rowIndex++) {
+      const columns = this.parseCSVLine(lines[rowIndex]);
+      console.log(`📋 ${rowIndex + 1}行目の列数:`, columns.length);
+      
+      // B列から始まってキーワードが存在する限り処理
+      for (let col = 1; col < columns.length; col++) {
+        const keyword = columns[col]?.trim();
+        
+        if (keyword && keyword !== '' && keyword.length > 1) {
+          // 重複チェック
+          const exists = questions.some(q => q.keyword === keyword);
+          if (!exists) {
+            questions.push({
+              id: questions.length + 1,
+              keyword: keyword,
+              explanation: `${keyword}について詳しく学習しましょう。`, // デフォルト解説
+              subject: this.detectSubject(keyword, ''),
+              status: 'pending'
+            });
+          }
+        }
+      }
+      
+      // 十分なキーワードが見つかったら終了
+      if (questions.length > 50) break;
+    }
+    
+    console.log('✅ 抽出されたキーワード数:', questions.length);
+    if (questions.length > 0) {
+      console.log('📝 最初の5件:', questions.slice(0, 5).map(q => q.keyword));
     }
     
     return questions;
@@ -120,5 +147,43 @@ export class SheetsService {
     // 既存データとの重複チェックやフィルタリングロジックをここに実装
     // 今回は全データを返す（実際は localStorage などで管理）
     return allQuestions;
+  }
+
+  /**
+   * 解説データをGoogle Sheets C列用のCSV形式で生成
+   * @param explanations 解説データ配列
+   * @returns CSV形式の文字列
+   */
+  generateCSVForColumn(explanations: {keyword: string, explanation: string}[]): string {
+    // Google Sheetsの列に直接貼り付け用のCSV（改行区切り）
+    return explanations.map(exp => 
+      `"${exp.explanation.replace(/"/g, '""')}"`
+    ).join('\n');
+  }
+
+  /**
+   * 解説データを完全なCSV形式で生成（ダウンロード用）
+   */
+  generateFullCSV(explanations: {keyword: string, explanation: string, subject?: string}[]): string {
+    const header = 'キーワード,解説,科目\n';
+    const rows = explanations.map(exp => 
+      `"${exp.keyword}","${exp.explanation.replace(/"/g, '""')}","${exp.subject || ''}"`
+    ).join('\n');
+    
+    return header + rows;
+  }
+
+  /**
+   * キーワードと行番号のマッピングを取得（C列への正確な配置用）
+   */
+  async getKeywordRowMapping(): Promise<Map<string, number>> {
+    const questions = await this.fetchQuestionsData();
+    const mapping = new Map<string, number>();
+    
+    questions.forEach((question, index) => {
+      mapping.set(question.keyword, index + 2); // ヘッダー行を考慮して+2
+    });
+    
+    return mapping;
   }
 }
