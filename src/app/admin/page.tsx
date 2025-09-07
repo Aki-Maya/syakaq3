@@ -143,37 +143,119 @@ const AdminDashboard = () => {
     };
   };
 
-  // 問題をアプリに追加
-  const addToApp = (question: GeneratedQuestion) => {
-    // 🎲 選択肢シャッフル機能のテスト用デモ
-    const shuffledQuestion = shuffleQuestionOptions(question);
+  // 一括追加機能
+  const addAllToApp = async () => {
+    if (generatedQuestions.length === 0) {
+      alert('追加する問題がありません');
+      return;
+    }
+
+    const confirmMessage = `${generatedQuestions.length}個の問題をすべてアプリに追加しますか？\n\n📊 内訳:\n${generatedQuestions.map((q, i) => `${i+1}. [${q.subject}] ${q.question.substring(0, 30)}...`).join('\n')}`;
     
-    // データファイルに追加するロジック
-    const questionCode = `{
-  id: "${Date.now()}",
-  question: "${question.question}",
-  options: ${JSON.stringify(question.options, null, 2)},
-  correct: ${question.correct},
-  explanation: "${question.explanation}",
-  difficulty: "${question.difficulty}",
-  subject: "${question.subject}",
-  category: "${question.category}"
-},
+    if (!confirm(confirmMessage)) {
+      return;
+    }
 
-// 🎲 選択肢シャッフル機能付きバージョン（参考）
-// 実際のアプリでは実行時に自動でシャッフルされます
-/*
-シャッフル例:
-元の選択肢: ${JSON.stringify(question.options)}
-元の正解: ${question.options[question.correct]} (位置: ${question.correct})
-シャッフル後: ${JSON.stringify(shuffledQuestion.options)}
-新しい正解: ${shuffledQuestion.options[shuffledQuestion.correct]} (位置: ${shuffledQuestion.correct})
-*/`;
+    setIsLoading(true);
+    let successCount = 0;
+    let failCount = 0;
+    const results = [];
 
-    // クリップボードにコピー
-    navigator.clipboard.writeText(questionCode).then(() => {
-      alert('問題コードをクリップボードにコピーしました！\n\n📋 内容：\n- 基本の問題コード\n- シャッフル機能の説明コメント\n\nデータファイルに貼り付けてください。');
-    });
+    try {
+      for (const question of generatedQuestions) {
+        try {
+          const questionData = {
+            question: question.question,
+            options: question.options,
+            correct: question.correct,
+            explanation: question.explanation,
+            category: question.category || 'general',
+            difficulty: question.difficulty
+          };
+
+          const response = await fetch('/api/add-question', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              subject: question.subject,
+              questionData: questionData
+            })
+          });
+
+          const result = await response.json();
+          
+          if (result.success) {
+            successCount++;
+            results.push(`✅ ID ${result.id}: ${question.question.substring(0, 50)}...`);
+          } else {
+            failCount++;
+            results.push(`❌ 失敗: ${question.question.substring(0, 50)}... (${result.error})`);
+          }
+        } catch (error) {
+          failCount++;
+          results.push(`❌ エラー: ${question.question.substring(0, 50)}...`);
+        }
+      }
+
+      // 結果表示
+      alert(`🎉 一括追加完了！\n\n📊 結果:\n✅ 成功: ${successCount}件\n❌ 失敗: ${failCount}件\n\n${results.join('\n')}`);
+      
+      // 成功した問題を生成リストから削除
+      if (successCount > 0) {
+        setGeneratedQuestions([]);
+      }
+    } catch (error) {
+      console.error('一括追加エラー:', error);
+      alert('❌ 一括追加中に予期しないエラーが発生しました');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // 問題をアプリに自動追加
+  const addToApp = async (question: GeneratedQuestion) => {
+    try {
+      // 🎲 選択肢シャッフル機能のテスト用デモ
+      const shuffledQuestion = shuffleQuestionOptions(question);
+      
+      // 生成問題のフォーマットを/api/add-questionの形式に変換
+      const questionData = {
+        question: question.question,
+        options: question.options,
+        correct: question.correct,
+        explanation: question.explanation,
+        category: question.category || 'general',
+        difficulty: question.difficulty
+      };
+
+      // APIを呼び出して自動追加
+      const response = await fetch('/api/add-question', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          subject: question.subject,
+          questionData: questionData
+        })
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        alert(`✅ 問題を本番アプリに自動追加しました！\n\n📊 追加情報:\n- ID: ${result.id}\n- 科目: ${question.subject}\n- カテゴリー: ${question.category}\n\n🎲 シャッフル機能情報:\n元の選択肢: ${JSON.stringify(question.options)}\n元の正解: ${question.options[question.correct]} (位置: ${question.correct})\nシャッフル例: ${JSON.stringify(shuffledQuestion.options)}\n新しい正解: ${shuffledQuestion.options[shuffledQuestion.correct]} (位置: ${shuffledQuestion.correct})`);
+        
+        // 成功した問題を生成リストから削除（オプション）
+        setGeneratedQuestions(prev => prev.filter(q => q !== question));
+      } else {
+        alert(`❌ 追加に失敗しました: ${result.error}`);
+      }
+    } catch (error) {
+      console.error('自動追加エラー:', error);
+      alert('❌ アプリへの自動追加中にエラーが発生しました');
+    }
   };
 
   // チェックボックス操作
@@ -355,7 +437,16 @@ const AdminDashboard = () => {
         {/* 生成された問題 */}
         {generatedQuestions.length > 0 && !editingQuestion && (
           <div className="bg-white rounded-xl p-6 shadow-lg">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">✅ 生成された問題 ({generatedQuestions.length}件)</h2>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-gray-800">✅ 生成された問題 ({generatedQuestions.length}件)</h2>
+              <button
+                onClick={addAllToApp}
+                disabled={isLoading}
+                className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors disabled:opacity-50 font-medium"
+              >
+                🚀 全問題をアプリに追加
+              </button>
+            </div>
             
             <div className="space-y-4">
               {generatedQuestions.map((question, index) => (
@@ -408,9 +499,10 @@ const AdminDashboard = () => {
                     </button>
                     <button
                       onClick={() => addToApp(question)}
-                      className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+                      disabled={isLoading}
+                      className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors disabled:opacity-50"
                     >
-                      📋 コードをコピー
+                      🚀 アプリに追加
                     </button>
                     <button
                       onClick={() => setGeneratedQuestions(prev => prev.filter((_, i) => i !== index))}
