@@ -13,18 +13,42 @@ const AdminDashboard = () => {
   const [selectedQuestions, setSelectedQuestions] = useState<Set<number>>(new Set());
   const [editingQuestion, setEditingQuestion] = useState<GeneratedQuestion | null>(null);
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
+
+  console.log('🔍 コンポーネント再レンダリング - sheetQuestions.length:', sheetQuestions.length);
   const sheetsService = new SheetsService();
   const genSparkAIService = new GenSparkAIService();
+
+  // ページ読み込み時に自動でデータ取得
+  useEffect(() => {
+    console.log('🚀 管理画面: 初期データ取得を開始');
+    fetchSheetData();
+  }, []); // 空の依存配列で初回のみ実行
 
   // スプレッドシートからデータを取得
   const fetchSheetData = async () => {
     setIsLoading(true);
     try {
-      const questions = await sheetsService.fetchQuestionsData();
-      setSheetQuestions(questions);
+      // サーバーサイドAPIエンドポイント経由でデータを取得
+      const response = await fetch('/api/fetch-sheets');
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log(`✅ 管理画面: ${result.count}件のキーワードを取得しました`);
+        console.log('📝 受信データサンプル:', result.data.slice(0, 3));
+        console.log('🔧 setSheetQuestions実行前 - 現在の長さ:', sheetQuestions.length);
+        setSheetQuestions(result.data);
+        console.log('📊 setSheetQuestions実行後 - 新しいデータ長さ:', result.data.length);
+        
+        // 状態更新の確認用（非同期なので次のレンダリングで反映）
+        setTimeout(() => {
+          console.log('⏱️ タイムアウト後の状態確認:', sheetQuestions.length);
+        }, 100);
+      } else {
+        throw new Error(result.error || 'データ取得に失敗しました');
+      }
     } catch (error) {
-      console.error('データ取得エラー:', error);
-      alert('スプレッドシートの取得に失敗しました');
+      console.error('❌ 管理画面: データ取得エラー:', error);
+      alert(`スプレッドシートの取得に失敗しました: ${error instanceof Error ? error.message : '不明なエラー'}`);
     } finally {
       setIsLoading(false);
     }
