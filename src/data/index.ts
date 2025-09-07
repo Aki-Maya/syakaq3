@@ -109,7 +109,10 @@ export const subjects: Subject[] = [
     categories: [
       { id: 'climate', name: '気候', description: '日本の気候区分', questionCount: 0 },
       { id: 'industry', name: '産業', description: '日本の産業', questionCount: 0 },
-      { id: 'regions', name: '地方', description: '各地方の特色', questionCount: 0 }
+      { id: 'regions', name: '地方', description: '各地方の特色', questionCount: 0 },
+      { id: 'prefecture', name: '都道府県', description: '都道府県の基本情報', questionCount: 0 },
+      { id: 'landforms', name: '地形', description: '日本の地形と特徴', questionCount: 0 },
+      { id: 'agriculture', name: '農業', description: '日本の農業', questionCount: 0 }
     ],
     totalQuestions: 0
   },
