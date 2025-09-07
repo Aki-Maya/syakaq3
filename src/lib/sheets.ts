@@ -165,6 +165,38 @@ export class SheetsService {
   }
 
   /**
+   * 解説をスプレッドシートのC列に書き戻し（簡易版）
+   * 注意: これは読み取り専用のCSV APIなので、実際の書き込みはできません
+   * 実際の実装では Google Sheets API v4 の認証付きアクセスが必要
+   */
+  generateExplanationUpdates(keywords: string[], explanations: string[]): string {
+    const updates: string[] = [];
+    
+    keywords.forEach((keyword, index) => {
+      const explanation = explanations[index] || 'デフォルト解説';
+      updates.push(`"${keyword}","${explanation}"`);
+    });
+    
+    return `スプレッドシートに追加するCSVデータ:\n\n${updates.join('\n')}\n\n上記のデータをC列に手動でコピー&ペーストしてください。`;
+  }
+
+  /**
+   * 解説生成用のCSVフォーマットを作成
+   */
+  createExplanationCSV(keywordExplanations: Array<{keyword: string, explanation: string}>): string {
+    let csv = 'キーワード,解説\n';
+    
+    keywordExplanations.forEach(item => {
+      // CSVエスケープ処理
+      const escapedKeyword = `"${item.keyword.replace(/"/g, '""')}"`;
+      const escapedExplanation = `"${item.explanation.replace(/"/g, '""')}"`;
+      csv += `${escapedKeyword},${escapedExplanation}\n`;
+    });
+    
+    return csv;
+  }
+
+  /**
    * 新しいデータのみを取得（前回取得時との差分）
    */
   async getNewQuestions(lastFetchTime?: string): Promise<SheetQuestion[]> {
@@ -173,5 +205,19 @@ export class SheetsService {
     // 既存データとの重複チェックやフィルタリングロジックをここに実装
     // 今回は全データを返す（実際は localStorage などで管理）
     return allQuestions;
+  }
+
+  /**
+   * 実際にGoogle Sheets APIで書き込みを行う場合の準備
+   * （将来の拡張用 - 認証とAPI設定が必要）
+   */
+  async writeExplanationsToSheet(explanationData: Array<{row: number, explanation: string}>): Promise<boolean> {
+    // TODO: Google Sheets API v4 での書き込み実装
+    // 1. サービスアカウント認証
+    // 2. sheets.spreadsheets.values.batchUpdate API 呼び出し
+    // 3. C列への一括更新
+    
+    console.log('📝 Google Sheets API書き込み（未実装）:', explanationData.length, '件');
+    return false; // 暫定的にfalseを返す
   }
 }

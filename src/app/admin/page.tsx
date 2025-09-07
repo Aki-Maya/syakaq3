@@ -3,12 +3,14 @@
 import { useState, useEffect } from 'react';
 import { SheetsService, SheetQuestion } from '@/lib/sheets';
 import { GenSparkAIService, GeneratedQuestion } from '@/lib/genspark-ai';
+import { ExplanationGenerator, GeneratedExplanation } from '@/lib/explanation-generator';
 import { shuffleQuestionOptions } from '@/utils/questionUtils';
 import { QuestionEditor } from '@/components';
 
 const AdminDashboard = () => {
   const [sheetQuestions, setSheetQuestions] = useState<SheetQuestion[]>([]);
   const [generatedQuestions, setGeneratedQuestions] = useState<GeneratedQuestion[]>([]);
+  const [generatedExplanations, setGeneratedExplanations] = useState<GeneratedExplanation[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedQuestions, setSelectedQuestions] = useState<Set<number>>(new Set());
   const [editingQuestion, setEditingQuestion] = useState<GeneratedQuestion | null>(null);
@@ -17,6 +19,7 @@ const AdminDashboard = () => {
   console.log('🔍 コンポーネント再レンダリング - sheetQuestions.length:', sheetQuestions.length);
   const sheetsService = new SheetsService();
   const genSparkAIService = new GenSparkAIService();
+  const explanationGenerator = new ExplanationGenerator();
 
   // ページ読み込み時に自動でデータ取得
   useEffect(() => {
@@ -169,6 +172,44 @@ const AdminDashboard = () => {
     setEditingIndex(null);
   };
 
+  // 解説生成機能
+  const generateExplanations = async () => {
+    const selectedData = sheetQuestions.filter(q => selectedQuestions.has(q.id));
+    if (selectedData.length === 0) {
+      alert('解説を生成するキーワードを選択してください');
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      console.log(`📝 ${selectedData.length}件のキーワードの解説生成を開始`);
+      
+      const keywords = selectedData.map(q => q.keyword);
+      const explanations = await explanationGenerator.generateMultipleExplanations(keywords);
+      
+      setGeneratedExplanations(prev => [...prev, ...explanations]);
+      
+      // CSV形式での出力準備
+      const csvData = sheetsService.createExplanationCSV(
+        explanations.map(e => ({ keyword: e.keyword, explanation: e.explanation }))
+      );
+      
+      // CSVをクリップボードにコピー
+      navigator.clipboard.writeText(csvData).then(() => {
+        alert(`✅ ${explanations.length}件の解説生成が完了しました！\n\nCSVデータがクリップボードにコピーされました。\nスプレッドシートのC列に貼り付けてください。`);
+      }).catch(() => {
+        console.log('📋 生成されたCSVデータ:\n', csvData);
+        alert(`✅ ${explanations.length}件の解説生成が完了しました！\n\nコンソールログでCSVデータを確認してください。`);
+      });
+      
+    } catch (error) {
+      console.error('❌ 解説生成エラー:', error);
+      alert(`解説生成に失敗しました: ${error instanceof Error ? error.message : '不明なエラー'}`);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   useEffect(() => {
     fetchSheetData();
   }, []);
@@ -225,6 +266,13 @@ const AdminDashboard = () => {
               className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors disabled:opacity-50"
             >
               🚀 GenSpark AIで生成 ({selectedQuestions.size}件)
+            </button>
+            <button
+              onClick={generateExplanations}
+              disabled={isLoading || selectedQuestions.size === 0}
+              className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors disabled:opacity-50"
+            >
+              📝 解説生成→C列 ({selectedQuestions.size}件)
             </button>
           </div>
 
@@ -337,6 +385,79 @@ const AdminDashboard = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {/* 生成された解説 */}
+        {generatedExplanations.length > 0 && (
+          <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-gray-800">📝 生成された解説 ({generatedExplanations.length}件)</h2>
+              <button
+                onClick={() => {
+                  const csvData = sheetsService.createExplanationCSV(
+                    generatedExplanations.map(e => ({ keyword: e.keyword, explanation: e.explanation }))
+                  );
+                  navigator.clipboard.writeText(csvData).then(() => {
+                    alert('📋 CSVデータをクリップボードにコピーしました！\nスプレッドシートのC列に貼り付けてください。');
+                  });
+                }}
+                className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+              >
+                📋 CSV再コピー
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              {generatedExplanations.map((explanation, index) => (
+                <div key={index} className="border border-gray-200 rounded-lg p-4">
+                  <div className="mb-3">
+                    <span className={`px-2 py-1 rounded text-xs font-bold text-white ${
+                      explanation.subject === 'geography' ? 'bg-green-500' :
+                      explanation.subject === 'history' ? 'bg-blue-500' : 'bg-purple-500'
+                    }`}>
+                      {explanation.subject === 'geography' ? '地理' :
+                       explanation.subject === 'history' ? '歴史' : '公民'}
+                    </span>
+                    <span className={`ml-2 px-2 py-1 rounded text-xs font-bold ${
+                      explanation.difficulty === 'easy' ? 'bg-green-100 text-green-800' :
+                      explanation.difficulty === 'medium' ? 'bg-yellow-100 text-yellow-800' :
+                      'bg-red-100 text-red-800'
+                    }`}>
+                      {explanation.difficulty.toUpperCase()}
+                    </span>
+                    <h3 className="font-bold text-gray-800 mt-2">{explanation.keyword}</h3>
+                  </div>
+                  
+                  <div className="bg-gray-50 rounded-lg p-4 mb-3">
+                    <p className="text-gray-700">{explanation.explanation}</p>
+                  </div>
+
+                  {explanation.tags && explanation.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {explanation.tags.map((tag, tagIndex) => (
+                        <span
+                          key={tagIndex}
+                          className="px-2 py-1 bg-gray-200 text-gray-700 rounded text-xs"
+                        >
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r">
+              <h4 className="font-bold text-yellow-800 mb-2">📋 使用方法</h4>
+              <ol className="text-yellow-700 text-sm space-y-1">
+                <li>1. 上の「📋 CSV再コピー」ボタンをクリック</li>
+                <li>2. Google Sheetsを開く</li>
+                <li>3. C1セルを選択してCtrl+V（またはCmd+V）で貼り付け</li>
+                <li>4. データが正しく入力されたことを確認</li>
+              </ol>
             </div>
           </div>
         )}
