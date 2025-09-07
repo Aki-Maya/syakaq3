@@ -77,29 +77,7 @@ const AdminDashboard = () => {
     }
   };
 
-  // 改善された解説を一括生成
-  const generateExplanations = async () => {
-    const selectedData = sheetQuestions.filter(q => selectedQuestions.has(q.id));
-    if (selectedData.length === 0) {
-      alert('解説を生成するキーワードを選択してください');
-      return;
-    }
 
-    setIsLoading(true);
-    try {
-      // 改善された解説生成システムを使用
-      const keywords = selectedData.map(q => q.keyword);
-      const explanations = await explanationGenerator.generateMultipleExplanations(keywords);
-      
-      setGeneratedExplanations(explanations);
-      alert(`${explanations.length}件の高品質解説を生成しました！\n\n✅ 記憶テクニック含有\n✅ 試験パターン分析\n✅ 構造化表記\n✅ 学習特化型内容`);
-    } catch (error) {
-      console.error('解説生成エラー:', error);
-      alert('解説生成に失敗しました。再度お試しください。');
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   // CSV形式で解説データを出力（C列専用）
   const exportExplanationsForCColumn = () => {
