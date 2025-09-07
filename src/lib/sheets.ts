@@ -31,52 +31,41 @@ export class SheetsService {
   }
 
   /**
-   * CSV文字列をパース（横並び形式対応）
+   * CSV文字列をパース（縦並び形式対応）
    */
   private parseCSV(csvText: string): SheetQuestion[] {
     const lines = csvText.split('\n');
     const questions: SheetQuestion[] = [];
     
-    // デバッグ用ログ
-    console.log('📊 CSV行数:', lines.length);
-    if (lines.length > 0) {
-      console.log('📋 1行目:', lines[0]);
-      if (lines.length > 1) {
-        console.log('📋 2行目:', lines[1]);
-      }
-    }
+    console.log('📊 スプレッドシートからデータを処理中...');
     
-    // 複数行をチェックして、キーワードが含まれている行を探す
-    for (let rowIndex = 0; rowIndex < Math.min(lines.length, 5); rowIndex++) {
+    // ヘッダー行をスキップして、2行目以降からキーワードを抽出
+    for (let rowIndex = 1; rowIndex < lines.length; rowIndex++) {
       const columns = this.parseCSVLine(lines[rowIndex]);
-      console.log(`📋 ${rowIndex + 1}行目の列数:`, columns.length);
       
-      // B列から始まってキーワードが存在する限り処理
-      for (let col = 1; col < columns.length; col++) {
-        const keyword = columns[col]?.trim();
+      // B列（index 1）からキーワードを取得
+      const keyword = columns[1]?.trim().replace(/\r/g, '');
+      
+      if (keyword && keyword !== '' && keyword.length > 1) {
+        // ヘッダー行の「キーワード」をスキップ
+        if (keyword === 'キーワード') continue;
         
-        if (keyword && keyword !== '' && keyword.length > 1) {
-          // 重複チェック
-          const exists = questions.some(q => q.keyword === keyword);
-          if (!exists) {
-            questions.push({
-              id: questions.length + 1,
-              keyword: keyword,
-              explanation: `${keyword}について詳しく学習しましょう。`, // デフォルト解説
-              subject: this.detectSubject(keyword, ''),
-              status: 'pending'
-            });
-          }
-        }
+        questions.push({
+          id: questions.length + 1,
+          keyword: keyword,
+          explanation: `${keyword}について詳しく学習しましょう。`, // デフォルト解説
+          subject: this.detectSubject(keyword, ''),
+          status: 'pending'
+        });
       }
       
-      // 十分なキーワードが見つかったら終了
-      if (questions.length > 50) break;
+      // 十分なキーワードが見つかったら終了（パフォーマンス最適化）
+      if (questions.length > 100) break;
     }
     
-    console.log('✅ 抽出されたキーワード数:', questions.length);
+    console.log(`✅ ${questions.length}件のキーワードを取得完了`);
     if (questions.length > 0) {
-      console.log('📝 最初の5件:', questions.slice(0, 5).map(q => q.keyword));
+      console.log(`📝 範囲: ${questions[0].keyword} ～ ${questions[Math.min(questions.length - 1, 2)].keyword} など`);
     }
     
     return questions;
