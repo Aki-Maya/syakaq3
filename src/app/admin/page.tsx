@@ -4,12 +4,15 @@ import { useState, useEffect } from 'react';
 import { SheetsService, SheetQuestion } from '@/lib/sheets';
 import { GenSparkAIService, GeneratedQuestion } from '@/lib/genspark-ai';
 import { shuffleQuestionOptions } from '@/utils/questionUtils';
+import { QuestionEditor } from '@/components';
 
 const AdminDashboard = () => {
   const [sheetQuestions, setSheetQuestions] = useState<SheetQuestion[]>([]);
   const [generatedQuestions, setGeneratedQuestions] = useState<GeneratedQuestion[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedQuestions, setSelectedQuestions] = useState<Set<number>>(new Set());
+  const [editingQuestion, setEditingQuestion] = useState<GeneratedQuestion | null>(null);
+  const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const sheetsService = new SheetsService();
   const genSparkAIService = new GenSparkAIService();
 
@@ -121,6 +124,27 @@ const AdminDashboard = () => {
     setSelectedQuestions(newSelected);
   };
 
+  // 編集機能
+  const startEditing = (question: GeneratedQuestion, index: number) => {
+    setEditingQuestion({ ...question });
+    setEditingIndex(index);
+  };
+
+  const saveEditedQuestion = (updatedQuestion: GeneratedQuestion) => {
+    if (editingIndex !== null) {
+      const newQuestions = [...generatedQuestions];
+      newQuestions[editingIndex] = updatedQuestion;
+      setGeneratedQuestions(newQuestions);
+    }
+    setEditingQuestion(null);
+    setEditingIndex(null);
+  };
+
+  const cancelEditing = () => {
+    setEditingQuestion(null);
+    setEditingIndex(null);
+  };
+
   useEffect(() => {
     fetchSheetData();
   }, []);
@@ -209,8 +233,19 @@ const AdminDashboard = () => {
           </div>
         </div>
 
+        {/* 編集モード */}
+        {editingQuestion && (
+          <div className="bg-white rounded-xl p-6 shadow-lg">
+            <QuestionEditor
+              question={editingQuestion}
+              onSave={saveEditedQuestion}
+              onCancel={cancelEditing}
+            />
+          </div>
+        )}
+
         {/* 生成された問題 */}
-        {generatedQuestions.length > 0 && (
+        {generatedQuestions.length > 0 && !editingQuestion && (
           <div className="bg-white rounded-xl p-6 shadow-lg">
             <h2 className="text-xl font-bold text-gray-800 mb-4">✅ 生成された問題 ({generatedQuestions.length}件)</h2>
             
@@ -224,6 +259,13 @@ const AdminDashboard = () => {
                     }`}>
                       {question.subject === 'geography' ? '地理' :
                        question.subject === 'history' ? '歴史' : '公民'}
+                    </span>
+                    <span className={`ml-2 px-2 py-1 rounded text-xs font-bold ${
+                      question.difficulty === 'easy' ? 'bg-green-100 text-green-800' :
+                      question.difficulty === 'medium' ? 'bg-yellow-100 text-yellow-800' :
+                      'bg-red-100 text-red-800'
+                    }`}>
+                      {question.difficulty.toUpperCase()}
                     </span>
                     <span className="ml-2 text-sm text-gray-600">
                       元データ: {question.source.keyword}
@@ -250,6 +292,12 @@ const AdminDashboard = () => {
                   </div>
                   
                   <div className="flex gap-2">
+                    <button
+                      onClick={() => startEditing(question, index)}
+                      className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    >
+                      ✏️ 編集
+                    </button>
                     <button
                       onClick={() => addToApp(question)}
                       className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
