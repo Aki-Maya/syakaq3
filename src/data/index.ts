@@ -128,7 +128,8 @@ export const subjects: Subject[] = [
       { id: 'medieval', name: '中世', description: '1185年〜1573年', questionCount: 0 },
       { id: 'early-modern', name: '近世', description: '1573年〜1867年', questionCount: 0 },
       { id: 'modern', name: '近代', description: '1868年〜1945年', questionCount: 0 },
-      { id: 'contemporary', name: '現代', description: '1945年〜現在', questionCount: 0 }
+      { id: 'contemporary', name: '現代', description: '1945年〜現在', questionCount: 0 },
+      { id: 'general', name: '総合', description: '時代横断的な歴史問題', questionCount: 0 }
     ],
     totalQuestions: 0
   },
@@ -141,7 +142,9 @@ export const subjects: Subject[] = [
     categories: [
       { id: 'politics', name: '政治制度', description: '政治、法律、選挙、地方自治、国際関係', questionCount: 0 },
       { id: 'human-rights', name: '人権', description: '基本的人権と新しい人権', questionCount: 0 },
-      { id: 'economics', name: '経済', description: '掲載、労働', questionCount: 0 },
+      { id: 'economics', name: '経済', description: '経済、労働', questionCount: 0 },
+      { id: 'constitution', name: '憲法', description: '日本国憲法の基本原理', questionCount: 0 },
+      { id: 'general', name: '総合', description: '分野横断的な公民問題', questionCount: 0 }
     ],
     totalQuestions: 0
   }
