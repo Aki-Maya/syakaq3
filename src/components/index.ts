@@ -7,3 +7,4 @@ export { QuestionEditor } from './QuestionEditor';
 export { QuizResult } from './QuizResult';
 export { QuizQuestion } from './QuizQuestion';
 export { ShuffleIndicator } from './ShuffleIndicator';
+export { default as QuestionCreationForm } from './QuestionCreationForm';

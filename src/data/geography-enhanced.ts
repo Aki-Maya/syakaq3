@@ -377,6 +377,16 @@ export const geographyQuestions: GeographyQuestion[] = [
     category: 'regions',
     difficulty: 'hard',
     explanation: '秋吉台は山口県の中西部に位置する、日本最大級のカルスト台地です。 '
+  },
+  {
+    id: 19,
+    question: 'テスト問題：日本で最も面積が大きい都道府県はどこですか？',
+    options: ['北海道', '青森県', '岩手県', '秋田県'],
+    correct: 0,
+    category: 'prefecture',
+    difficulty: 'easy',
+    explanation: '北海道は日本の全面積の約22%を占める、日本最大の都道府県です。',
+    type: 'multiple-choice' as const
   }
 ];
 

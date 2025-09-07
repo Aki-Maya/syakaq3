@@ -6,6 +6,7 @@ import { GenSparkAIService, GeneratedQuestion } from '@/lib/genspark-ai';
 import { ExplanationGenerator, GeneratedExplanation } from '@/lib/explanation-generator';
 import { shuffleQuestionOptions } from '@/utils/questionUtils';
 import { QuestionEditor } from '@/components';
+import QuestionCreationForm from '@/components/QuestionCreationForm';
 
 const AdminDashboard = () => {
   const [sheetQuestions, setSheetQuestions] = useState<SheetQuestion[]>([]);
@@ -519,6 +520,12 @@ const AdminDashboard = () => {
             </div>
           </div>
         )}
+
+        {/* 新規問題作成フォーム */}
+        <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
+          <h2 className="text-xl font-bold text-gray-800 mb-4">➕ 新規問題作成</h2>
+          <QuestionCreationForm />
+        </div>
 
         {isLoading && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
