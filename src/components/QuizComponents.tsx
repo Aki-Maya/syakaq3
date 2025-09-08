@@ -155,7 +155,9 @@ export default function EnhancedQuiz({ subject, category, onFinish, onBack }: En
       const earnedXP = answers.reduce((total, answer) => {
         if (answer.isCorrect) {
           const timeBonus = answer.timeSpent < 3000; // 3秒以内の回答でボーナス
-          return total + calculateXPForCorrectAnswer(answer.question.difficulty, timeBonus);
+          const legacyDifficulty = answer.question.difficulty === 'basic' ? 'easy' : 
+                                   answer.question.difficulty === 'standard' ? 'medium' : 'hard';
+          return total + calculateXPForCorrectAnswer(1, 1, legacyDifficulty, timeBonus);
         }
         return total;
       }, 0);
@@ -238,11 +240,11 @@ export default function EnhancedQuiz({ subject, category, onFinish, onBack }: En
             <div className="flex items-center gap-2 mb-4">
               <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                 currentQuestion.difficulty === 'basic' ? 'bg-green-100 text-green-800' :
-                currentQuestion.difficulty === 'intermediate' ? 'bg-yellow-100 text-yellow-800' :
+                currentQuestion.difficulty === 'standard' ? 'bg-yellow-100 text-yellow-800' :
                 'bg-red-100 text-red-800'
               }`}>
                 {currentQuestion.difficulty === 'basic' ? '基本' :
-                 currentQuestion.difficulty === 'intermediate' ? '標準' : '応用'}
+                 currentQuestion.difficulty === 'standard' ? '標準' : '応用'}
               </span>
               <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
                 {currentQuestion.subject === 'geography' ? '地理' :
