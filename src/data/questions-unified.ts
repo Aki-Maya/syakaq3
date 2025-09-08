@@ -7360,6 +7360,3598 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "version": 1,
     "qualityScore": 8
   }
+,
+  {
+    "id": "HIS_ANC_139",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代"
+    ],
+    "question": "縄文土器の特徴の特徴として最も適切なものはどれですか。",
+    "options": [
+      "縄目模様が施され、狩猟採集社会の生活を反映している",
+      "軍事的な必要性から生まれた制度",
+      "貴族階級の利益を重視した政策",
+      "中国から直接導入された制度である"
+    ],
+    "correct": 0,
+    "explanation": "縄文土器は縄目模様が特徴的で、狩猟採集社会の生活様式を反映しています。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.643Z",
+    "createdAt": "2025-09-08T02:12:34.643Z",
+    "version": 1,
+    "qualityScore": 8.8
+  },
+  {
+    "id": "HIS_ANC_140",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "cultural",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "古代",
+      "文化"
+    ],
+    "question": "古代の弥生文化と稲作に関する記述として正しいものはどれですか。",
+    "options": [
+      "主に経済的な理由によるものだった",
+      "中国から直接導入された制度である",
+      "大陸から稲作が伝来し、定住農業社会が始まった",
+      "貴族階級の利益を重視した政策"
+    ],
+    "correct": 2,
+    "explanation": "弥生時代に稲作が伝来し、定住農業社会が始まりました。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.643Z",
+    "createdAt": "2025-09-08T02:12:34.643Z",
+    "version": 1,
+    "qualityScore": 8.8
+  },
+  {
+    "id": "HIS_ANC_141",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "social",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代",
+      "社会"
+    ],
+    "question": "次の古墳と階級社会の説明で適切なものを選びなさい。",
+    "options": [
+      "中国から直接導入された制度である",
+      "貴族階級の利益を重視した政策",
+      "大型古墳の建設により政治的権力の集中が進んだ",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 2,
+    "explanation": "大型古墳の建設により政治的権力の集中と階級社会の成立が明らかになります。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.643Z",
+    "createdAt": "2025-09-08T02:12:34.643Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_ANC_142",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "古代"
+    ],
+    "question": "古代の仏教伝来の影響に関する記述として正しいものはどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "538年に百済から伝来し、日本文化に大きな変化をもたらした",
+      "民衆の要求により実現した改革",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 1,
+    "explanation": "538年の仏教伝来は日本の文化と政治に革命的変化をもたらしました。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.643Z",
+    "createdAt": "2025-09-08T02:12:34.643Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_ANC_143",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代"
+    ],
+    "question": "次の律令制の確立の説明で適切なものを選びなさい。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "主に経済的な理由によるものだった",
+      "宗教的な目的で行われた事業",
+      "中国の制度を参考に中央集権的な国家体制が整備された"
+    ],
+    "correct": 3,
+    "explanation": "奈良時代に律令制が完成し、古代国家としての体制が整いました。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.644Z",
+    "createdAt": "2025-09-08T02:12:34.644Z",
+    "version": 1,
+    "qualityScore": 8.5
+  },
+  {
+    "id": "HIS_ANC_144",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代"
+    ],
+    "question": "次の縄文土器の特徴の説明で適切なものを選びなさい。",
+    "options": [
+      "外国の圧力により実施された政策",
+      "民衆の要求により実現した改革",
+      "縄目模様が施され、狩猟採集社会の生活を反映している",
+      "地方豪族の反発により失敗した"
+    ],
+    "correct": 2,
+    "explanation": "縄文土器は縄目模様が特徴的で、狩猟採集社会の生活様式を反映しています。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.644Z",
+    "createdAt": "2025-09-08T02:12:34.644Z",
+    "version": 1,
+    "qualityScore": 8.8
+  },
+  {
+    "id": "HIS_ANC_145",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "cultural",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "古代",
+      "文化"
+    ],
+    "question": "古代の弥生文化と稲作に関する記述として正しいものはどれですか。",
+    "options": [
+      "大陸から稲作が伝来し、定住農業社会が始まった",
+      "地方豪族の反発により失敗した",
+      "民衆の要求により実現した改革",
+      "外国の圧力により実施された政策"
+    ],
+    "correct": 0,
+    "explanation": "弥生時代に稲作が伝来し、定住農業社会が始まりました。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.644Z",
+    "createdAt": "2025-09-08T02:12:34.644Z",
+    "version": 1,
+    "qualityScore": 8.8
+  },
+  {
+    "id": "HIS_ANC_146",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "social",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代",
+      "社会"
+    ],
+    "question": "次の古墳と階級社会の説明で適切なものを選びなさい。",
+    "options": [
+      "貴族階級の利益を重視した政策",
+      "中国から直接導入された制度である",
+      "大型古墳の建設により政治的権力の集中が進んだ",
+      "宗教的な目的で行われた事業"
+    ],
+    "correct": 2,
+    "explanation": "大型古墳の建設により政治的権力の集中と階級社会の成立が明らかになります。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.644Z",
+    "createdAt": "2025-09-08T02:12:34.644Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_ANC_147",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "古代"
+    ],
+    "question": "古代の仏教伝来の影響に関する記述として正しいものはどれですか。",
+    "options": [
+      "主に経済的な理由によるものだった",
+      "宗教的な目的で行われた事業",
+      "中国から直接導入された制度である",
+      "538年に百済から伝来し、日本文化に大きな変化をもたらした"
+    ],
+    "correct": 3,
+    "explanation": "538年の仏教伝来は日本の文化と政治に革命的変化をもたらしました。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.644Z",
+    "createdAt": "2025-09-08T02:12:34.644Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_ANC_148",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代"
+    ],
+    "question": "次の律令制の確立の説明で適切なものを選びなさい。",
+    "options": [
+      "貴族階級の利益を重視した政策",
+      "中国の制度を参考に中央集権的な国家体制が整備された",
+      "民衆の要求により実現した改革",
+      "中国から直接導入された制度である"
+    ],
+    "correct": 1,
+    "explanation": "奈良時代に律令制が完成し、古代国家としての体制が整いました。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.644Z",
+    "createdAt": "2025-09-08T02:12:34.644Z",
+    "version": 1,
+    "qualityScore": 8.5
+  },
+  {
+    "id": "HIS_ANC_149",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代"
+    ],
+    "question": "縄文土器の特徴の特徴として最も適切なものはどれですか。",
+    "options": [
+      "中国から直接導入された制度である",
+      "民衆の要求により実現した改革",
+      "地方豪族の反発により失敗した",
+      "縄目模様が施され、狩猟採集社会の生活を反映している"
+    ],
+    "correct": 3,
+    "explanation": "縄文土器は縄目模様が特徴的で、狩猟採集社会の生活様式を反映しています。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 8.8
+  },
+  {
+    "id": "HIS_ANC_150",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "cultural",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "古代",
+      "文化"
+    ],
+    "question": "古代の弥生文化と稲作に関する記述として正しいものはどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "大陸から稲作が伝来し、定住農業社会が始まった",
+      "宗教的な目的で行われた事業",
+      "地方豪族の反発により失敗した"
+    ],
+    "correct": 1,
+    "explanation": "弥生時代に稲作が伝来し、定住農業社会が始まりました。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 8.8
+  },
+  {
+    "id": "HIS_ANC_151",
+    "subject": "history",
+    "category": "ancient_history",
+    "subcategory": "social",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "古代",
+      "社会"
+    ],
+    "question": "古代の古墳と階級社会に関する記述として正しいものはどれですか。",
+    "options": [
+      "宗教的な目的で行われた事業",
+      "民衆の要求により実現した改革",
+      "地方豪族の反発により失敗した",
+      "大型古墳の建設により政治的権力の集中が進んだ"
+    ],
+    "correct": 3,
+    "explanation": "大型古墳の建設により政治的権力の集中と階級社会の成立が明らかになります。この古代の制度や文化は現代日本の基礎となる重要な要素です。現代の文化的アイデンティティ形成に影響を与えています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MED_152",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "political",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世",
+      "政治"
+    ],
+    "question": "藤原氏の摂関政治の特徴として最も適切なものはどれですか。",
+    "options": [
+      "主に経済的な理由によるものだった",
+      "中国から直接導入された制度である",
+      "摂政・関白として天皇を補佐し政治の実権を握った",
+      "貴族階級の利益を重視した政策"
+    ],
+    "correct": 2,
+    "explanation": "平安時代中期に藤原氏が摂政・関白として政治の実権を握りました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_MED_153",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "次の源平合戦と武士の台頭の説明で適切なものを選びなさい。",
+    "options": [
+      "民衆の要求により実現した改革",
+      "軍事的な必要性から生まれた制度",
+      "源氏と平氏の争いを通じて武士が政治の中心となった",
+      "貴族階級の利益を重視した政策"
+    ],
+    "correct": 2,
+    "explanation": "源氏と平氏の争いを通じて武士階級が政治の中心となりました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_MED_154",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "中世の鎌倉幕府の成立に関する記述として正しいものはどれですか。",
+    "options": [
+      "1192年に源頼朝が征夷大将軍に任命され武家政権が誕生",
+      "地方豪族の反発により失敗した",
+      "中国から直接導入された制度である",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 0,
+    "explanation": "1192年源頼朝により日本初の武家政権が誕生しました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 7.9
+  },
+  {
+    "id": "HIS_MED_155",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "元寇と日本の対外関係の特徴として最も適切なものはどれですか。",
+    "options": [
+      "中国から直接導入された制度である",
+      "地方豪族の反発により失敗した",
+      "蒙古の襲来により国防意識と武士団結が高まった",
+      "軍事的な必要性から生まれた制度"
+    ],
+    "correct": 2,
+    "explanation": "蒙古襲来は日本の国防意識と武士団結を高める契機となりました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 7.9
+  },
+  {
+    "id": "HIS_MED_156",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "cultural",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "中世",
+      "文化"
+    ],
+    "question": "中世の室町文化の特色に関する記述として正しいものはどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "地方豪族の反発により失敗した",
+      "中国から直接導入された制度である",
+      "禅宗の影響を受けた簡素で洗練された文化が発達"
+    ],
+    "correct": 3,
+    "explanation": "禅宗の影響を受けた簡素で洗練された文化が発達しました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 8.5
+  },
+  {
+    "id": "HIS_MED_157",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "political",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世",
+      "政治"
+    ],
+    "question": "藤原氏の摂関政治について、最も適切な説明はどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "摂政・関白として天皇を補佐し政治の実権を握った",
+      "地方豪族の反発により失敗した",
+      "外国の圧力により実施された政策"
+    ],
+    "correct": 1,
+    "explanation": "平安時代中期に藤原氏が摂政・関白として政治の実権を握りました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.645Z",
+    "createdAt": "2025-09-08T02:12:34.645Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_MED_158",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "源平合戦と武士の台頭の特徴として最も適切なものはどれですか。",
+    "options": [
+      "中国から直接導入された制度である",
+      "源氏と平氏の争いを通じて武士が政治の中心となった",
+      "地方豪族の反発により失敗した",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 1,
+    "explanation": "源氏と平氏の争いを通じて武士階級が政治の中心となりました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_MED_159",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "中世の鎌倉幕府の成立に関する記述として正しいものはどれですか。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "貴族階級の利益を重視した政策",
+      "1192年に源頼朝が征夷大将軍に任命され武家政権が誕生",
+      "中国から直接導入された制度である"
+    ],
+    "correct": 2,
+    "explanation": "1192年源頼朝により日本初の武家政権が誕生しました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 7.9
+  },
+  {
+    "id": "HIS_MED_160",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "元寇と日本の対外関係について、最も適切な説明はどれですか。",
+    "options": [
+      "蒙古の襲来により国防意識と武士団結が高まった",
+      "宗教的な目的で行われた事業",
+      "中国から直接導入された制度である",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 0,
+    "explanation": "蒙古襲来は日本の国防意識と武士団結を高める契機となりました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 7.9
+  },
+  {
+    "id": "HIS_MED_161",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "cultural",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "中世",
+      "文化"
+    ],
+    "question": "室町文化の特色について、最も適切な説明はどれですか。",
+    "options": [
+      "民衆の要求により実現した改革",
+      "主に経済的な理由によるものだった",
+      "禅宗の影響を受けた簡素で洗練された文化が発達",
+      "宗教的な目的で行われた事業"
+    ],
+    "correct": 2,
+    "explanation": "禅宗の影響を受けた簡素で洗練された文化が発達しました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.5
+  },
+  {
+    "id": "HIS_MED_162",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "political",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世",
+      "政治"
+    ],
+    "question": "中世の藤原氏の摂関政治に関する記述として正しいものはどれですか。",
+    "options": [
+      "貴族階級の利益を重視した政策",
+      "外国の圧力により実施された政策",
+      "主に経済的な理由によるものだった",
+      "摂政・関白として天皇を補佐し政治の実権を握った"
+    ],
+    "correct": 3,
+    "explanation": "平安時代中期に藤原氏が摂政・関白として政治の実権を握りました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_MED_163",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "源平合戦と武士の台頭について、最も適切な説明はどれですか。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "主に経済的な理由によるものだった",
+      "源氏と平氏の争いを通じて武士が政治の中心となった",
+      "外国の圧力により実施された政策"
+    ],
+    "correct": 2,
+    "explanation": "源氏と平氏の争いを通じて武士階級が政治の中心となりました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_MED_164",
+    "subject": "history",
+    "category": "medieval_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "中世"
+    ],
+    "question": "鎌倉幕府の成立の特徴として最も適切なものはどれですか。",
+    "options": [
+      "貴族階級の利益を重視した政策",
+      "宗教的な目的で行われた事業",
+      "1192年に源頼朝が征夷大将軍に任命され武家政権が誕生",
+      "中国から直接導入された制度である"
+    ],
+    "correct": 2,
+    "explanation": "1192年源頼朝により日本初の武家政権が誕生しました。この中世の変化は日本独自の封建制発展の基盤となりました。現代の日本人の価値観や行動様式の源流となっています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 7.9
+  },
+  {
+    "id": "HIS_EAR_165",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "織田信長の革新政策の特徴として最も適切なものはどれですか。",
+    "options": [
+      "宗教的な目的で行われた事業",
+      "主に経済的な理由によるものだった",
+      "民衆の要求により実現した改革",
+      "楽市楽座や兵農分離など革新的政策で戦国統一の基礎を築きました。。"
+    ],
+    "correct": 3,
+    "explanation": "楽市楽座や兵農分離など革新的政策で戦国統一の基礎を築きました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_166",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "近世の豊臣秀吉の全国統一に関する記述として正しいものはどれですか。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "中国から直接導入された制度である",
+      "主に経済的な理由によるものだった",
+      "検地と刀狩により近世社会の基盤となる制度を確立しました。。"
+    ],
+    "correct": 3,
+    "explanation": "検地と刀狩により近世社会の基盤となる制度を確立しました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_167",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "political",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世",
+      "政治"
+    ],
+    "question": "江戸幕府の政治制度について、最も適切な説明はどれですか。",
+    "options": [
+      "貴族階級の利益を重視した政策",
+      "地方豪族の反発により失敗した",
+      "中国から直接導入された制度である",
+      "参勤交代制度により大名統制と中央集権化を実現しました。。"
+    ],
+    "correct": 3,
+    "explanation": "参勤交代制度により大名統制と中央集権化を実現しました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_168",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "鎖国政策の意義について、最も適切な説明はどれですか。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "軍事的な必要性から生まれた制度",
+      "外交統制により国内の安定と独自文化発展を可能にしました。。",
+      "民衆の要求により実現した改革"
+    ],
+    "correct": 2,
+    "explanation": "外交統制により国内の安定と独自文化発展を可能にしました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.5
+  },
+  {
+    "id": "HIS_EAR_169",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "social",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近世",
+      "社会"
+    ],
+    "question": "身分制社会の構造について、最も適切な説明はどれですか。",
+    "options": [
+      "中国から直接導入された制度である",
+      "宗教的な目的で行われた事業",
+      "士農工商の身分制により社会秩序の維持を図りました。。",
+      "貴族階級の利益を重視した政策"
+    ],
+    "correct": 2,
+    "explanation": "士農工商の身分制により社会秩序の維持を図りました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_EAR_170",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "次の織田信長の革新政策の説明で適切なものを選びなさい。",
+    "options": [
+      "中国から直接導入された制度である",
+      "外国の圧力により実施された政策",
+      "主に経済的な理由によるものだった",
+      "楽市楽座や兵農分離など革新的政策で戦国統一の基礎を築きました。。"
+    ],
+    "correct": 3,
+    "explanation": "楽市楽座や兵農分離など革新的政策で戦国統一の基礎を築きました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_171",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "豊臣秀吉の全国統一の特徴として最も適切なものはどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "中国から直接導入された制度である",
+      "検地と刀狩により近世社会の基盤となる制度を確立しました。。",
+      "宗教的な目的で行われた事業"
+    ],
+    "correct": 2,
+    "explanation": "検地と刀狩により近世社会の基盤となる制度を確立しました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_172",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "political",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世",
+      "政治"
+    ],
+    "question": "近世の江戸幕府の政治制度に関する記述として正しいものはどれですか。",
+    "options": [
+      "外国の圧力により実施された政策",
+      "民衆の要求により実現した改革",
+      "宗教的な目的で行われた事業",
+      "参勤交代制度により大名統制と中央集権化を実現しました。。"
+    ],
+    "correct": 3,
+    "explanation": "参勤交代制度により大名統制と中央集権化を実現しました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_173",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "鎖国政策の意義の特徴として最も適切なものはどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "民衆の要求により実現した改革",
+      "中国から直接導入された制度である",
+      "外交統制により国内の安定と独自文化発展を可能にしました。。"
+    ],
+    "correct": 3,
+    "explanation": "外交統制により国内の安定と独自文化発展を可能にしました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.5
+  },
+  {
+    "id": "HIS_EAR_174",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "social",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近世",
+      "社会"
+    ],
+    "question": "身分制社会の構造の特徴として最も適切なものはどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "地方豪族の反発により失敗した",
+      "士農工商の身分制により社会秩序の維持を図りました。。",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 2,
+    "explanation": "士農工商の身分制により社会秩序の維持を図りました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_EAR_175",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "次の織田信長の革新政策の説明で適切なものを選びなさい。",
+    "options": [
+      "楽市楽座や兵農分離など革新的政策で戦国統一の基礎を築きました。。",
+      "中国から直接導入された制度である",
+      "主に経済的な理由によるものだった",
+      "宗教的な目的で行われた事業"
+    ],
+    "correct": 0,
+    "explanation": "楽市楽座や兵農分離など革新的政策で戦国統一の基礎を築きました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_176",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近世"
+    ],
+    "question": "近世の豊臣秀吉の全国統一に関する記述として正しいものはどれですか。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "貴族階級の利益を重視した政策",
+      "民衆の要求により実現した改革",
+      "検地と刀狩により近世社会の基盤となる制度を確立しました。。"
+    ],
+    "correct": 3,
+    "explanation": "検地と刀狩により近世社会の基盤となる制度を確立しました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_EAR_177",
+    "subject": "history",
+    "category": "early_modern_history",
+    "subcategory": "political",
+    "grade": 6,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近世",
+      "政治"
+    ],
+    "question": "近世の江戸幕府の政治制度に関する記述として正しいものはどれですか。",
+    "options": [
+      "宗教的な目的で行われた事業",
+      "参勤交代制度により大名統制と中央集権化を実現しました。。",
+      "中国から直接導入された制度である",
+      "軍事的な必要性から生まれた制度"
+    ],
+    "correct": 1,
+    "explanation": "参勤交代制度により大名統制と中央集権化を実現しました。この近世の政策は江戸時代の安定した社会秩序を支えました。現代日本の社会制度や文化的特徴の原型が見られます。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.646Z",
+    "createdAt": "2025-09-08T02:12:34.646Z",
+    "version": 1,
+    "qualityScore": 8.2
+  },
+  {
+    "id": "HIS_MOD_178",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "次の明治維新の意義の説明で適切なものを選びなさい。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "中国から直接導入された制度である",
+      "主に経済的な理由によるものだった",
+      "封建制から近代国家への転換を実現した世界史的変革でした。。"
+    ],
+    "correct": 3,
+    "explanation": "封建制から近代国家への転換を実現した世界史的変革でした。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_MOD_179",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "次の文明開化と西洋化の説明で適切なものを選びなさい。",
+    "options": [
+      "宗教的な目的で行われた事業",
+      "外国の圧力により実施された政策",
+      "西洋文明の導入により日本社会が急速に近代化しました。。",
+      "軍事的な必要性から生まれた制度"
+    ],
+    "correct": 2,
+    "explanation": "西洋文明の導入により日本社会が急速に近代化しました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MOD_180",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "近代の富国強兵政策に関する記述として正しいものはどれですか。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "経済発展と軍事力強化により近代国家建設を目指しました。。",
+      "軍事的な必要性から生まれた制度",
+      "貴族階級の利益を重視した政策"
+    ],
+    "correct": 1,
+    "explanation": "経済発展と軍事力強化により近代国家建設を目指しました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MOD_181",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "次の大正デモクラシーの説明で適切なものを選びなさい。",
+    "options": [
+      "政治の民主化と自由主義思想の普及が進みました。。",
+      "宗教的な目的で行われた事業",
+      "主に経済的な理由によるものだった",
+      "民衆の要求により実現した改革"
+    ],
+    "correct": 0,
+    "explanation": "政治の民主化と自由主義思想の普及が進みました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_MOD_182",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "次の昭和恐慌の影響の説明で適切なものを選びなさい。",
+    "options": [
+      "経済危機により社会不安が高まり軍国主義台頭の背景となりました。。",
+      "中国から直接導入された制度である",
+      "主に経済的な理由によるものだった",
+      "外国の圧力により実施された政策"
+    ],
+    "correct": 0,
+    "explanation": "経済危機により社会不安が高まり軍国主義台頭の背景となりました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MOD_183",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "次の明治維新の意義の説明で適切なものを選びなさい。",
+    "options": [
+      "封建制から近代国家への転換を実現した世界史的変革でした。。",
+      "軍事的な必要性から生まれた制度",
+      "貴族階級の利益を重視した政策",
+      "中国から直接導入された制度である"
+    ],
+    "correct": 0,
+    "explanation": "封建制から近代国家への転換を実現した世界史的変革でした。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_MOD_184",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "文明開化と西洋化の特徴として最も適切なものはどれですか。",
+    "options": [
+      "外国の圧力により実施された政策",
+      "民衆の要求により実現した改革",
+      "貴族階級の利益を重視した政策",
+      "西洋文明の導入により日本社会が急速に近代化しました。。"
+    ],
+    "correct": 3,
+    "explanation": "西洋文明の導入により日本社会が急速に近代化しました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MOD_185",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "近代の富国強兵政策に関する記述として正しいものはどれですか。",
+    "options": [
+      "経済発展と軍事力強化により近代国家建設を目指しました。。",
+      "外国の圧力により実施された政策",
+      "軍事的な必要性から生まれた制度",
+      "民衆の要求により実現した改革"
+    ],
+    "correct": 0,
+    "explanation": "経済発展と軍事力強化により近代国家建設を目指しました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MOD_186",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "次の大正デモクラシーの説明で適切なものを選びなさい。",
+    "options": [
+      "政治の民主化と自由主義思想の普及が進みました。。",
+      "民衆の要求により実現した改革",
+      "地方豪族の反発により失敗した",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 0,
+    "explanation": "政治の民主化と自由主義思想の普及が進みました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_MOD_187",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "昭和恐慌の影響について、最も適切な説明はどれですか。",
+    "options": [
+      "貴族階級の利益を重視した政策",
+      "民衆の要求により実現した改革",
+      "経済危機により社会不安が高まり軍国主義台頭の背景となりました。。",
+      "地方豪族の反発により失敗した"
+    ],
+    "correct": 2,
+    "explanation": "経済危機により社会不安が高まり軍国主義台頭の背景となりました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MOD_188",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "近代の明治維新の意義に関する記述として正しいものはどれですか。",
+    "options": [
+      "外国の圧力により実施された政策",
+      "主に経済的な理由によるものだった",
+      "民衆の要求により実現した改革",
+      "封建制から近代国家への転換を実現した世界史的変革でした。。"
+    ],
+    "correct": 3,
+    "explanation": "封建制から近代国家への転換を実現した世界史的変革でした。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_MOD_189",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "近代の文明開化と西洋化に関する記述として正しいものはどれですか。",
+    "options": [
+      "中国から直接導入された制度である",
+      "西洋文明の導入により日本社会が急速に近代化しました。。",
+      "貴族階級の利益を重視した政策",
+      "地方豪族の反発により失敗した"
+    ],
+    "correct": 1,
+    "explanation": "西洋文明の導入により日本社会が急速に近代化しました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_MOD_190",
+    "subject": "history",
+    "category": "modern_history",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "challenging",
+    "tags": [
+      "history",
+      "近代"
+    ],
+    "question": "富国強兵政策の特徴として最も適切なものはどれですか。",
+    "options": [
+      "主に経済的な理由によるものだった",
+      "経済発展と軍事力強化により近代国家建設を目指しました。。",
+      "民衆の要求により実現した改革",
+      "宗教的な目的で行われた事業"
+    ],
+    "correct": 1,
+    "explanation": "経済発展と軍事力強化により近代国家建設を目指しました。この近代の変革は現代日本の政治制度の直接的基盤です。現代の政治制度や国際関係の基礎を築きました。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_CON_191",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "general",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代"
+    ],
+    "question": "次の戦後復興と民主化の説明で適切なものを選びなさい。",
+    "options": [
+      "外国の圧力により実施された政策",
+      "新憲法制定により平和と民主主義を基調とする国家が誕生しました。。",
+      "地方豪族の反発により失敗した",
+      "民衆の要求により実現した改革"
+    ],
+    "correct": 1,
+    "explanation": "新憲法制定により平和と民主主義を基調とする国家が誕生しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.647Z",
+    "createdAt": "2025-09-08T02:12:34.647Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_CON_192",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "economic",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代",
+      "経済"
+    ],
+    "question": "高度経済成長の特徴として最も適切なものはどれですか。",
+    "options": [
+      "1960年代の急激な経済発展により豊かな社会を実現しました。。",
+      "貴族階級の利益を重視した政策",
+      "軍事的な必要性から生まれた制度",
+      "中国から直接導入された制度である"
+    ],
+    "correct": 0,
+    "explanation": "1960年代の急激な経済発展により豊かな社会を実現しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_CON_193",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "general",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代"
+    ],
+    "question": "冷戦と日本外交の特徴として最も適切なものはどれですか。",
+    "options": [
+      "東西冷戦下で日米安保体制を基軸とした外交を展開しました。。",
+      "中国から直接導入された制度である",
+      "貴族階級の利益を重視した政策",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 0,
+    "explanation": "東西冷戦下で日米安保体制を基軸とした外交を展開しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_CON_194",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "general",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代"
+    ],
+    "question": "国際化の進展の特徴として最も適切なものはどれですか。",
+    "options": [
+      "外国の圧力により実施された政策",
+      "軍事的な必要性から生まれた制度",
+      "宗教的な目的で行われた事業",
+      "経済大国として国際社会での役割と責任が拡大しました。。"
+    ],
+    "correct": 3,
+    "explanation": "経済大国として国際社会での役割と責任が拡大しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_CON_195",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "social",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代",
+      "社会"
+    ],
+    "question": "次の現代社会の課題の説明で適切なものを選びなさい。",
+    "options": [
+      "少子高齢化や環境問題など新たな課題への対応が求められています。。",
+      "民衆の要求により実現した改革",
+      "地方豪族の反発により失敗した",
+      "貴族階級の利益を重視した政策"
+    ],
+    "correct": 0,
+    "explanation": "少子高齢化や環境問題など新たな課題への対応が求められています。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_CON_196",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "general",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代"
+    ],
+    "question": "現代の戦後復興と民主化に関する記述として正しいものはどれですか。",
+    "options": [
+      "地方豪族の反発により失敗した",
+      "民衆の要求により実現した改革",
+      "新憲法制定により平和と民主主義を基調とする国家が誕生しました。。",
+      "貴族階級の利益を重視した政策"
+    ],
+    "correct": 2,
+    "explanation": "新憲法制定により平和と民主主義を基調とする国家が誕生しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_CON_197",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "economic",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代",
+      "経済"
+    ],
+    "question": "現代の高度経済成長に関する記述として正しいものはどれですか。",
+    "options": [
+      "中国から直接導入された制度である",
+      "地方豪族の反発により失敗した",
+      "軍事的な必要性から生まれた制度",
+      "1960年代の急激な経済発展により豊かな社会を実現しました。。"
+    ],
+    "correct": 3,
+    "explanation": "1960年代の急激な経済発展により豊かな社会を実現しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "HIS_CON_198",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "general",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代"
+    ],
+    "question": "現代の冷戦と日本外交に関する記述として正しいものはどれですか。",
+    "options": [
+      "主に経済的な理由によるものだった",
+      "中国から直接導入された制度である",
+      "東西冷戦下で日米安保体制を基軸とした外交を展開しました。。",
+      "外国の圧力により実施された政策"
+    ],
+    "correct": 2,
+    "explanation": "東西冷戦下で日米安保体制を基軸とした外交を展開しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_CON_199",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "general",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代"
+    ],
+    "question": "国際化の進展の特徴として最も適切なものはどれですか。",
+    "options": [
+      "中国から直接導入された制度である",
+      "経済大国として国際社会での役割と責任が拡大しました。。",
+      "貴族階級の利益を重視した政策",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 1,
+    "explanation": "経済大国として国際社会での役割と責任が拡大しました。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "HIS_CON_200",
+    "subject": "history",
+    "category": "contemporary_history",
+    "subcategory": "social",
+    "grade": 8,
+    "difficulty": "basic",
+    "tags": [
+      "history",
+      "現代",
+      "社会"
+    ],
+    "question": "現代の現代社会の課題に関する記述として正しいものはどれですか。",
+    "options": [
+      "軍事的な必要性から生まれた制度",
+      "宗教的な目的で行われた事業",
+      "少子高齢化や環境問題など新たな課題への対応が求められています。。",
+      "主に経済的な理由によるものだった"
+    ],
+    "correct": 2,
+    "explanation": "少子高齢化や環境問題など新たな課題への対応が求められています。この現代の出来事は今日の日本社会に直接影響しています。学習指導要領において重要な学習内容として位置づけられています。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:12:34.648Z",
+    "createdAt": "2025-09-08T02:12:34.648Z",
+    "version": 1,
+    "qualityScore": 8.7
+  }
+,
+  {
+    "id": "GEO_PHY_073",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "climate",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理",
+      "日本"
+    ],
+    "question": "日本の気候の特徴に関する記述として正しいものはどれですか。",
+    "options": [
+      "国際協力により改善された問題",
+      "季節風の影響で四季が明確に分かれ、地域により異なる気候を示す",
+      "法的規制により制限された活動",
+      "主に経済的要因によって決定される現象"
+    ],
+    "correct": 1,
+    "explanation": "日本は季節風の影響で四季が明確で、地域により気候が大きく異なります。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.937Z",
+    "createdAt": "2025-09-08T02:14:16.937Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_074",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "landforms",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "次の火山活動と地形の説明で適切なものを選びなさい。",
+    "options": [
+      "法的規制により制限された活動",
+      "国際協力により改善された問題",
+      "文化的な価値観の違いから生まれた現象",
+      "環太平洋火山帯に位置し火山活動により多様な地形が形成されている"
+    ],
+    "correct": 3,
+    "explanation": "日本は環太平洋火山帯に位置し、火山活動により多様な地形が形成されています。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.938Z",
+    "createdAt": "2025-09-08T02:14:16.938Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_075",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "河川と平野の関係について、最も適切な説明はどれですか。",
+    "options": [
+      "法的規制により制限された活動",
+      "技術進歩により解決された課題",
+      "外国との関係により形成された特徴",
+      "短く急流の河川が下流部に沖積平野を形成している"
+    ],
+    "correct": 3,
+    "explanation": "日本の河川は短く急流で、下流部に沖積平野を形成し人口密集地となっています。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.938Z",
+    "createdAt": "2025-09-08T02:14:16.938Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_076",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "landforms",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "海岸地形の特色に関する記述として正しいものはどれですか。",
+    "options": [
+      "太平洋側はリアス海岸、日本海側は砂丘海岸が発達している",
+      "主に経済的要因によって決定される現象",
+      "文化的な価値観の違いから生まれた現象",
+      "政治的な政策の結果として生じた変化"
+    ],
+    "correct": 0,
+    "explanation": "太平洋側はリアス海岸、日本海側は砂丘海岸が発達し、それぞれ特徴的な地形を示します。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.939Z",
+    "createdAt": "2025-09-08T02:14:16.939Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_077",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "climate",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理",
+      "日本"
+    ],
+    "question": "次の日本の気候の特徴の説明で適切なものを選びなさい。",
+    "options": [
+      "国際協力により改善された問題",
+      "季節風の影響で四季が明確に分かれ、地域により異なる気候を示す",
+      "主に経済的要因によって決定される現象",
+      "文化的な価値観の違いから生まれた現象"
+    ],
+    "correct": 1,
+    "explanation": "日本は季節風の影響で四季が明確で、地域により気候が大きく異なります。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.939Z",
+    "createdAt": "2025-09-08T02:14:16.939Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_078",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "landforms",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "火山活動と地形について、最も適切な説明はどれですか。",
+    "options": [
+      "外国との関係により形成された特徴",
+      "環太平洋火山帯に位置し火山活動により多様な地形が形成されている",
+      "主に経済的要因によって決定される現象",
+      "文化的な価値観の違いから生まれた現象"
+    ],
+    "correct": 1,
+    "explanation": "日本は環太平洋火山帯に位置し、火山活動により多様な地形が形成されています。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.939Z",
+    "createdAt": "2025-09-08T02:14:16.939Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_079",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "河川と平野の関係に関する記述として正しいものはどれですか。",
+    "options": [
+      "短く急流の河川が下流部に沖積平野を形成している",
+      "主に経済的要因によって決定される現象",
+      "外国との関係により形成された特徴",
+      "政治的な政策の結果として生じた変化"
+    ],
+    "correct": 0,
+    "explanation": "日本の河川は短く急流で、下流部に沖積平野を形成し人口密集地となっています。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.940Z",
+    "createdAt": "2025-09-08T02:14:16.940Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_080",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "landforms",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "海岸地形の特色の特徴として最も適切なものはどれですか。",
+    "options": [
+      "太平洋側はリアス海岸、日本海側は砂丘海岸が発達している",
+      "主に経済的要因によって決定される現象",
+      "外国との関係により形成された特徴",
+      "政治的な政策の結果として生じた変化"
+    ],
+    "correct": 0,
+    "explanation": "太平洋側はリアス海岸、日本海側は砂丘海岸が発達し、それぞれ特徴的な地形を示します。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.940Z",
+    "createdAt": "2025-09-08T02:14:16.940Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_081",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "climate",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理",
+      "日本"
+    ],
+    "question": "日本の気候の特徴の特徴として最も適切なものはどれですか。",
+    "options": [
+      "法的規制により制限された活動",
+      "季節風の影響で四季が明確に分かれ、地域により異なる気候を示す",
+      "主に経済的要因によって決定される現象",
+      "政治的な政策の結果として生じた変化"
+    ],
+    "correct": 1,
+    "explanation": "日本は季節風の影響で四季が明確で、地域により気候が大きく異なります。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.941Z",
+    "createdAt": "2025-09-08T02:14:16.941Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_082",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "landforms",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "次の火山活動と地形の説明で適切なものを選びなさい。",
+    "options": [
+      "環太平洋火山帯に位置し火山活動により多様な地形が形成されている",
+      "文化的な価値観の違いから生まれた現象",
+      "法的規制により制限された活動",
+      "国際協力により改善された問題"
+    ],
+    "correct": 0,
+    "explanation": "日本は環太平洋火山帯に位置し、火山活動により多様な地形が形成されています。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.942Z",
+    "createdAt": "2025-09-08T02:14:16.942Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_083",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "河川と平野の関係について、最も適切な説明はどれですか。",
+    "options": [
+      "技術進歩により解決された課題",
+      "国際協力により改善された問題",
+      "短く急流の河川が下流部に沖積平野を形成している",
+      "主に経済的要因によって決定される現象"
+    ],
+    "correct": 2,
+    "explanation": "日本の河川は短く急流で、下流部に沖積平野を形成し人口密集地となっています。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.942Z",
+    "createdAt": "2025-09-08T02:14:16.942Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_PHY_084",
+    "subject": "geography",
+    "category": "physical_geography",
+    "subcategory": "landforms",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "自然地理"
+    ],
+    "question": "次の海岸地形の特色の説明で適切なものを選びなさい。",
+    "options": [
+      "主に経済的要因によって決定される現象",
+      "法的規制により制限された活動",
+      "太平洋側はリアス海岸、日本海側は砂丘海岸が発達している",
+      "外国との関係により形成された特徴"
+    ],
+    "correct": 2,
+    "explanation": "太平洋側はリアス海岸、日本海側は砂丘海岸が発達し、それぞれ特徴的な地形を示します。自然環境の特徴は人間生活に大きな影響を与えます。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.942Z",
+    "createdAt": "2025-09-08T02:14:16.942Z",
+    "version": 1,
+    "qualityScore": 9
+  },
+  {
+    "id": "GEO_HUM_085",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "population",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "人口分布の特徴の特徴として最も適切なものはどれですか。",
+    "options": [
+      "政治的な政策の結果として生じた変化",
+      "太平洋ベルト地帯に人口が集中し都市部への集中が進んでいる",
+      "技術進歩により解決された課題",
+      "法的規制により制限された活動"
+    ],
+    "correct": 1,
+    "explanation": "日本の人口は太平洋ベルト地帯に集中し、都市部への人口集中が進んでいます。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.943Z",
+    "createdAt": "2025-09-08T02:14:16.943Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_086",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "次の都市化の進展の説明で適切なものを選びなさい。",
+    "options": [
+      "主に経済的要因によって決定される現象",
+      "高度経済成長期以降大都市圏への人口集中が加速した",
+      "外国との関係により形成された特徴",
+      "国際協力により改善された問題"
+    ],
+    "correct": 1,
+    "explanation": "高度経済成長期以降、急速な都市化により大都市圏への人口集中が加速しました。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.944Z",
+    "createdAt": "2025-09-08T02:14:16.944Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_087",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "次の過疎化の問題の説明で適切なものを選びなさい。",
+    "options": [
+      "法的規制により制限された活動",
+      "文化的な価値観の違いから生まれた現象",
+      "少子高齢化と人口流出により地方の過疎化が進んでいる",
+      "技術進歩により解決された課題"
+    ],
+    "correct": 2,
+    "explanation": "地方では少子高齢化と人口流出により過疎化が深刻な社会問題となっています。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.944Z",
+    "createdAt": "2025-09-08T02:14:16.944Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_088",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "industry",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "次の産業構造の変化の説明で適切なものを選びなさい。",
+    "options": [
+      "技術進歩により解決された課題",
+      "外国との関係により形成された特徴",
+      "法的規制により制限された活動",
+      "第一次産業から第三次産業へと産業構造が変化した"
+    ],
+    "correct": 3,
+    "explanation": "戦後の経済発展により第一次産業から第三次産業へと産業構造が大きく変化しました。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.945Z",
+    "createdAt": "2025-09-08T02:14:16.945Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "GEO_HUM_089",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "population",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "次の人口分布の特徴の説明で適切なものを選びなさい。",
+    "options": [
+      "法的規制により制限された活動",
+      "太平洋ベルト地帯に人口が集中し都市部への集中が進んでいる",
+      "主に経済的要因によって決定される現象",
+      "国際協力により改善された問題"
+    ],
+    "correct": 1,
+    "explanation": "日本の人口は太平洋ベルト地帯に集中し、都市部への人口集中が進んでいます。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.945Z",
+    "createdAt": "2025-09-08T02:14:16.945Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_090",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "都市化の進展について、最も適切な説明はどれですか。",
+    "options": [
+      "法的規制により制限された活動",
+      "高度経済成長期以降大都市圏への人口集中が加速した",
+      "技術進歩により解決された課題",
+      "主に経済的要因によって決定される現象"
+    ],
+    "correct": 1,
+    "explanation": "高度経済成長期以降、急速な都市化により大都市圏への人口集中が加速しました。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.946Z",
+    "createdAt": "2025-09-08T02:14:16.946Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_091",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "過疎化の問題について、最も適切な説明はどれですか。",
+    "options": [
+      "少子高齢化と人口流出により地方の過疎化が進んでいる",
+      "法的規制により制限された活動",
+      "主に経済的要因によって決定される現象",
+      "外国との関係により形成された特徴"
+    ],
+    "correct": 0,
+    "explanation": "地方では少子高齢化と人口流出により過疎化が深刻な社会問題となっています。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.946Z",
+    "createdAt": "2025-09-08T02:14:16.946Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_092",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "industry",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "産業構造の変化について、最も適切な説明はどれですか。",
+    "options": [
+      "国際協力により改善された問題",
+      "主に経済的要因によって決定される現象",
+      "技術進歩により解決された課題",
+      "第一次産業から第三次産業へと産業構造が変化した"
+    ],
+    "correct": 3,
+    "explanation": "戦後の経済発展により第一次産業から第三次産業へと産業構造が大きく変化しました。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.946Z",
+    "createdAt": "2025-09-08T02:14:16.946Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "GEO_HUM_093",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "population",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "人口分布の特徴に関する記述として正しいものはどれですか。",
+    "options": [
+      "外国との関係により形成された特徴",
+      "政治的な政策の結果として生じた変化",
+      "太平洋ベルト地帯に人口が集中し都市部への集中が進んでいる",
+      "法的規制により制限された活動"
+    ],
+    "correct": 2,
+    "explanation": "日本の人口は太平洋ベルト地帯に集中し、都市部への人口集中が進んでいます。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.946Z",
+    "createdAt": "2025-09-08T02:14:16.946Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_094",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "都市化の進展に関する記述として正しいものはどれですか。",
+    "options": [
+      "国際協力により改善された問題",
+      "外国との関係により形成された特徴",
+      "文化的な価値観の違いから生まれた現象",
+      "高度経済成長期以降大都市圏への人口集中が加速した"
+    ],
+    "correct": 3,
+    "explanation": "高度経済成長期以降、急速な都市化により大都市圏への人口集中が加速しました。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.947Z",
+    "createdAt": "2025-09-08T02:14:16.947Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_095",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "過疎化の問題に関する記述として正しいものはどれですか。",
+    "options": [
+      "政治的な政策の結果として生じた変化",
+      "少子高齢化と人口流出により地方の過疎化が進んでいる",
+      "外国との関係により形成された特徴",
+      "国際協力により改善された問題"
+    ],
+    "correct": 1,
+    "explanation": "地方では少子高齢化と人口流出により過疎化が深刻な社会問題となっています。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.947Z",
+    "createdAt": "2025-09-08T02:14:16.947Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_HUM_096",
+    "subject": "geography",
+    "category": "human_geography",
+    "subcategory": "industry",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "人文地理"
+    ],
+    "question": "産業構造の変化の特徴として最も適切なものはどれですか。",
+    "options": [
+      "文化的な価値観の違いから生まれた現象",
+      "第一次産業から第三次産業へと産業構造が変化した",
+      "政治的な政策の結果として生じた変化",
+      "国際協力により改善された問題"
+    ],
+    "correct": 1,
+    "explanation": "戦後の経済発展により第一次産業から第三次産業へと産業構造が大きく変化しました。人口や都市の分布は経済活動と密接に関連しています。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.947Z",
+    "createdAt": "2025-09-08T02:14:16.947Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "GEO_REG_097",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "次の関東地方の特色の説明で適切なものを選びなさい。",
+    "options": [
+      "文化的な価値観の違いから生まれた現象",
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "国際協力により改善された問題",
+      "法的規制により制限された活動"
+    ],
+    "correct": 1,
+    "explanation": "日本の政治経済の中心地として首都圏を形成し、人口と産業が高度に集中しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.947Z",
+    "createdAt": "2025-09-08T02:14:16.947Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_098",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "関西地方の文化に関する記述として正しいものはどれですか。",
+    "options": [
+      "法的規制により制限された活動",
+      "文化的な価値観の違いから生まれた現象",
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "主に経済的要因によって決定される現象"
+    ],
+    "correct": 2,
+    "explanation": "古くから文化の中心地として発展し、現在も独自の文化と経済圏を維持しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.948Z",
+    "createdAt": "2025-09-08T02:14:16.948Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "GEO_REG_099",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "industry",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "次の中部地方の産業の説明で適切なものを選びなさい。",
+    "options": [
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "法的規制により制限された活動",
+      "主に経済的要因によって決定される現象",
+      "外国との関係により形成された特徴"
+    ],
+    "correct": 0,
+    "explanation": "自動車産業を中心とした製造業が発達し、日本の産業を支える重要な地域です。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.948Z",
+    "createdAt": "2025-09-08T02:14:16.948Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_100",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "九州地方の農業に関する記述として正しいものはどれですか。",
+    "options": [
+      "主に経済的要因によって決定される現象",
+      "政治的な政策の結果として生じた変化",
+      "文化的な価値観の違いから生まれた現象",
+      "地理的条件と人間活動の関係を示す重要な現象です"
+    ],
+    "correct": 3,
+    "explanation": "温暖な気候を活かした農業が盛んで、特に畜産業と園芸農業が発達しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.948Z",
+    "createdAt": "2025-09-08T02:14:16.948Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_101",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "関東地方の特色について、最も適切な説明はどれですか。",
+    "options": [
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "文化的な価値観の違いから生まれた現象",
+      "主に経済的要因によって決定される現象",
+      "法的規制により制限された活動"
+    ],
+    "correct": 0,
+    "explanation": "日本の政治経済の中心地として首都圏を形成し、人口と産業が高度に集中しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.949Z",
+    "createdAt": "2025-09-08T02:14:16.949Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_102",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "関西地方の文化の特徴として最も適切なものはどれですか。",
+    "options": [
+      "政治的な政策の結果として生じた変化",
+      "文化的な価値観の違いから生まれた現象",
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "外国との関係により形成された特徴"
+    ],
+    "correct": 2,
+    "explanation": "古くから文化の中心地として発展し、現在も独自の文化と経済圏を維持しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.949Z",
+    "createdAt": "2025-09-08T02:14:16.949Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "GEO_REG_103",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "industry",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "中部地方の産業について、最も適切な説明はどれですか。",
+    "options": [
+      "外国との関係により形成された特徴",
+      "主に経済的要因によって決定される現象",
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "国際協力により改善された問題"
+    ],
+    "correct": 2,
+    "explanation": "自動車産業を中心とした製造業が発達し、日本の産業を支える重要な地域です。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.949Z",
+    "createdAt": "2025-09-08T02:14:16.949Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_104",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "九州地方の農業に関する記述として正しいものはどれですか。",
+    "options": [
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "主に経済的要因によって決定される現象",
+      "外国との関係により形成された特徴",
+      "政治的な政策の結果として生じた変化"
+    ],
+    "correct": 0,
+    "explanation": "温暖な気候を活かした農業が盛んで、特に畜産業と園芸農業が発達しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.949Z",
+    "createdAt": "2025-09-08T02:14:16.949Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_105",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "関東地方の特色について、最も適切な説明はどれですか。",
+    "options": [
+      "国際協力により改善された問題",
+      "技術進歩により解決された課題",
+      "文化的な価値観の違いから生まれた現象",
+      "地理的条件と人間活動の関係を示す重要な現象です"
+    ],
+    "correct": 3,
+    "explanation": "日本の政治経済の中心地として首都圏を形成し、人口と産業が高度に集中しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.949Z",
+    "createdAt": "2025-09-08T02:14:16.949Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_106",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "関西地方の文化の特徴として最も適切なものはどれですか。",
+    "options": [
+      "文化的な価値観の違いから生まれた現象",
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "外国との関係により形成された特徴",
+      "法的規制により制限された活動"
+    ],
+    "correct": 1,
+    "explanation": "古くから文化の中心地として発展し、現在も独自の文化と経済圏を維持しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.950Z",
+    "createdAt": "2025-09-08T02:14:16.950Z",
+    "version": 1,
+    "qualityScore": 8.7
+  },
+  {
+    "id": "GEO_REG_107",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "industry",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "中部地方の産業について、最も適切な説明はどれですか。",
+    "options": [
+      "主に経済的要因によって決定される現象",
+      "法的規制により制限された活動",
+      "地理的条件と人間活動の関係を示す重要な現象です",
+      "外国との関係により形成された特徴"
+    ],
+    "correct": 2,
+    "explanation": "自動車産業を中心とした製造業が発達し、日本の産業を支える重要な地域です。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.950Z",
+    "createdAt": "2025-09-08T02:14:16.950Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "GEO_REG_108",
+    "subject": "geography",
+    "category": "regional_geography",
+    "subcategory": "general",
+    "grade": 6,
+    "difficulty": "standard",
+    "tags": [
+      "geography",
+      "地域地理"
+    ],
+    "question": "九州地方の農業に関する記述として正しいものはどれですか。",
+    "options": [
+      "国際協力により改善された問題",
+      "主に経済的要因によって決定される現象",
+      "文化的な価値観の違いから生まれた現象",
+      "地理的条件と人間活動の関係を示す重要な現象です"
+    ],
+    "correct": 3,
+    "explanation": "温暖な気候を活かした農業が盛んで、特に畜産業と園芸農業が発達しています。各地域の特色は自然と人文の要因が複合的に作用した結果です。地理的条件と人間活動の相互関係を理解することが重要です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.950Z",
+    "createdAt": "2025-09-08T02:14:16.950Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_CON_067",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "constitution",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法",
+      "憲法"
+    ],
+    "question": "日本国憲法の基本原理について、最も適切な説明はどれですか。",
+    "options": [
+      "特定の政党が提案した改革案",
+      "国民主権、基本的人権の尊重、平和主義が三大原理である",
+      "経済発展を最優先とした政策",
+      "国際法により義務付けられた制度"
+    ],
+    "correct": 1,
+    "explanation": "国民主権、基本的人権の尊重、平和主義の三つが日本国憲法の基本原理です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.952Z",
+    "createdAt": "2025-09-08T02:14:16.952Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_068",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "基本的人権の保障に関する記述として正しいものはどれですか。",
+    "options": [
+      "経済発展を最優先とした政策",
+      "特定の政党が提案した改革案",
+      "自由権、社会権、参政権、請求権が基本的人権として保障されている",
+      "国際法により義務付けられた制度"
+    ],
+    "correct": 2,
+    "explanation": "自由権、社会権、参政権、請求権が基本的人権として憲法で保障されています。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.952Z",
+    "createdAt": "2025-09-08T02:14:16.952Z",
+    "version": 1,
+    "qualityScore": 7.8
+  },
+  {
+    "id": "CIV_CON_069",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "平和主義の理念について、最も適切な説明はどれですか。",
+    "options": [
+      "国際法により義務付けられた制度",
+      "国民の直接投票により決定される事項",
+      "地方自治体が独自に決定できる事項",
+      "戦争放棄と戦力不保持を定めた第9条が特徴的である"
+    ],
+    "correct": 3,
+    "explanation": "戦争放棄と戦力不保持を定めた第9条は日本国憲法の特徴的な条項です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.953Z",
+    "createdAt": "2025-09-08T02:14:16.953Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_070",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "国民主権の原則に関する記述として正しいものはどれですか。",
+    "options": [
+      "裁判所が独自に判断する権限",
+      "国の政治は国民の意思に基づいて行われる民主主義の根本原理",
+      "国民の直接投票により決定される事項",
+      "外国の制度をそのまま導入したもの"
+    ],
+    "correct": 1,
+    "explanation": "国の政治は国民の意思に基づいて行われるという民主主義の根本原理です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.953Z",
+    "createdAt": "2025-09-08T02:14:16.953Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_071",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "constitution",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法",
+      "憲法"
+    ],
+    "question": "日本国憲法の基本原理に関する記述として正しいものはどれですか。",
+    "options": [
+      "特定の政党が提案した改革案",
+      "国民の直接投票により決定される事項",
+      "国民主権、基本的人権の尊重、平和主義が三大原理である",
+      "経済発展を最優先とした政策"
+    ],
+    "correct": 2,
+    "explanation": "国民主権、基本的人権の尊重、平和主義の三つが日本国憲法の基本原理です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.954Z",
+    "createdAt": "2025-09-08T02:14:16.954Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_072",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "次の基本的人権の保障の説明で適切なものを選びなさい。",
+    "options": [
+      "自由権、社会権、参政権、請求権が基本的人権として保障されている",
+      "地方自治体が独自に決定できる事項",
+      "国際法により義務付けられた制度",
+      "国民の直接投票により決定される事項"
+    ],
+    "correct": 0,
+    "explanation": "自由権、社会権、参政権、請求権が基本的人権として憲法で保障されています。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.954Z",
+    "createdAt": "2025-09-08T02:14:16.954Z",
+    "version": 1,
+    "qualityScore": 7.8
+  },
+  {
+    "id": "CIV_CON_073",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "平和主義の理念の特徴として最も適切なものはどれですか。",
+    "options": [
+      "国民の直接投票により決定される事項",
+      "国際法により義務付けられた制度",
+      "戦争放棄と戦力不保持を定めた第9条が特徴的である",
+      "裁判所が独自に判断する権限"
+    ],
+    "correct": 2,
+    "explanation": "戦争放棄と戦力不保持を定めた第9条は日本国憲法の特徴的な条項です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.954Z",
+    "createdAt": "2025-09-08T02:14:16.954Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_074",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "国民主権の原則の特徴として最も適切なものはどれですか。",
+    "options": [
+      "外国の制度をそのまま導入したもの",
+      "国の政治は国民の意思に基づいて行われる民主主義の根本原理",
+      "特定の政党が提案した改革案",
+      "裁判所が独自に判断する権限"
+    ],
+    "correct": 1,
+    "explanation": "国の政治は国民の意思に基づいて行われるという民主主義の根本原理です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.954Z",
+    "createdAt": "2025-09-08T02:14:16.954Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_075",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "constitution",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法",
+      "憲法"
+    ],
+    "question": "日本国憲法の基本原理について、最も適切な説明はどれですか。",
+    "options": [
+      "経済発展を最優先とした政策",
+      "国民主権、基本的人権の尊重、平和主義が三大原理である",
+      "外国の制度をそのまま導入したもの",
+      "裁判所が独自に判断する権限"
+    ],
+    "correct": 1,
+    "explanation": "国民主権、基本的人権の尊重、平和主義の三つが日本国憲法の基本原理です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.954Z",
+    "createdAt": "2025-09-08T02:14:16.954Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_076",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "基本的人権の保障に関する記述として正しいものはどれですか。",
+    "options": [
+      "地方自治体が独自に決定できる事項",
+      "国際法により義務付けられた制度",
+      "自由権、社会権、参政権、請求権が基本的人権として保障されている",
+      "裁判所が独自に判断する権限"
+    ],
+    "correct": 2,
+    "explanation": "自由権、社会権、参政権、請求権が基本的人権として憲法で保障されています。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.954Z",
+    "createdAt": "2025-09-08T02:14:16.954Z",
+    "version": 1,
+    "qualityScore": 7.8
+  },
+  {
+    "id": "CIV_CON_077",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "次の平和主義の理念の説明で適切なものを選びなさい。",
+    "options": [
+      "特定の政党が提案した改革案",
+      "経済発展を最優先とした政策",
+      "戦争放棄と戦力不保持を定めた第9条が特徴的である",
+      "国際法により義務付けられた制度"
+    ],
+    "correct": 2,
+    "explanation": "戦争放棄と戦力不保持を定めた第9条は日本国憲法の特徴的な条項です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.954Z",
+    "createdAt": "2025-09-08T02:14:16.954Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_CON_078",
+    "subject": "civics",
+    "category": "constitution",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "憲法"
+    ],
+    "question": "国民主権の原則に関する記述として正しいものはどれですか。",
+    "options": [
+      "地方自治体が独自に決定できる事項",
+      "裁判所が独自に判断する権限",
+      "国の政治は国民の意思に基づいて行われる民主主義の根本原理",
+      "国際法により義務付けられた制度"
+    ],
+    "correct": 2,
+    "explanation": "国の政治は国民の意思に基づいて行われるという民主主義の根本原理です。憲法は国家の基本法として最高の法的効力を持ちます。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_079",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "次の三権分立の仕組みの説明で適切なものを選びなさい。",
+    "options": [
+      "立法権、行政権、司法権を分離し権力の集中を防ぐ制度",
+      "地方自治体が独自に決定できる事項",
+      "特定の政党が提案した改革案",
+      "国民の直接投票により決定される事項"
+    ],
+    "correct": 0,
+    "explanation": "立法権、行政権、司法権を分離することで権力の集中を防ぎ民主政治を実現します。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_080",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "次の国会の役割と権能の説明で適切なものを選びなさい。",
+    "options": [
+      "外国の制度をそのまま導入したもの",
+      "地方自治体が独自に決定できる事項",
+      "国権の最高機関として法律制定や予算審議の権限を持つ",
+      "特定の政党が提案した改革案"
+    ],
+    "correct": 2,
+    "explanation": "国権の最高機関として法律制定や予算審議など重要な権限を持っています。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_POL_081",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "次の内閣の組織と機能の説明で適切なものを選びなさい。",
+    "options": [
+      "裁判所が独自に判断する権限",
+      "行政権の担い手として政策の企画立案と実施を行う",
+      "特定の政党が提案した改革案",
+      "経済発展を最優先とした政策"
+    ],
+    "correct": 1,
+    "explanation": "行政権の担い手として政策の企画立案と実施を行う合議制の機関です。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_082",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "裁判所の独立性について、最も適切な説明はどれですか。",
+    "options": [
+      "地方自治体が独自に決定できる事項",
+      "司法権の独立により公正な裁判と法の支配を実現する",
+      "国際法により義務付けられた制度",
+      "裁判所が独自に判断する権限"
+    ],
+    "correct": 1,
+    "explanation": "司法権の独立により公正な裁判が保障され法の支配が実現されます。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_083",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "三権分立の仕組みに関する記述として正しいものはどれですか。",
+    "options": [
+      "特定の政党が提案した改革案",
+      "国際法により義務付けられた制度",
+      "立法権、行政権、司法権を分離し権力の集中を防ぐ制度",
+      "地方自治体が独自に決定できる事項"
+    ],
+    "correct": 2,
+    "explanation": "立法権、行政権、司法権を分離することで権力の集中を防ぎ民主政治を実現します。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_084",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "国会の役割と権能に関する記述として正しいものはどれですか。",
+    "options": [
+      "特定の政党が提案した改革案",
+      "外国の制度をそのまま導入したもの",
+      "国権の最高機関として法律制定や予算審議の権限を持つ",
+      "国民の直接投票により決定される事項"
+    ],
+    "correct": 2,
+    "explanation": "国権の最高機関として法律制定や予算審議など重要な権限を持っています。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_POL_085",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "内閣の組織と機能に関する記述として正しいものはどれですか。",
+    "options": [
+      "裁判所が独自に判断する権限",
+      "行政権の担い手として政策の企画立案と実施を行う",
+      "特定の政党が提案した改革案",
+      "地方自治体が独自に決定できる事項"
+    ],
+    "correct": 1,
+    "explanation": "行政権の担い手として政策の企画立案と実施を行う合議制の機関です。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_086",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "次の裁判所の独立性の説明で適切なものを選びなさい。",
+    "options": [
+      "裁判所が独自に判断する権限",
+      "国民の直接投票により決定される事項",
+      "外国の制度をそのまま導入したもの",
+      "司法権の独立により公正な裁判と法の支配を実現する"
+    ],
+    "correct": 3,
+    "explanation": "司法権の独立により公正な裁判が保障され法の支配が実現されます。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_087",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "三権分立の仕組みについて、最も適切な説明はどれですか。",
+    "options": [
+      "立法権、行政権、司法権を分離し権力の集中を防ぐ制度",
+      "国際法により義務付けられた制度",
+      "地方自治体が独自に決定できる事項",
+      "特定の政党が提案した改革案"
+    ],
+    "correct": 0,
+    "explanation": "立法権、行政権、司法権を分離することで権力の集中を防ぎ民主政治を実現します。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_088",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "次の国会の役割と権能の説明で適切なものを選びなさい。",
+    "options": [
+      "国際法により義務付けられた制度",
+      "裁判所が独自に判断する権限",
+      "地方自治体が独自に決定できる事項",
+      "国権の最高機関として法律制定や予算審議の権限を持つ"
+    ],
+    "correct": 3,
+    "explanation": "国権の最高機関として法律制定や予算審議など重要な権限を持っています。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_POL_089",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "次の内閣の組織と機能の説明で適切なものを選びなさい。",
+    "options": [
+      "国民の直接投票により決定される事項",
+      "外国の制度をそのまま導入したもの",
+      "特定の政党が提案した改革案",
+      "行政権の担い手として政策の企画立案と実施を行う"
+    ],
+    "correct": 3,
+    "explanation": "行政権の担い手として政策の企画立案と実施を行う合議制の機関です。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_POL_090",
+    "subject": "civics",
+    "category": "politics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "政治"
+    ],
+    "question": "裁判所の独立性について、最も適切な説明はどれですか。",
+    "options": [
+      "司法権の独立により公正な裁判と法の支配を実現する",
+      "地方自治体が独自に決定できる事項",
+      "裁判所が独自に判断する権限",
+      "国際法により義務付けられた制度"
+    ],
+    "correct": 0,
+    "explanation": "司法権の独立により公正な裁判が保障され法の支配が実現されます。政治制度は民主主義の実現のために設計されています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_ECO_091",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "economics",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "市場経済の仕組みの特徴として最も適切なものはどれですか。",
+    "options": [
+      "地方自治体が独自に決定できる事項",
+      "裁判所が独自に判断する権限",
+      "民主主義社会の基本的な仕組みを表す重要な概念です",
+      "国際法により義務付けられた制度"
+    ],
+    "correct": 2,
+    "explanation": "需要と供給の関係により価格が決定され、効率的な資源配分が実現されます。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.955Z",
+    "createdAt": "2025-09-08T02:14:16.955Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_ECO_092",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "次の金融の役割の説明で適切なものを選びなさい。",
+    "options": [
+      "民主主義社会の基本的な仕組みを表す重要な概念です",
+      "国民の直接投票により決定される事項",
+      "裁判所が独自に判断する権限",
+      "地方自治体が独自に決定できる事項"
+    ],
+    "correct": 0,
+    "explanation": "銀行を中心とした金融システムが経済活動の円滑化と発展を支えています。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_ECO_093",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "財政政策の効果について、最も適切な説明はどれですか。",
+    "options": [
+      "国民の直接投票により決定される事項",
+      "経済発展を最優先とした政策",
+      "国際法により義務付けられた制度",
+      "民主主義社会の基本的な仕組みを表す重要な概念です"
+    ],
+    "correct": 3,
+    "explanation": "政府の歳入歳出政策により経済の安定と社会保障の充実を図ります。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_ECO_094",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "economics",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "国際経済と日本に関する記述として正しいものはどれですか。",
+    "options": [
+      "民主主義社会の基本的な仕組みを表す重要な概念です",
+      "経済発展を最優先とした政策",
+      "裁判所が独自に判断する権限",
+      "地方自治体が独自に決定できる事項"
+    ],
+    "correct": 0,
+    "explanation": "貿易や投資を通じた国際分業により日本経済は発展してきました。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_ECO_095",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "economics",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "次の市場経済の仕組みの説明で適切なものを選びなさい。",
+    "options": [
+      "特定の政党が提案した改革案",
+      "地方自治体が独自に決定できる事項",
+      "民主主義社会の基本的な仕組みを表す重要な概念です",
+      "国民の直接投票により決定される事項"
+    ],
+    "correct": 2,
+    "explanation": "需要と供給の関係により価格が決定され、効率的な資源配分が実現されます。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_ECO_096",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "金融の役割に関する記述として正しいものはどれですか。",
+    "options": [
+      "国際法により義務付けられた制度",
+      "経済発展を最優先とした政策",
+      "民主主義社会の基本的な仕組みを表す重要な概念です",
+      "地方自治体が独自に決定できる事項"
+    ],
+    "correct": 2,
+    "explanation": "銀行を中心とした金融システムが経済活動の円滑化と発展を支えています。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_ECO_097",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "次の財政政策の効果の説明で適切なものを選びなさい。",
+    "options": [
+      "外国の制度をそのまま導入したもの",
+      "民主主義社会の基本的な仕組みを表す重要な概念です",
+      "裁判所が独自に判断する権限",
+      "特定の政党が提案した改革案"
+    ],
+    "correct": 1,
+    "explanation": "政府の歳入歳出政策により経済の安定と社会保障の充実を図ります。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.1
+  },
+  {
+    "id": "CIV_ECO_098",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "economics",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "国際経済と日本の特徴として最も適切なものはどれですか。",
+    "options": [
+      "民主主義社会の基本的な仕組みを表す重要な概念です",
+      "経済発展を最優先とした政策",
+      "地方自治体が独自に決定できる事項",
+      "裁判所が独自に判断する権限"
+    ],
+    "correct": 0,
+    "explanation": "貿易や投資を通じた国際分業により日本経済は発展してきました。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_ECO_099",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "economics",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "市場経済の仕組みに関する記述として正しいものはどれですか。",
+    "options": [
+      "裁判所が独自に判断する権限",
+      "地方自治体が独自に決定できる事項",
+      "外国の制度をそのまま導入したもの",
+      "民主主義社会の基本的な仕組みを表す重要な概念です"
+    ],
+    "correct": 3,
+    "explanation": "需要と供給の関係により価格が決定され、効率的な資源配分が実現されます。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.4
+  },
+  {
+    "id": "CIV_ECO_100",
+    "subject": "civics",
+    "category": "economics",
+    "subcategory": "general",
+    "grade": 7,
+    "difficulty": "standard",
+    "tags": [
+      "civics",
+      "経済"
+    ],
+    "question": "金融の役割に関する記述として正しいものはどれですか。",
+    "options": [
+      "国際法により義務付けられた制度",
+      "経済発展を最優先とした政策",
+      "国民の直接投票により決定される事項",
+      "民主主義社会の基本的な仕組みを表す重要な概念です"
+    ],
+    "correct": 3,
+    "explanation": "銀行を中心とした金融システムが経済活動の円滑化と発展を支えています。経済制度は社会全体の福祉向上を目指しています。民主主義社会の一員として理解すべき基本的な知識です。",
+    "type": "multiple_choice",
+    "source": "generated_high_quality",
+    "lastUpdated": "2025-09-08T02:14:16.956Z",
+    "createdAt": "2025-09-08T02:14:16.956Z",
+    "version": 1,
+    "qualityScore": 8.4
+  }
 ];
 
 // 科目別問題取得
