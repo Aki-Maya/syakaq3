@@ -1219,7 +1219,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 9,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1252,7 +1252,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3.5,
+    "qualityScore": 5,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1285,7 +1285,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 6,
+    "qualityScore": 6.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1318,7 +1318,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4.5,
+    "qualityScore": 6.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1351,7 +1351,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4.5,
+    "qualityScore": 6.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1384,7 +1384,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4.5,
+    "qualityScore": 6,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1417,7 +1417,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 8.5,
+    "qualityScore": 6.5,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -1450,7 +1450,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4.5,
+    "qualityScore": 6,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -1483,7 +1483,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 6,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -1516,7 +1516,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 6,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1549,7 +1549,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4,
+    "qualityScore": 6,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1615,7 +1615,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4,
+    "qualityScore": 6,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1648,7 +1648,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 8,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1681,7 +1681,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 8.5,
+    "qualityScore": 6.5,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1714,7 +1714,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4,
+    "qualityScore": 6,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1813,7 +1813,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 8,
+    "qualityScore": 6,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1846,7 +1846,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4.5,
+    "qualityScore": 6,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1879,7 +1879,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4,
+    "qualityScore": 4.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1912,7 +1912,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4.5,
+    "qualityScore": 6,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1945,7 +1945,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5.5,
+    "qualityScore": 6,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1978,7 +1978,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4,
+    "qualityScore": 5.5,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2011,7 +2011,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4,
+    "qualityScore": 5.5,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2044,7 +2044,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4.5,
+    "qualityScore": 5.5,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2077,7 +2077,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 6,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2110,7 +2110,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 6,
     "era": {
       "start": -14000,
       "end": -300,
@@ -2143,7 +2143,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 6.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -2209,7 +2209,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 6,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -2275,7 +2275,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 6,
+    "qualityScore": 5.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -2341,7 +2341,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 5,
+    "qualityScore": 7,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2374,7 +2374,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7.5,
+    "qualityScore": 9,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2407,7 +2407,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7,
+    "qualityScore": 6.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2440,7 +2440,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7.5,
+    "qualityScore": 10,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2473,7 +2473,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7,
+    "qualityScore": 6.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2539,7 +2539,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7.5,
+    "qualityScore": 10,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2572,7 +2572,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7.5,
+    "qualityScore": 6.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2605,7 +2605,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7,
+    "qualityScore": 6.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2638,7 +2638,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7.5,
+    "qualityScore": 6.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -2671,7 +2671,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 7.5,
+    "qualityScore": 6.5,
     "era": {
       "start": 1868,
       "end": 1912,
