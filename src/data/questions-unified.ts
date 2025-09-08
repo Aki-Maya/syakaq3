@@ -1214,7 +1214,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "秘密外交の廃止"
     ],
     "correct": 0,
-    "explanation": "ウィルソン米大統領が提唱した「民族自決（その民族のことは自分たちで決める）」の考え方が、朝鮮の三・一独立運動に影響を与えました。",
+    "explanation": "ウィルソン米大統領が提唱した「民族自決（その民族のことは自分たちで決める）」の考え方が、朝鮮の三・一独立運動に影響を与えました。この古代の出来事は日本文化の基礎形成に重要変化がもたらされました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1247,7 +1247,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "享保の改革の実施"
     ],
     "correct": 0,
-    "explanation": "北条時宗は、二度にわたる元（モンゴル帝国）の襲来（元寇）に際して、御家人を率いて防衛体制を強化し、これを退けました。",
+    "explanation": "北条時宗は、二度にわたる元（モンゴル帝国）の襲来（元寇）に際して、御家人を率いて防衛体制を強化し、これを退けました。この武士による初の政権で、封建制度と武家政治の基礎が築かれました。武家政治の発展と日本独自の封建制度確立に重要な役割を...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1280,7 +1280,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "火薬と羅針盤"
     ],
     "correct": 1,
-    "explanation": "各地の遺跡から牛や馬の骨、埴輪、馬具が出土していることから、古墳時代に渡来人によって牛や馬の飼育が大陸から持ち込まれたと考えられています。",
+    "explanation": "各地の遺跡から牛や馬の骨、埴輪、馬具が出土していることから、古墳時代に渡来人によって牛や馬の飼育が大陸から持ち込まれたと考えられています。古代日本の政治・社会制度の基盤となる重要な要素でした。この出来事は後の時代の政治・社会発展に影響...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1313,7 +1313,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "風土記"
     ],
     "correct": 1,
-    "explanation": "古事記は、稗田阿礼が記憶していた神話や伝承を、太安万侶が書き記す形で712年に完成した、現存する日本最古の歴史書です。",
+    "explanation": "古事記は、稗田阿礼が記憶していた神話や伝承を、太安万侶が書き記す形で712年に完成した、現存する日本最古の歴史書です。この古代の出来事は日本文化の基礎形成に重要な役割を果たしました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1346,7 +1346,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "大仏殿"
     ],
     "correct": 2,
-    "explanation": "東大寺の正倉院には、聖武天皇の遺品や、シルクロードを経て伝わったペルシャや唐の文物などが数多く保管されています。",
+    "explanation": "東大寺の正倉院には、聖武天皇の遺品や、シルクロードを経て伝わったペルシャや唐の文物などが数多く保管されています。この律令制度の確立により古代国家が完成し、平城京を中心とした政治が行われました。古代日本の政治・社会制度の基盤となる重要な...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1379,7 +1379,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "後三年合戦"
     ],
     "correct": 3,
-    "explanation": "後三年合戦は平安時代後期に奥州で源義家と清原氏の間で起こった戦いで、源義家が勝利し、東国における源氏の基盤を築きました。",
+    "explanation": "後三年合戦は平安時代後期に奥州で源義家と清原氏の間で起こった戦いで、源義家が勝利し、東国における源氏の基盤を築きました。古代日本の政治・社会制度の基盤となる重要な要素でした。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1412,7 +1412,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "勘解由使"
     ],
     "correct": 1,
-    "explanation": "源頼朝は、国ごとに御家人の中から守護を任命し、国内の治安維持や軍事警察の役割を担当させました。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。",
+    "explanation": "源頼朝は、国ごとに御家人の中から守護を任命し、国内の治安維持や軍事警察の役割を担当させました。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この中世の変化は武士社会の発展に大きく影響しました。この出来事は後の時代の政治・...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1445,7 +1445,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "即身成仏"
     ],
     "correct": 1,
-    "explanation": "日蓮は法華経の教えを重視し、「南無妙法蓮華経」という題目を唱えることで国も人も救われると説きました。",
+    "explanation": "日蓮は法華経の教えを重視し、「南無妙法蓮華経」という題目を唱えることで国も人も救われると説きました。この武士による初の政権で、封建制度と武家政治の基礎が築かれました。武家政治の発展と日本独自の封建制度確立に重要な役割を果たしました。こ...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1478,7 +1478,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "臨済宗"
     ],
     "correct": 3,
-    "explanation": "栄西は中国（宋）から臨済宗を伝え、座禅によって悟りを開く教えは武士の気風と合致し、広く信仰されました。",
+    "explanation": "栄西は中国（宋）から臨済宗を伝え、座禅によって悟りを開く教えは武士の気風と合致し、広く信仰されました。この武士による初の政権で、封建制度と武家政治の基礎が築かれました。武家政治の発展と日本独自の封建制度確立に重要な役割を果たしました。...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1511,7 +1511,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "じゃがいも"
     ],
     "correct": 1,
-    "explanation": "1543年、ポルトガル人を乗せた船が種子島に漂着し、鉄砲が伝えられました。これは後の戦国時代の戦い方を大きく変えました。",
+    "explanation": "1543年、ポルトガル人を乗せた船が種子島に漂着し、鉄砲が伝えられました。これは後の戦国時代の戦い方を大きく変えました。日本歴史の発展において重要な意味を持つ出来事でした。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1544,7 +1544,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "貴族や寺社の荘園を保護し、財力を安定させた"
     ],
     "correct": 3,
-    "explanation": "太閤検地は全国の土地を武士の権力のもとに一元的に支配するものであり、貴族や寺社が持っていた荘園は実質的に消滅しました。",
+    "explanation": "太閤検地は全国の土地を武士の権力のもとに一元的に支配するものであり、貴族や寺社が持っていた荘園は実質的に消滅しました。日本歴史の発展において重要な意味を持つ出来事でした。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1577,7 +1577,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "キリスト教の禁止"
     ],
     "correct": 1,
-    "explanation": "徳川家光は武家諸法度を改定し、大名の力を抑えるために参勤交代の義務化や大型船の建造禁止などを定めました。",
+    "explanation": "徳川家光は武家諸法度を改定し、大名の力を抑えるために参勤交代の義務化や大型船の建造禁止などを定めました。この江戸時代の制度は日本社会の安定に寄与しました。江戸幕府の統治システムと平和維持に不可欠な制度でした。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1610,7 +1610,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "菱川師宣"
     ],
     "correct": 2,
-    "explanation": "元禄文化では、近松門左衛門が人形浄瑠璃や歌舞伎の脚本家として活躍し、町人の心情を描いた作品で人気を博しました。",
+    "explanation": "元禄文化では、近松門左衛門が人形浄瑠璃や歌舞伎の脚本家として活躍し、町人の心情を描いた作品で人気を博しました。日本歴史の発展において重要な意味を持つ出来事でした。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1643,7 +1643,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "葛飾北斎"
     ],
     "correct": 3,
-    "explanation": "葛飾北斎は化政文化を代表する浮世絵師で、風景画「富嶽三十六景」シリーズは海外の画家にも影響を与えました。",
+    "explanation": "葛飾北斎は化政文化を代表する浮世絵師で、風景画「富嶽三十六景」シリーズは海外の画家にも影響を与えました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1676,7 +1676,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "人返し令"
     ],
     "correct": 2,
-    "explanation": "棄捐令（旗本・御家人の借金を帳消しにする法令）の発令は、松平定信による寛政の改革で行われました。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。",
+    "explanation": "棄捐令（旗本・御家人の借金を帳消しにする法令）の発令は、松平定信による寛政の改革で行われました。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1709,7 +1709,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "レザノフ"
     ],
     "correct": 2,
-    "explanation": "1792年、ロシアのラクスマンが根室に来航し、江戸幕府に通商を求めましたが、幕府はこれを拒否しました。",
+    "explanation": "1792年、ロシアのラクスマンが根室に来航し、江戸幕府に通商を求めましたが、幕府はこれを拒否しました。日本歴史の発展において重要な意味を持つ出来事でした。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1742,7 +1742,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "幕府が多額の賠償金を金で支払ったため"
     ],
     "correct": 1,
-    "explanation": "当時の日本では金と銀の交換比率が1:5だったのに対し、海外では1:15と異なっていたため、外国人が日本の金を安く手に入れようと大量に持ち出しました。",
+    "explanation": "当時の日本では金と銀の交換比率が1:5だったのに対し、海外では1:15と異なっていたため、外国人が日本の金を安く手に入れようと大量に持ち出しました。この近代の改革は日本の国際化に重要な意義を持ちました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1808,7 +1808,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "神戸製鋼所"
     ],
     "correct": 1,
-    "explanation": "日清戦争で得た賠償金の一部を使い、1901年に福岡県に官営の八幡製鉄所が設立されました。近代国家建設過程における重要な政策・制度変革です。",
+    "explanation": "日清戦争で得た賠償金の一部を使い、1901年に福岡県に官営の八幡製鉄所が設立されました。近代国家建設過程における重要な政策・制度変革です。この西洋文明の導入により急速な近代化が進められ、立憲国家が建設されました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1841,7 +1841,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "山東省"
     ],
     "correct": 0,
-    "explanation": "下関条約により、日本は台湾、澎湖諸島、遼東半島などを得ましたが、遼東半島はロシアなどの三国干渉により返還しました。",
+    "explanation": "下関条約により、日本は台湾、澎湖諸島、遼東半島などを得ましたが、遼東半島はロシアなどの三国干渉により返還しました。この近代の改革は日本の国際化に重要な意義を持ちました。現代日本の政治制度と社会構造の直接的基盤となりました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1874,7 +1874,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "平塚らいてう"
     ],
     "correct": 1,
-    "explanation": "与謝野晶子は、日露戦争に従軍した弟を想い、戦争の悲惨さを訴えた詩「君死にたまふこと勿れ」を発表しました。",
+    "explanation": "与謝野晶子は、日露戦争に従軍した弟を想い、戦争の悲惨さを訴えた詩「君死にたまふこと勿れ」を発表しました。この太平洋戦争は日本社会に甚大な影響を与え、戦後復興の出発点となりました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1907,7 +1907,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "満州事変"
     ],
     "correct": 2,
-    "explanation": "桂太郎の第一次内閣（1901〜1906年）の時に、日英同盟の締結（1902年）や日露戦争（1904-1905年）が起こりました。",
+    "explanation": "桂太郎の第一次内閣（1901〜1906年）の時に、日英同盟の締結（1902年）や日露戦争（1904-1905年）が起こりました。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1940,7 +1940,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "犬養毅"
     ],
     "correct": 3,
-    "explanation": "1932年、海軍の青年将校らが犬養毅首相を暗殺しました（五・一五事件）。これにより政党政治は終わりを迎えました。",
+    "explanation": "1932年、海軍の青年将校らが犬養毅首相を暗殺しました（五・一五事件）。これにより政党政治は終わりを迎えました。この近代の改革は日本の国際化に重要な意義を持ちました。現代日本の政治制度と社会構造の直接的基盤となりました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -1973,7 +1973,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "鈴木貫太郎"
     ],
     "correct": 1,
-    "explanation": "東条英機は、内閣総理大臣在任中に太平洋戦争が始まり、戦後、A級戦犯として極東国際軍事裁判にかけられ処刑されました。",
+    "explanation": "東条英機は、内閣総理大臣在任中に太平洋戦争が始まり、戦後、A級戦犯として極東国際軍事裁判にかけられ処刑されました。この新憲法の制定と民主化により、平和国家としての歩みが始まりました。現代日本の民主主義と平和主義の基礎を築いた重要な変革...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2006,7 +2006,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "日米地位協定"
     ],
     "correct": 2,
-    "explanation": "1951年、吉田茂内閣はサンフランシスコ平和条約と同時に日米安全保障条約を結び、日本の独立後もアメリカ軍が引き続き日本国内に駐留することを認めました。",
+    "explanation": "1951年、吉田茂内閣はサンフランシスコ平和条約と同時に日米安全保障条約を結び、日本の独立後もアメリカ軍が引き続き日本国内に駐留することを認めました。この現代の出来事は今日の日本社会に直接影響しています。この出来事は後の時代の政治・社...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2039,7 +2039,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "ソ連は抑留していた日本人捕虜を帰還させること"
     ],
     "correct": 2,
-    "explanation": "日ソ共同宣言では、平和条約締結後に歯舞群島・色丹島が日本へ引き渡されるとされましたが、北方領土問題全体は未解決のままです。",
+    "explanation": "日ソ共同宣言では、平和条約締結後に歯舞群島・色丹島が日本へ引き渡されるとされましたが、北方領土問題全体は未解決のままです。この現代の出来事は今日の日本社会に直接影響しています。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2072,7 +2072,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "札幌"
     ],
     "correct": 2,
-    "explanation": "1970年に大阪で日本万国博覧会（大阪万博）が開催され、日本の高度経済成長を象徴する出来事となりました。",
+    "explanation": "1970年に大阪で日本万国博覧会（大阪万博）が開催され、日本の高度経済成長を象徴する出来事となりました。この現代の出来事は今日の日本社会に直接影響しています。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2105,7 +2105,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "平城京に住み、天皇中心の政治を行っていた"
     ],
     "correct": 1,
-    "explanation": "縄文時代は、縄目の文様が特徴の縄文土器を使い、狩りや漁、木の実の採集を中心とした生活を送っていました。",
+    "explanation": "縄文時代は、縄目の文様が特徴の縄文土器を使い、狩りや漁、木の実の採集を中心とした生活を送っていました。古代日本の政治・社会制度の基盤となる重要な要素でした。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2138,7 +2138,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "和同開珎（わどうかいちん）"
     ],
     "correct": 0,
-    "explanation": "銅鐸は弥生時代を代表する青銅器で、主に祭りに使われたと考えられています。土偶は縄文時代、埴輪は古墳時代のものです。",
+    "explanation": "銅鐸は弥生時代を代表する青銅器で、主に祭りに使われたと考えられています。土偶は縄文時代、埴輪は古墳時代のものです。古代日本の政治・社会制度の基盤となる重要な要素でした。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2204,7 +2204,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "琉球使節"
     ],
     "correct": 2,
-    "explanation": "朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。",
+    "explanation": "朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。武家政治の発展と日本独自の封建制度確立に重要な役割を果たしました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2270,7 +2270,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "東洲斎写楽 - 「市川鰕蔵の竹村定之進」"
     ],
     "correct": 3,
-    "explanation": "東洲斎写楽は「市川鰕蔵の竹村定之進」を描いた江戸時代の浮世絵師です。 「見返り美人図」は菱川師宣、「風神雷神図屏風」は俵屋宗達の作品で、雪舟は室町時代の水墨画家です。",
+    "explanation": "東洲斎写楽は「市川鰕蔵の竹村定之進」を描いた江戸時代の浮世絵師です。「見返り美人図」は菱川師宣、「風神雷神図屏風」は俵屋宗達の作品で、雪舟は室町時代の水墨画家です。古代日本の政治・社会制度の基盤となる重要な要素でした。この出来事は後の...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2336,7 +2336,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "明治維新"
     ],
     "correct": 2,
-    "explanation": "1955年頃から1973年の石油危機（オイルショック）まで続いた、日本の経済が世界でも有数の速さで成長した期間を高度経済成長と呼びます。",
+    "explanation": "1955年頃から1973年の石油危機（オイルショック）まで続いた、日本の経済が世界でも有数の速さで成長した期間を高度経済成長と呼びます。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を...",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2369,7 +2369,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "室町時代"
     ],
     "correct": 0,
-    "explanation": "藤原定家について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。中学校レベルで理解すべき基本的内容です。",
+    "explanation": "藤原定家について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2402,7 +2402,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "果物"
     ],
     "correct": 0,
-    "explanation": "人形浄瑠璃について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。",
+    "explanation": "人形浄瑠璃について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2435,7 +2435,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "中世"
     ],
     "correct": 0,
-    "explanation": "藤原京について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この知識は学習指導要領の重要項目です。",
+    "explanation": "藤原京について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要項目です。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2468,7 +2468,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "湾"
     ],
     "correct": 0,
-    "explanation": "バカンスの由来について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。",
+    "explanation": "バカンスの由来について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2501,7 +2501,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "源頼朝"
     ],
     "correct": 0,
-    "explanation": "平城京について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。社会科学習の基礎となる重要な概念です。",
+    "explanation": "平城京について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な概念です。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2534,7 +2534,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "九州"
     ],
     "correct": 0,
-    "explanation": "卑弥呼について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この知識は学習指導要領の重要項目です。",
+    "explanation": "卑弥呼について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要項目です。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2567,7 +2567,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "豊臣秀吉"
     ],
     "correct": 0,
-    "explanation": "北条時宗について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この知識は学習指導要領の重要項目です。",
+    "explanation": "北条時宗について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要項目です。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2600,7 +2600,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "大阪府"
     ],
     "correct": 0,
-    "explanation": "八幡製鉄所について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。",
+    "explanation": "八幡製鉄所について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2633,7 +2633,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "大政奉還"
     ],
     "correct": 0,
-    "explanation": "奈良時代の特徴について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。",
+    "explanation": "奈良時代の特徴について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この出来事は後の時代の政治・社会発展に影響を与えました。現代日本文化の源流となる要素が含まれています。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2666,7 +2666,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "文明開化"
     ],
     "correct": 0,
-    "explanation": "室町時代の特徴について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。",
+    "explanation": "室町時代の特徴について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。この出来事は後の時代の政治・社会発展に影響を与えました。現代日本の政治制度と社会構造の直接的基盤となりました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
@@ -2699,7 +2699,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
       "中世"
     ],
     "correct": 0,
-    "explanation": "藤原頼通について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な手がかりです。社会科学習の基礎となる重要な概念です。",
+    "explanation": "藤原頼通について詳しく学習しましょう。この歴史的事実は当時の社会情勢を理解する重要な概念です。この近代の改革は日本の国際化に重要な意義を持ちました。この出来事は後の時代の政治・社会発展に影響を与えました。",
     "type": "multiple-choice",
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
