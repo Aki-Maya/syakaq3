@@ -10,25 +10,8 @@ import {
   getHighQualityQuestions
 } from './questions-unified-complete';
 
-// 🎯 HIGH QUALITY FILTER: Only use educational valuable questions
-// 高品質問題のみを使用（教育的価値のある問題のみ）
-const HIGH_QUALITY_IDS = [
-  "GEO_HUM_002", "GEO_HUM_003", "GEO_PHY_001", "HIS_ANC_001", "HIS_ANC_005",
-  "HIS_MED_002", "HIS_EMO_002", "HIS_EMO_005", "HIS_EMO_006", "HIS_EMO_008",
-  "HIS_MOD_002", "HIS_MOD_003", "HIS_MOD_005", "HIS_MOD_006", "HIS_CON_001",
-  "HIS_CON_002", "HIS_ANC_007", "HIS_EMO_009", "HIS_MED_004", "GEO_PHY_003",
-  "GEO_PHY_005", "GEO_REG_001", "GEO_REG_002", "GEO_REG_004", "GEO_REG_005",
-  "GEO_REG_006", "GEO_REG_007", "GEO_REG_008", "GEO_REG_009", "GEO_REG_010",
-  "GEO_REG_011", "GEO_REG_012", "GEO_REG_013", "GEO_REG_014", "GEO_HUM_001",
-  "GEO_HUM_004", "GEO_HUM_005", "GEO_HUM_006", "GEO_HUM_007", "GEO_HUM_008",
-  "CIV_POL_001", "CIV_POL_002", "CIV_POL_003", "CIV_POL_004", "CIV_POL_005",
-  "CIV_POL_006", "CIV_POL_007", "CIV_POL_008", "CIV_POL_009", "CIV_POL_010",
-  "CIV_INT_001", "CIV_INT_002", "CIV_INT_003", "CIV_INT_004", "CIV_INT_005",
-  "CIV_INT_006", "CIV_ECO_001", "CIV_ECO_002", "CIV_ECO_003", "CIV_ECO_004",
-  "CIV_ECO_005", "CIV_ECO_006", "CIV_ECO_007"
-];
-
-// Use all questions from complete database - all have been verified as high quality
+// 🎯 ALL QUESTIONS ARE NOW HIGH QUALITY: Using complete 445-question database
+// 全445問が高品質に変換済み - フィルタリング不要
 export const unifiedQuestions = allUnifiedQuestions;
 
 import { 
