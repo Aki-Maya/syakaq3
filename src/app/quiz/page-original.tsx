@@ -223,8 +223,8 @@ const QuizComponent = () => {
         <div className="bg-white rounded-xl shadow-lg p-4 mb-4 flex flex-col">
           <div className="flex-shrink-0">
             <div className="flex items-center mb-2">
-              <span className={`px-2 py-1 rounded text-xs font-bold text-white ${currentQuestion?.difficulty === 'easy' ? 'bg-green-500' : currentQuestion?.difficulty === 'medium' ? 'bg-yellow-500' : 'bg-red-500'}`}>
-                {currentQuestion?.difficulty === 'easy' ? '初級' : currentQuestion?.difficulty === 'medium' ? '中級' : '上級'}
+              <span className={`px-2 py-1 rounded text-xs font-bold text-white ${currentQuestion?.difficulty === 'basic' ? 'bg-green-500' : currentQuestion?.difficulty === 'standard' ? 'bg-yellow-500' : 'bg-red-500'}`}>
+                {currentQuestion?.difficulty === 'basic' ? '基本' : currentQuestion?.difficulty === 'standard' ? '標準' : '応用'}
               </span>
             </div>
             <h2 className="text-lg font-bold text-gray-800 mb-2">{currentQuestion?.question}</h2>

@@ -80,7 +80,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'modern',
     difficulty: 'medium',
-    explanation: 'ウィルソン米大統領が提唱した「民族自決（その民族のことは自分たちで決める）」の考え方が、朝鮮の三・一独立運動に影響を与えました。'
+    explanation: 'ウィルソン米大統領が提唱した「民族自決（その民族のことは自分たちで決める）」の考え方が、朝鮮の三・一独立運動に影響を与えました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 102,
@@ -89,7 +91,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'ancient',
     difficulty: 'easy',
-    explanation: '武家諸法度は、江戸時代に徳川家光が大名の統制のために定めた法律であり、奈良時代の聖武天皇の政策ではありません。'
+    explanation: '武家諸法度は、江戸時代に徳川家光が大名の統制のために定めた法律であり、奈良時代の聖武天皇の政策ではありません。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 103,
@@ -98,7 +102,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'medieval',
     difficulty: 'medium',
-    explanation: '北条時宗は、二度にわたる元（モンゴル帝国）の襲来（元寇）に際して、御家人を率いて防衛体制を強化し、これを退けました。'
+    explanation: '北条時宗は、二度にわたる元（モンゴル帝国）の襲来（元寇）に際して、御家人を率いて防衛体制を強化し、これを退けました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 104,
@@ -107,7 +113,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'early-modern',
     difficulty: 'easy',
-    explanation: '井原西鶴は、元禄文化を代表する浮世草子の作者です。滝沢馬琴と葛飾北斎は化政文化、平家物語は鎌倉時代の作品です。'
+    explanation: '井原西鶴は、元禄文化を代表する浮世草子の作者です。滝沢馬琴と葛飾北斎は化政文化、平家物語は鎌倉時代の作品です。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 105,
@@ -116,7 +124,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'medium',
-    explanation: '各地の遺跡から牛や馬の骨、埴輪、馬具が出土していることから、古墳時代に渡来人によって牛や馬の飼育が大陸から持ち込まれたと考えられています。'
+    explanation: '各地の遺跡から牛や馬の骨、埴輪、馬具が出土していることから、古墳時代に渡来人によって牛や馬の飼育が大陸から持ち込まれたと考えられています。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 106,
@@ -125,7 +135,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'ancient',
     difficulty: 'medium',
-    explanation: '聖徳太子の死後、権力を強めた蘇我蝦夷・入鹿親子を、中大兄皇子と中臣鎌足らが暗殺した645年の政変を「乙巳の変」と呼びます。'
+    explanation: '聖徳太子の死後、権力を強めた蘇我蝦夷・入鹿親子を、中大兄皇子と中臣鎌足らが暗殺した645年の政変を「乙巳の変」と呼びます。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 107,
@@ -134,7 +146,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'medium',
-    explanation: '古事記は、稗田阿礼が記憶していた神話や伝承を、太安万侶が書き記す形で712年に完成した、現存する日本最古の歴史書です。'
+    explanation: '古事記は、稗田阿礼が記憶していた神話や伝承を、太安万侶が書き記す形で712年に完成した、現存する日本最古の歴史書です。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 108,
@@ -143,7 +157,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'medium',
-    explanation: '日本書紀は、天武天皇の命により舎人親王らが編纂した、日本初の国家による公式の歴史書（正史）で、720年に完成しました。'
+    explanation: '日本書紀は、天武天皇の命により舎人親王らが編纂した、日本初の国家による公式の歴史書（正史）で、720年に完成しました。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 109,
@@ -152,7 +168,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'ancient',
     difficulty: 'easy',
-    explanation: '東大寺の正倉院には、聖武天皇の遺品や、シルクロードを経て伝わったペルシャや唐の文物などが数多く保管されています。'
+    explanation: '東大寺の正倉院には、聖武天皇の遺品や、シルクロードを経て伝わったペルシャや唐の文物などが数多く保管されています。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 110,
@@ -161,7 +179,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'medium',
-    explanation: '阿倍仲麻呂は遣唐使として唐に渡り、玄宗皇帝に仕えるなど高い評価を受けましたが、帰国の途中で遭難し、再び唐に戻ってその地で生涯を終えました。'
+    explanation: '阿倍仲麻呂は遣唐使として唐に渡り、玄宗皇帝に仕えるなど高い評価を受けましたが、帰国の途中で遭難し、再び唐に戻ってその地で生涯を終えました。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 111,
@@ -170,7 +190,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'ancient',
     difficulty: 'hard',
-    explanation: '後三年合戦は平安時代後期に奥州で源義家と清原氏の間で起こった戦いで、源義家が勝利し、東国における源氏の基盤を築きました。'
+    explanation: '後三年合戦は平安時代後期に奥州で源義家と清原氏の間で起こった戦いで、源義家が勝利し、東国における源氏の基盤を築きました。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 112,
@@ -179,7 +201,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'ancient',
     difficulty: 'medium',
-    explanation: '藤原頼通は藤原道長の息子で関白となり、極楽浄土の世界を再現するため、1053年に宇治の平等院鳳凰堂を建立しました。'
+    explanation: '藤原頼通は藤原道長の息子で関白となり、極楽浄土の世界を再現するため、1053年に宇治の平等院鳳凰堂を建立しました。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 113,
@@ -188,7 +212,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'medieval',
     difficulty: 'easy',
-    explanation: '源頼朝は、国ごとに御家人の中から守護を任命し、国内の治安維持や軍事警察の役割を担当させました。'
+    explanation: '源頼朝は、国ごとに御家人の中から守護を任命し、国内の治安維持や軍事警察の役割を担当させました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 114,
@@ -197,7 +223,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'medieval',
     difficulty: 'easy',
-    explanation: '地頭は荘園や公領に置かれ、年貢の徴収や土地の管理、治安維持などを行いました。'
+    explanation: '地頭は荘園や公領に置かれ、年貢の徴収や土地の管理、治安維持などを行いました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 115,
@@ -206,7 +234,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'medieval',
     difficulty: 'easy',
-    explanation: '日蓮は法華経の教えを重視し、「南無妙法蓮華経」という題目を唱えることで国も人も救われると説きました。'
+    explanation: '日蓮は法華経の教えを重視し、「南無妙法蓮華経」という題目を唱えることで国も人も救われると説きました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 116,
@@ -215,7 +245,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'medieval',
     difficulty: 'easy',
-    explanation: '親鸞は浄土真宗を開き、阿弥陀仏を信じ「南無阿弥陀仏」と念仏を唱えれば、善人だけでなく悪人こそが救われると説きました。'
+    explanation: '親鸞は浄土真宗を開き、阿弥陀仏を信じ「南無阿弥陀仏」と念仏を唱えれば、善人だけでなく悪人こそが救われると説きました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 117,
@@ -224,7 +256,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'medieval',
     difficulty: 'medium',
-    explanation: '栄西は中国（宋）から臨済宗を伝え、座禅によって悟りを開く教えは武士の気風と合致し、広く信仰されました。'
+    explanation: '栄西は中国（宋）から臨済宗を伝え、座禅によって悟りを開く教えは武士の気風と合致し、広く信仰されました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 118,
@@ -233,7 +267,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'medieval',
     difficulty: 'medium',
-    explanation: '日明貿易（勘合貿易）では、硫黄、銅、刀剣などが日本からの主な輸出品でした。明からは銅銭や生糸などを輸入しました。'
+    explanation: '日明貿易（勘合貿易）では、硫黄、銅、刀剣などが日本からの主な輸出品でした。明からは銅銭や生糸などを輸入しました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 119,
@@ -242,7 +278,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'medieval',
     difficulty: 'easy',
-    explanation: '1543年、ポルトガル人を乗せた船が種子島に漂着し、鉄砲が伝えられました。これは後の戦国時代の戦い方を大きく変えました。'
+    explanation: '1543年、ポルトガル人を乗せた船が種子島に漂着し、鉄砲が伝えられました。これは後の戦国時代の戦い方を大きく変えました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 120,
@@ -251,7 +289,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '1582年に、大友宗麟らのキリシタン大名が、伊東マンショら4人の少年を天正遣欧少年使節としてローマ教皇のもとへ派遣しました。'
+    explanation: '1582年に、大友宗麟らのキリシタン大名が、伊東マンショら4人の少年を天正遣欧少年使節としてローマ教皇のもとへ派遣しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 121,
@@ -265,7 +305,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'early-modern',
     difficulty: 'hard',
-    explanation: '太閤検地は全国の土地を武士の権力のもとに一元的に支配するものであり、貴族や寺社が持っていた荘園は実質的に消滅しました。'
+    explanation: '太閤検地は全国の土地を武士の権力のもとに一元的に支配するものであり、貴族や寺社が持っていた荘園は実質的に消滅しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 122,
@@ -274,7 +316,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '1609年、島津氏（薩摩藩）が琉球王国に侵攻し、支配下に置きました。これにより琉球は薩摩と中国（明・清）の両方に従属することになりました。'
+    explanation: '1609年、島津氏（薩摩藩）が琉球王国に侵攻し、支配下に置きました。これにより琉球は薩摩と中国（明・清）の両方に従属することになりました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 123,
@@ -283,7 +327,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '徳川家光は武家諸法度を改定し、大名の力を抑えるために参勤交代の義務化や大型船の建造禁止などを定めました。'
+    explanation: '徳川家光は武家諸法度を改定し、大名の力を抑えるために参勤交代の義務化や大型船の建造禁止などを定めました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 124,
@@ -292,7 +338,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '徳川綱吉は、幕府の財政難を補うため、金の含有量を減らした質の低い元禄小判を発行させました。これにより物価が上昇しました。'
+    explanation: '徳川綱吉は、幕府の財政難を補うため、金の含有量を減らした質の低い元禄小判を発行させました。これにより物価が上昇しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 125,
@@ -301,7 +349,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'easy',
-    explanation: '元禄文化では、近松門左衛門が人形浄瑠璃や歌舞伎の脚本家として活躍し、町人の心情を描いた作品で人気を博しました。'
+    explanation: '元禄文化では、近松門左衛門が人形浄瑠璃や歌舞伎の脚本家として活躍し、町人の心情を描いた作品で人気を博しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 126,
@@ -310,7 +360,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'early-modern',
     difficulty: 'easy',
-    explanation: '化政文化を代表する読み本作家である滝沢馬琴が、長編伝奇小説「南総里見八犬伝」を著しました。'
+    explanation: '化政文化を代表する読み本作家である滝沢馬琴が、長編伝奇小説「南総里見八犬伝」を著しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 127,
@@ -319,7 +371,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'early-modern',
     difficulty: 'easy',
-    explanation: '葛飾北斎は化政文化を代表する浮世絵師で、風景画「富嶽三十六景」シリーズは海外の画家にも影響を与えました。'
+    explanation: '葛飾北斎は化政文化を代表する浮世絵師で、風景画「富嶽三十六景」シリーズは海外の画家にも影響を与えました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 128,
@@ -328,7 +382,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '目安箱の設置や、裁判の基準となる法律「公事方御定書」の制定は、8代将軍徳川吉宗による享保の改革で行われた政策です。'
+    explanation: '目安箱の設置や、裁判の基準となる法律「公事方御定書」の制定は、8代将軍徳川吉宗による享保の改革で行われた政策です。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 129,
@@ -337,7 +393,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'hard',
-    explanation: '棄捐令（旗本・御家人の借金を帳消しにする法令）の発令は、松平定信による寛政の改革で行われました。'
+    explanation: '棄捐令（旗本・御家人の借金を帳消しにする法令）の発令は、松平定信による寛政の改革で行われました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 130,
@@ -346,7 +404,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'early-modern',
     difficulty: 'hard',
-    explanation: '朱子学以外の学問を禁止した「寛政異学の禁」は、松平定信による寛政の改革の政策です。'
+    explanation: '朱子学以外の学問を禁止した「寛政異学の禁」は、松平定信による寛政の改革の政策です。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 131,
@@ -355,7 +415,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '1792年、ロシアのラクスマンが根室に来航し、江戸幕府に通商を求めましたが、幕府はこれを拒否しました。'
+    explanation: '1792年、ロシアのラクスマンが根室に来航し、江戸幕府に通商を求めましたが、幕府はこれを拒否しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 132,
@@ -364,7 +426,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'hard',
-    explanation: 'アヘン戦争で清がイギリスに敗れたことを知り、幕府は1842年に外国船打払令を緩和し、遭難した船に燃料や食料を与えることを認める薪水給与令を出しました。'
+    explanation: 'アヘン戦争で清がイギリスに敗れたことを知り、幕府は1842年に外国船打払令を緩和し、遭難した船に燃料や食料を与えることを認める薪水給与令を出しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 133,
@@ -378,7 +442,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'early-modern',
     difficulty: 'hard',
-    explanation: '当時の日本では金と銀の交換比率が1:5だったのに対し、海外では1:15と異なっていたため、外国人が日本の金を安く手に入れようと大量に持ち出しました。'
+    explanation: '当時の日本では金と銀の交換比率が1:5だったのに対し、海外では1:15と異なっていたため、外国人が日本の金を安く手に入れようと大量に持ち出しました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 134,
@@ -387,7 +453,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'modern',
     difficulty: 'easy',
-    explanation: '日本最初の鉄道は、1872年に新橋（現在の汐留）と横浜（現在の桜木町）の間で開業しました。'
+    explanation: '日本最初の鉄道は、1872年に新橋（現在の汐留）と横浜（現在の桜木町）の間で開業しました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 135,
@@ -396,7 +464,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'modern',
     difficulty: 'easy',
-    explanation: '1871年に前島密によって郵便制度が整備され、全国どこでも同じ料金で手紙を送れるようになりました。'
+    explanation: '1871年に前島密によって郵便制度が整備され、全国どこでも同じ料金で手紙を送れるようになりました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 136,
@@ -405,7 +475,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'modern',
     difficulty: 'easy',
-    explanation: '明治政府の近代化政策により特権を失った士族の不満が爆発し、西郷隆盛をリーダーとして1877年に起こったのが西南戦争です。'
+    explanation: '明治政府の近代化政策により特権を失った士族の不満が爆発し、西郷隆盛をリーダーとして1877年に起こったのが西南戦争です。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 137,
@@ -414,7 +486,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'modern',
     difficulty: 'easy',
-    explanation: '日清戦争で得た賠償金の一部を使い、1901年に福岡県に官営の八幡製鉄所が設立されました。'
+    explanation: '日清戦争で得た賠償金の一部を使い、1901年に福岡県に官営の八幡製鉄所が設立されました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 138,
@@ -423,7 +497,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'modern',
     difficulty: 'easy',
-    explanation: '蚕のまゆから生糸を生産することを製糸業といいます。綿花から綿糸を生産するのは紡績業です。'
+    explanation: '蚕のまゆから生糸を生産することを製糸業といいます。綿花から綿糸を生産するのは紡績業です。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 139,
@@ -432,7 +508,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '下関条約により、日本は台湾、澎湖諸島、遼東半島などを得ましたが、遼東半島はロシアなどの三国干渉により返還しました。'
+    explanation: '下関条約により、日本は台湾、澎湖諸島、遼東半島などを得ましたが、遼東半島はロシアなどの三国干渉により返還しました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 140,
@@ -441,7 +519,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'modern',
     difficulty: 'medium',
-    explanation: 'ポーツマス条約により、日本はロシアから北緯50度以南の樺太（南樺太）と、遼東半島南部の租借権などを得ました。'
+    explanation: 'ポーツマス条約により、日本はロシアから北緯50度以南の樺太（南樺太）と、遼東半島南部の租借権などを得ました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 141,
@@ -450,7 +530,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '与謝野晶子は、日露戦争に従軍した弟を想い、戦争の悲惨さを訴えた詩「君死にたまふこと勿れ」を発表しました。'
+    explanation: '与謝野晶子は、日露戦争に従軍した弟を想い、戦争の悲惨さを訴えた詩「君死にたまふこと勿れ」を発表しました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 142,
@@ -459,7 +541,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '三国協商はイギリス、フランス、ロシアの間で成立した協力関係で、ドイツ中心の三国同盟と対立し、第一次世界大戦の遠因となりました。'
+    explanation: '三国協商はイギリス、フランス、ロシアの間で成立した協力関係で、ドイツ中心の三国同盟と対立し、第一次世界大戦の遠因となりました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 143,
@@ -468,7 +552,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '桂太郎の第一次内閣（1901〜1906年）の時に、日英同盟の締結（1902年）や日露戦争（1904-1905年）が起こりました。'
+    explanation: '桂太郎の第一次内閣（1901〜1906年）の時に、日英同盟の締結（1902年）や日露戦争（1904-1905年）が起こりました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 144,
@@ -477,7 +563,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '1918年の米騒動は、シベリア出兵を背景とした米の買い占めなどによる米価の急騰が原因で、富山県の主婦たちの行動をきっかけに全国に広がりました。'
+    explanation: '1918年の米騒動は、シベリア出兵を背景とした米の買い占めなどによる米価の急騰が原因で、富山県の主婦たちの行動をきっかけに全国に広がりました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 145,
@@ -486,7 +574,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '1932年、海軍の青年将校らが犬養毅首相を暗殺しました（五・一五事件）。これにより政党政治は終わりを迎えました。'
+    explanation: '1932年、海軍の青年将校らが犬養毅首相を暗殺しました（五・一五事件）。これにより政党政治は終わりを迎えました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 146,
@@ -495,7 +585,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'modern',
     difficulty: 'hard',
-    explanation: '日本は、援蔣ルート（アメリカ・イギリスから中国への支援ルート）を断つため、1940年にフランス領インドシナ北部（現在のベトナム北部）に進駐しました。'
+    explanation: '日本は、援蔣ルート（アメリカ・イギリスから中国への支援ルート）を断つため、1940年にフランス領インドシナ北部（現在のベトナム北部）に進駐しました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 147,
@@ -504,7 +596,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '東条英機は、内閣総理大臣在任中に太平洋戦争が始まり、戦後、A級戦犯として極東国際軍事裁判にかけられ処刑されました。'
+    explanation: '東条英機は、内閣総理大臣在任中に太平洋戦争が始まり、戦後、A級戦犯として極東国際軍事裁判にかけられ処刑されました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 148,
@@ -518,7 +612,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'contemporary',
     difficulty: 'medium',
-    explanation: '戦後の農地改革では、政府が地主から農地を強制的に買い上げ、実際に耕作していた小作人に安く売り渡したことで、自作農が大幅に増えました。'
+    explanation: '戦後の農地改革では、政府が地主から農地を強制的に買い上げ、実際に耕作していた小作人に安く売り渡したことで、自作農が大幅に増えました。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 149,
@@ -527,7 +623,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'contemporary',
     difficulty: 'medium',
-    explanation: '1951年、吉田茂内閣はサンフランシスコ平和条約と同時に日米安全保障条約を結び、日本の独立後もアメリカ軍が引き続き日本国内に駐留することを認めました。'
+    explanation: '1951年、吉田茂内閣はサンフランシスコ平和条約と同時に日米安全保障条約を結び、日本の独立後もアメリカ軍が引き続き日本国内に駐留することを認めました。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 150,
@@ -536,7 +634,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'contemporary',
     difficulty: 'medium',
-    explanation: '1950年に朝鮮戦争が始まると、吉田茂内閣は国内の治安維持のため警察予備隊を組織しました。これは後の自衛隊の基礎となりました。'
+    explanation: '1950年に朝鮮戦争が始まると、吉田茂内閣は国内の治安維持のため警察予備隊を組織しました。これは後の自衛隊の基礎となりました。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 151,
@@ -550,7 +650,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'contemporary',
     difficulty: 'hard',
-    explanation: '日ソ共同宣言では、平和条約締結後に歯舞群島・色丹島が日本へ引き渡されるとされましたが、北方領土問題全体は未解決のままです。'
+    explanation: '日ソ共同宣言では、平和条約締結後に歯舞群島・色丹島が日本へ引き渡されるとされましたが、北方領土問題全体は未解決のままです。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 152,
@@ -559,7 +661,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'contemporary',
     difficulty: 'medium',
-    explanation: '1972年に沖縄がアメリカから返還されたのは佐藤栄作内閣の時です。佐藤栄作は非核三原則を提唱し、沖縄返還の功績でノーベル平和賞を受賞しました。'
+    explanation: '1972年に沖縄がアメリカから返還されたのは佐藤栄作内閣の時です。佐藤栄作は非核三原則を提唱し、沖縄返還の功績でノーベル平和賞を受賞しました。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 153,
@@ -568,7 +672,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'contemporary',
     difficulty: 'easy',
-    explanation: '1970年に大阪で日本万国博覧会（大阪万博）が開催され、日本の高度経済成長を象徴する出来事となりました。'
+    explanation: '1970年に大阪で日本万国博覧会（大阪万博）が開催され、日本の高度経済成長を象徴する出来事となりました。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 154,
@@ -577,7 +683,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'contemporary',
     difficulty: 'easy',
-    explanation: '平成元年である1989年、竹下登内閣の時に消費税（当初の税率は3%）が初めて導入されました。'
+    explanation: '平成元年である1989年、竹下登内閣の時に消費税（当初の税率は3%）が初めて導入されました。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 155,
@@ -586,7 +694,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'primitive',
     difficulty: 'easy',
-    explanation: '縄文時代は、縄目の文様が特徴の縄文土器を使い、狩りや漁、木の実の採集を中心とした生活を送っていました。'
+    explanation: '縄文時代は、縄目の文様が特徴の縄文土器を使い、狩りや漁、木の実の採集を中心とした生活を送っていました。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 156,
@@ -595,7 +705,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'primitive',
     difficulty: 'medium',
-    explanation: '大陸から稲作が伝わったことで食料を生産・備蓄できるようになり、弥生時代が始まりました。これにより定住化が進み、ムラがクニへと発展しました。'
+    explanation: '大陸から稲作が伝わったことで食料を生産・備蓄できるようになり、弥生時代が始まりました。これにより定住化が進み、ムラがクニへと発展しました。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 157,
@@ -604,7 +716,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'primitive',
     difficulty: 'hard',
-    explanation: '銅鐸は弥生時代を代表する青銅器で、主に祭りに使われたと考えられています。土偶は縄文時代、埴輪は古墳時代のものです。'
+    explanation: '銅鐸は弥生時代を代表する青銅器で、主に祭りに使われたと考えられています。土偶は縄文時代、埴輪は古墳時代のものです。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 158, 
@@ -613,7 +727,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'hard',
-    explanation: '現在の地名や神社の名称は「太宰府」ですが、歴史上の役所の名称としては「大宰府」が正しい表記です。'
+    explanation: '現在の地名や神社の名称は「太宰府」ですが、歴史上の役所の名称としては「大宰府」が正しい表記です。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 159,
@@ -622,7 +738,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'medieval',
     difficulty: 'medium',
-    explanation: '御成敗式目は、鎌倉幕府の三代目執権である北条泰時によって定められました。'
+    explanation: '御成敗式目は、鎌倉幕府の三代目執権である北条泰時によって定められました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 160,
@@ -636,7 +754,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '刀狩令は、農民が武器を持つことを禁じ、一揆を防止するとともに、武士と農民の身分を明確に分ける（兵農分離）目的がありました。'
+    explanation: '刀狩令は、農民が武器を持つことを禁じ、一揆を防止するとともに、武士と農民の身分を明確に分ける（兵農分離）目的がありました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 161,
@@ -645,7 +765,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。'
+    explanation: '朝鮮通信使は、江戸時代を通じて朝鮮から日本へ派遣された外交使節団で、対馬藩がその仲介役を担っていました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 162,
@@ -654,7 +776,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'medieval',
     difficulty: 'medium',
-    explanation: '鎌倉幕府の二代将軍である源頼家が病に倒れた後、弟の源実朝が三代将軍につきました。'
+    explanation: '鎌倉幕府の二代将軍である源頼家が病に倒れた後、弟の源実朝が三代将軍につきました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 163,
@@ -663,7 +787,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'modern',
     difficulty: 'medium',
-    explanation: '板垣退助は、国会開設の準備のために1881年に自由党を結成しました。'
+    explanation: '板垣退助は、国会開設の準備のために1881年に自由党を結成しました。',
+  type: 'multiple-choice',
+  era: 'modern'
   },
   {
     id: 164,
@@ -677,7 +803,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'ancient',
     difficulty: 'easy',
-    explanation: '古代の中国などでは貝が貨幣として用いられていたため、お金や財産に関する漢字の部首に「貝」が多く使われています。'
+    explanation: '古代の中国などでは貝が貨幣として用いられていたため、お金や財産に関する漢字の部首に「貝」が多く使われています。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 165,
@@ -691,7 +819,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'early-modern',
     difficulty: 'hard',
-    explanation: '東洲斎写楽は「市川鰕蔵の竹村定之進」を描いた江戸時代の浮世絵師です。 「見返り美人図」は菱川師宣、「風神雷神図屏風」は俵屋宗達の作品で、雪舟は室町時代の水墨画家です。 '
+    explanation: '東洲斎写楽は「市川鰕蔵の竹村定之進」を描いた江戸時代の浮世絵師です。 「見返り美人図」は菱川師宣、「風神雷神図屏風」は俵屋宗達の作品で、雪舟は室町時代の水墨画家です。 ',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 166,
@@ -700,7 +830,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 0,
     category: 'ancient',
     difficulty: 'easy',
-    explanation: '邪馬台国の女王・卑弥呼は、中国の魏に使者を送り、「親魏倭王」の称号と金印を授かったと「魏志倭人伝」に記されています。'
+    explanation: '邪馬台国の女王・卑弥呼は、中国の魏に使者を送り、「親魏倭王」の称号と金印を授かったと「魏志倭人伝」に記されています。',
+  type: 'multiple-choice',
+  era: 'ancient'
   },
   {
     id: 167,
@@ -709,7 +841,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 1,
     category: 'medieval',
     difficulty: 'medium',
-    explanation: '足利義満は、対立していた南北朝を統一し、京都に金閣を建てるなど、室町幕府の最盛期を築きました。'
+    explanation: '足利義満は、対立していた南北朝を統一し、京都に金閣を建てるなど、室町幕府の最盛期を築きました。',
+  type: 'multiple-choice',
+  era: 'medieval'
   },
   {
     id: 168,
@@ -718,7 +852,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 3,
     category: 'early-modern',
     difficulty: 'medium',
-    explanation: '鎖国中、ヨーロッパの国で唯一オランダが長崎の出島でのみ貿易を許可されていました。また、中国（清）や朝鮮、琉球王国とは正式な交流がありました。'
+    explanation: '鎖国中、ヨーロッパの国で唯一オランダが長崎の出島でのみ貿易を許可されていました。また、中国（清）や朝鮮、琉球王国とは正式な交流がありました。',
+  type: 'multiple-choice',
+  era: 'early-modern'
   },
   {
     id: 169,
@@ -727,7 +863,9 @@ export const historyQuestions: HistoryQuestion[] = [
     correct: 2,
     category: 'contemporary',
     difficulty: 'easy',
-    explanation: '1955年頃から1973年の石油危機（オイルショック）まで続いた、日本の経済が世界でも有数の速さで成長した期間を高度経済成長と呼びます。'
+    explanation: '1955年頃から1973年の石油危機（オイルショック）まで続いた、日本の経済が世界でも有数の速さで成長した期間を高度経済成長と呼びます。',
+  type: 'multiple-choice',
+  era: 'contemporary'
   },
   {
     id: 170,
@@ -1006,7 +1144,7 @@ export const getEras = (): string[] => {
 };
 
 export const getCategories = (): string[] => {
-  return [...new Set(historyQuestions.map(q => q.category))];
+  return Array.from(new Set(historyQuestions.map(q => q.category)));
 };
 
 export default {
