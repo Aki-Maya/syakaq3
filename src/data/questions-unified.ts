@@ -31,7 +31,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_HUM_001",
@@ -58,7 +58,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 3.5
   },
   {
     "id": "GEO_REG_001",
@@ -85,7 +85,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 5.5
   },
   {
     "id": "GEO_REG_002",
@@ -112,7 +112,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 4
   },
   {
     "id": "GEO_HUM_002",
@@ -139,7 +139,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_HUM_003",
@@ -166,7 +166,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_003",
@@ -193,7 +193,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_REG_004",
@@ -220,7 +220,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 5
   },
   {
     "id": "GEO_REG_005",
@@ -247,7 +247,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_006",
@@ -274,7 +274,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_PHY_001",
@@ -301,7 +301,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 4.5
   },
   {
     "id": "GEO_PHY_002",
@@ -328,7 +328,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 5.5
   },
   {
     "id": "GEO_PHY_003",
@@ -355,7 +355,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 5
   },
   {
     "id": "GEO_PHY_004",
@@ -382,7 +382,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 7
   },
   {
     "id": "GEO_PHY_005",
@@ -409,7 +409,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 5.5
   },
   {
     "id": "GEO_PHY_006",
@@ -436,7 +436,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_007",
@@ -463,7 +463,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_008",
@@ -490,7 +490,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "GEO_REG_009",
@@ -517,7 +517,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.365Z"),
     "createdAt": new Date("2025-09-07T08:38:59.365Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_010",
@@ -544,7 +544,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_011",
@@ -571,7 +571,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_012",
@@ -598,7 +598,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_013",
@@ -625,7 +625,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_PHY_007",
@@ -652,7 +652,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "GEO_PHY_008",
@@ -679,7 +679,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_014",
@@ -706,7 +706,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_015",
@@ -733,7 +733,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_016",
@@ -760,7 +760,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_017",
@@ -787,7 +787,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_018",
@@ -814,7 +814,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_019",
@@ -841,7 +841,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_REG_020",
@@ -868,7 +868,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_021",
@@ -895,7 +895,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_022",
@@ -922,7 +922,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_023",
@@ -949,7 +949,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_024",
@@ -976,7 +976,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_025",
@@ -1003,7 +1003,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_026",
@@ -1030,7 +1030,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_027",
@@ -1057,7 +1057,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_028",
@@ -1084,7 +1084,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_029",
@@ -1111,7 +1111,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_030",
@@ -1138,7 +1138,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_031",
@@ -1165,7 +1165,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "CIV_ENV_002",
@@ -1192,7 +1192,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.366Z"),
     "createdAt": new Date("2025-09-07T08:38:59.366Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "HIS_ANC_001",
@@ -1219,7 +1219,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1252,7 +1252,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 3.5,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1285,7 +1285,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 6,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1318,7 +1318,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1351,7 +1351,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1384,7 +1384,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 4.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -1417,7 +1417,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 8.5,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -1450,7 +1450,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4.5,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -1483,7 +1483,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 5,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -1516,7 +1516,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 5,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1549,7 +1549,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1582,7 +1582,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4.5,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1615,7 +1615,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1648,7 +1648,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 5,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1681,7 +1681,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 8.5,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1714,7 +1714,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -1747,7 +1747,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1780,7 +1780,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 9,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1813,7 +1813,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 8,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1846,7 +1846,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1879,7 +1879,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1912,7 +1912,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 4.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1945,7 +1945,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 5.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -1978,7 +1978,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 4,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2011,7 +2011,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 4,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2044,7 +2044,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 4.5,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2077,7 +2077,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 3,
     "era": {
       "start": 1945,
       "end": 1989,
@@ -2110,7 +2110,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 5,
     "era": {
       "start": -14000,
       "end": -300,
@@ -2143,7 +2143,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -2176,7 +2176,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 9,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -2209,7 +2209,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 5,
     "era": {
       "start": 1185,
       "end": 1333,
@@ -2242,7 +2242,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 8.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -2275,7 +2275,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 4,
+    "qualityScore": 6,
     "era": {
       "start": 794,
       "end": 1185,
@@ -2308,7 +2308,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 2,
+    "qualityScore": 8,
     "era": {
       "start": 1603,
       "end": 1867,
@@ -2341,7 +2341,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 3,
+    "qualityScore": 5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2374,7 +2374,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2407,7 +2407,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2440,7 +2440,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2473,7 +2473,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2506,7 +2506,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2539,7 +2539,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2572,7 +2572,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2605,7 +2605,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2638,7 +2638,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7.5,
     "era": {
       "start": 794,
       "end": 1185,
@@ -2671,7 +2671,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7.5,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2704,7 +2704,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.369Z"),
     "createdAt": new Date("2025-09-07T08:38:59.369Z"),
     "version": 1,
-    "qualityScore": 1,
+    "qualityScore": 7,
     "era": {
       "start": 1868,
       "end": 1912,
@@ -2737,7 +2737,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "CIV_POL_001",
@@ -2791,7 +2791,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 8
   },
   {
     "id": "CIV_POL_003",
@@ -2845,7 +2845,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 5
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_005",
@@ -2872,7 +2872,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 2
   },
   {
     "id": "CIV_CON_002",
@@ -2899,7 +2899,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "CIV_POL_006",
@@ -2926,7 +2926,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "CIV_POL_007",
@@ -2953,7 +2953,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 6.5
   },
   {
     "id": "CIV_POL_008",
@@ -2980,7 +2980,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "CIV_POL_009",
@@ -3007,7 +3007,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "CIV_POL_010",
@@ -3034,7 +3034,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "CIV_POL_011",
@@ -3061,7 +3061,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "CIV_ECO_001",
@@ -3088,7 +3088,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_ECO_002",
@@ -3115,7 +3115,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_012",
@@ -3142,7 +3142,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "CIV_CON_003",
@@ -3169,7 +3169,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "CIV_POL_013",
@@ -3196,7 +3196,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 9
   },
   {
     "id": "CIV_POL_014",
@@ -3223,7 +3223,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "CIV_POL_015",
@@ -3250,7 +3250,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_016",
@@ -3277,7 +3277,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
   {
     "id": "CIV_POL_017",
@@ -3304,7 +3304,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_018",
@@ -3331,7 +3331,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 8.5
   },
   {
     "id": "CIV_POL_019",
@@ -3358,7 +3358,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 5
   },
   {
     "id": "CIV_POL_020",
@@ -3385,7 +3385,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 6
   },
   {
     "id": "CIV_POL_021",
@@ -3412,7 +3412,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 4
   },
   {
     "id": "CIV_POL_022",
@@ -3439,7 +3439,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.377Z"),
     "createdAt": new Date("2025-09-07T08:38:59.377Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 4.5
   },
   {
     "id": "CIV_ECO_003",
@@ -3466,7 +3466,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 2
+    "qualityScore": 4.5
   },
   {
     "id": "CIV_CON_004",
@@ -3493,7 +3493,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 5.5
   },
   {
     "id": "CIV_CON_005",
@@ -3520,7 +3520,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 3
+    "qualityScore": 6
   },
   {
     "id": "CIV_POL_023",
@@ -3547,7 +3547,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7
   },
   {
     "id": "CIV_POL_024",
@@ -3574,7 +3574,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_025",
@@ -3601,7 +3601,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_026",
@@ -3628,7 +3628,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_027",
@@ -3655,7 +3655,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8
   },
   {
     "id": "CIV_POL_028",
@@ -3682,7 +3682,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_029",
@@ -3709,7 +3709,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_030",
@@ -3736,7 +3736,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-07T08:38:59.379Z"),
     "createdAt": new Date("2025-09-07T08:38:59.379Z"),
     "version": 1,
-    "qualityScore": 1
+    "qualityScore": 8.5
   },
 ,
   {
@@ -5687,7 +5687,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.373Z"),
     "createdAt": new Date("2025-09-08T00:00:22.373Z"),
     "version": 1,
-    "qualityScore": 9
+    "qualityScore": 7
   },
   {
     "id": "GEO_HUM_002",
@@ -5704,7 +5704,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.373Z"),
     "createdAt": new Date("2025-09-08T00:00:22.373Z"),
     "version": 1,
-    "qualityScore": 9
+    "qualityScore": 3.5
   },
   {
     "id": "GEO_REG_003",
@@ -5721,7 +5721,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.373Z"),
     "createdAt": new Date("2025-09-08T00:00:22.373Z"),
     "version": 1,
-    "qualityScore": 9
+    "qualityScore": 5.5
   },
   {
     "id": "GEO_REG_004",
@@ -5739,7 +5739,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.373Z"),
     "createdAt": new Date("2025-09-08T00:00:22.373Z"),
     "version": 1,
-    "qualityScore": 9
+    "qualityScore": 4
   },
   {
     "id": "GEO_HUM_005",
@@ -5757,7 +5757,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.373Z"),
     "createdAt": new Date("2025-09-08T00:00:22.373Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_HUM_006",
@@ -5793,7 +5793,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_REG_008",
@@ -5810,7 +5810,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 5
   },
   {
     "id": "GEO_REG_009",
@@ -5828,7 +5828,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_010",
@@ -5845,7 +5845,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_PHY_011",
@@ -5862,7 +5862,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 4.5
   },
   {
     "id": "GEO_PHY_012",
@@ -5879,7 +5879,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 5.5
   },
   {
     "id": "GEO_PHY_013",
@@ -5896,7 +5896,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 5
   },
   {
     "id": "GEO_PHY_014",
@@ -5931,7 +5931,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 5.5
   },
   {
     "id": "GEO_HUM_016",
@@ -5948,7 +5948,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 7
   },
   {
     "id": "GEO_PHY_017",
@@ -5966,7 +5966,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_018",
@@ -5984,7 +5984,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_019",
@@ -6002,7 +6002,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 6.5
   },
   {
     "id": "GEO_REG_020",
@@ -6019,7 +6019,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_REG_021",
@@ -6036,7 +6036,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 8
   },
   {
     "id": "GEO_REG_022",
@@ -6053,7 +6053,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_023",
@@ -6070,7 +6070,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_PHY_024",
@@ -6088,7 +6088,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_025",
@@ -6105,7 +6105,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_026",
@@ -6122,7 +6122,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_027",
@@ -6139,7 +6139,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_028",
@@ -6156,7 +6156,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_029",
@@ -6173,7 +6173,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_030",
@@ -6190,7 +6190,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_031",
@@ -6207,7 +6207,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_PHY_032",
@@ -6225,7 +6225,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 9
   },
   {
     "id": "GEO_PHY_033",
@@ -6243,7 +6243,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 9
   },
   {
     "id": "GEO_REG_034",
@@ -6260,7 +6260,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_PHY_035",
@@ -6278,7 +6278,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_036",
@@ -6295,7 +6295,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_037",
@@ -6312,7 +6312,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.374Z"),
     "createdAt": new Date("2025-09-08T00:00:22.374Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_REG_038",
@@ -6329,7 +6329,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.375Z"),
     "createdAt": new Date("2025-09-08T00:00:22.375Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_039",
@@ -6346,7 +6346,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.375Z"),
     "createdAt": new Date("2025-09-08T00:00:22.375Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_040",
@@ -6363,7 +6363,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.375Z"),
     "createdAt": new Date("2025-09-08T00:00:22.375Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_041",
@@ -6380,7 +6380,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.375Z"),
     "createdAt": new Date("2025-09-08T00:00:22.375Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_042",
@@ -6397,7 +6397,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.375Z"),
     "createdAt": new Date("2025-09-08T00:00:22.375Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_043",
@@ -6414,7 +6414,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.375Z"),
     "createdAt": new Date("2025-09-08T00:00:22.375Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_044",
@@ -6431,7 +6431,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_045",
@@ -6448,7 +6448,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_046",
@@ -6466,7 +6466,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "GEO_REG_047",
@@ -6483,7 +6483,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_048",
@@ -6500,7 +6500,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_049",
@@ -6517,7 +6517,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_050",
@@ -6534,7 +6534,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_051",
@@ -6551,7 +6551,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_PHY_052",
@@ -6569,7 +6569,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_053",
@@ -6586,7 +6586,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_054",
@@ -6604,7 +6604,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_055",
@@ -6621,7 +6621,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_HUM_056",
@@ -6638,7 +6638,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_057",
@@ -6655,7 +6655,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_058",
@@ -6672,7 +6672,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_059",
@@ -6689,7 +6689,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_060",
@@ -6706,7 +6706,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_061",
@@ -6723,7 +6723,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_062",
@@ -6740,7 +6740,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_063",
@@ -6757,7 +6757,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_064",
@@ -6774,7 +6774,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_065",
@@ -6791,7 +6791,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_066",
@@ -6808,7 +6808,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_067",
@@ -6825,7 +6825,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_068",
@@ -6842,7 +6842,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_069",
@@ -6859,7 +6859,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_070",
@@ -6876,7 +6876,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_071",
@@ -6893,7 +6893,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
   {
     "id": "GEO_REG_072",
@@ -6910,7 +6910,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:00:22.376Z"),
     "createdAt": new Date("2025-09-08T00:00:22.376Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7
   },
 ,
   {
@@ -6928,7 +6928,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.278Z"),
     "createdAt": new Date("2025-09-08T00:01:58.278Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_002",
@@ -6945,7 +6945,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.278Z"),
     "createdAt": new Date("2025-09-08T00:01:58.278Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_003",
@@ -6962,7 +6962,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.278Z"),
     "createdAt": new Date("2025-09-08T00:01:58.278Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_004",
@@ -6980,7 +6980,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.278Z"),
     "createdAt": new Date("2025-09-08T00:01:58.278Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_005",
@@ -6998,7 +6998,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.278Z"),
     "createdAt": new Date("2025-09-08T00:01:58.278Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 6
   },
   {
     "id": "CIV_POL_006",
@@ -7016,7 +7016,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.278Z"),
     "createdAt": new Date("2025-09-08T00:01:58.278Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 4
   },
   {
     "id": "CIV_POL_007",
@@ -7033,7 +7033,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 4.5
   },
   {
     "id": "CIV_ECO_008",
@@ -7050,7 +7050,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 4.5
   },
   {
     "id": "CIV_CON_009",
@@ -7067,7 +7067,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 8
+    "qualityScore": 5.5
   },
   {
     "id": "CIV_CON_010",
@@ -7084,7 +7084,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 6
   },
   {
     "id": "CIV_POL_011",
@@ -7101,7 +7101,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_012",
@@ -7118,7 +7118,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_013",
@@ -7135,7 +7135,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_014",
@@ -7152,7 +7152,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_015",
@@ -7169,7 +7169,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_016",
@@ -7186,7 +7186,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_017",
@@ -7203,7 +7203,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_018",
@@ -7220,7 +7220,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_019",
@@ -7237,7 +7237,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 8.5
   },
   {
     "id": "CIV_POL_020",
@@ -7254,7 +7254,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 7
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_021",
@@ -7271,7 +7271,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_022",
@@ -7288,7 +7288,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 8
   },
   {
     "id": "CIV_POL_023",
@@ -7305,7 +7305,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_024",
@@ -7323,7 +7323,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 8
   },
   {
     "id": "CIV_POL_025",
@@ -7340,7 +7340,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 7.5
   },
   {
     "id": "CIV_POL_026",
@@ -7358,7 +7358,7 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "lastUpdated": new Date("2025-09-08T00:01:58.279Z"),
     "createdAt": new Date("2025-09-08T00:01:58.279Z"),
     "version": 1,
-    "qualityScore": 6
+    "qualityScore": 8
   }
 ];
 
