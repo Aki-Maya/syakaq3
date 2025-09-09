@@ -2,7 +2,7 @@
 // 統一データベースを使用するメインインデックス
 
 import { 
-  unifiedQuestions as allUnifiedQuestions, 
+  allUnifiedQuestions, 
   getQuestionsBySubject as getUnifiedBySubject,
   getQuestionsByCategory as getUnifiedByCategory,
   getQuestionsByTag,
@@ -119,18 +119,21 @@ const calculateQuestionCounts = () => {
     }
   };
 
-  unifiedQuestions.forEach(q => {
-    if (q.subject === 'geography') {
-      counts.geography.total++;
-      counts.geography[q.category as keyof typeof counts.geography]++;
-    } else if (q.subject === 'history') {
-      counts.history.total++;
-      counts.history[q.category as keyof typeof counts.history]++;
-    } else if (q.subject === 'civics') {
-      counts.civics.total++;
-      counts.civics[q.category as keyof typeof counts.civics]++;
-    }
-  });
+  // Safe forEach with null check
+  if (unifiedQuestions && Array.isArray(unifiedQuestions)) {
+    unifiedQuestions.forEach(q => {
+      if (q.subject === 'geography') {
+        counts.geography.total++;
+        counts.geography[q.category as keyof typeof counts.geography]++;
+      } else if (q.subject === 'history') {
+        counts.history.total++;
+        counts.history[q.category as keyof typeof counts.history]++;
+      } else if (q.subject === 'civics') {
+        counts.civics.total++;
+        counts.civics[q.category as keyof typeof counts.civics]++;
+      }
+    });
+  }
 
   return counts;
 };
@@ -209,7 +212,7 @@ export type GovernmentBranch = any;
 
 // Enhanced utility functions using unified database
 export const getAllQuestions = (): NewUnifiedQuestion[] => {
-  return unifiedQuestions;
+  return unifiedQuestions || [];
 };
 
 export const getQuestionsBySubject = (subject: 'geography' | 'history' | 'civics'): NewUnifiedQuestion[] => {
@@ -221,7 +224,8 @@ export const getQuestionsBySubjectAndCategory = (subject: 'geography' | 'history
 };
 
 export const getRandomQuestionsMixed = (count: number = 10): NewUnifiedQuestion[] => {
-  const shuffled = [...unifiedQuestions].sort(() => 0.5 - Math.random());
+  const safeQuestions = unifiedQuestions || [];
+  const shuffled = [...safeQuestions].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
 
@@ -235,7 +239,7 @@ export const getQuestionsByDifficulty = (difficulty: 'easy' | 'medium' | 'hard')
     'hard': 'advanced' as const
   };
   
-  return unifiedQuestions.filter(q => q.difficulty === difficultyMap[difficulty]);
+  return (unifiedQuestions || []).filter(q => q.difficulty === difficultyMap[difficulty]);
 };
 
 // Legacy compatibility functions
@@ -405,17 +409,18 @@ export const calculateXPForCorrectAnswer = calculateXPFromScore;
 
 // Subject statistics using unified database
 export const getSubjectStats = () => {
+  const safeQuestions = unifiedQuestions || [];
   return {
-    totalQuestions: unifiedQuestions.length,
+    totalQuestions: safeQuestions.length,
     subjectBreakdown: {
       geography: questionCounts.geography.total,
       history: questionCounts.history.total,
       civics: questionCounts.civics.total
     },
     difficultyBreakdown: {
-      easy: unifiedQuestions.filter(q => q.difficulty === 'basic').length,
-      medium: unifiedQuestions.filter(q => q.difficulty === 'standard').length,
-      hard: unifiedQuestions.filter(q => q.difficulty === 'advanced').length
+      easy: safeQuestions.filter(q => q.difficulty === 'basic').length,
+      medium: safeQuestions.filter(q => q.difficulty === 'standard').length,
+      hard: safeQuestions.filter(q => q.difficulty === 'advanced').length
     }
   };
 };
