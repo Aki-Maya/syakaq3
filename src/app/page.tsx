@@ -34,8 +34,8 @@ const ShakaQuestHome = () => {
         {/* ヘッダー */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">ShakaQuest2</h1>
-          <p className="text-gray-600">中学受験学習アプリ - テスト版</p>
-          <div className="text-xs text-gray-500 mt-1">v2.2.0 - 最小限ビルドテスト</div>
+          <p className="text-gray-600">中学受験学習アプリ - 390問完全版</p>
+          <div className="text-xs text-gray-500 mt-1">v3.0.0 - 高品質統合完了！</div>
         </div>
 
         {/* ユーザー統計カード */}
