@@ -93,8 +93,8 @@ export interface SubjectCategory {
   questionCount: number;
 }
 
-// Calculate question counts from unified database
-const calculateQuestionCounts = () => {
+// Calculate question counts with proper initialization
+const calculateAndGetQuestionCounts = () => {
   const counts = {
     geography: {
       total: 0,
@@ -119,18 +119,24 @@ const calculateQuestionCounts = () => {
     }
   };
 
-  // Safe forEach with null check
-  if (unifiedQuestions && Array.isArray(unifiedQuestions)) {
-    unifiedQuestions.forEach(q => {
+  // Use allUnifiedQuestions directly
+  if (allUnifiedQuestions && Array.isArray(allUnifiedQuestions)) {
+    allUnifiedQuestions.forEach(q => {
       if (q.subject === 'geography') {
         counts.geography.total++;
-        counts.geography[q.category as keyof typeof counts.geography]++;
+        if (counts.geography[q.category as keyof typeof counts.geography] !== undefined) {
+          counts.geography[q.category as keyof typeof counts.geography]++;
+        }
       } else if (q.subject === 'history') {
         counts.history.total++;
-        counts.history[q.category as keyof typeof counts.history]++;
+        if (counts.history[q.category as keyof typeof counts.history] !== undefined) {
+          counts.history[q.category as keyof typeof counts.history]++;
+        }
       } else if (q.subject === 'civics') {
         counts.civics.total++;
-        counts.civics[q.category as keyof typeof counts.civics]++;
+        if (counts.civics[q.category as keyof typeof counts.civics] !== undefined) {
+          counts.civics[q.category as keyof typeof counts.civics]++;
+        }
       }
     });
   }
@@ -138,7 +144,7 @@ const calculateQuestionCounts = () => {
   return counts;
 };
 
-const questionCounts = calculateQuestionCounts();
+const questionCounts = calculateAndGetQuestionCounts();
 
 // Updated subject definitions with accurate question counts from unified database
 export const subjects: SubjectInfo[] = [
