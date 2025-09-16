@@ -119,7 +119,7 @@ export interface UnifiedQuestion {
   question: string;
   options: string[];
   correct: number;              // 正解のインデックス (0-3)
-  explanation: string;          // 詳細解説（100文字以上推奨）
+  explanation: string;          // 詳細解説（50文字以上推奨）
   type: QuestionType;
   
   // 管理情報
@@ -319,8 +319,8 @@ export function validateQuestion(question: UnifiedQuestion): ValidationResult {
   }
   
   // 解説文字数チェック
-  if (question.explanation.length < 100) {
-    warnings.push(`Explanation too short (${question.explanation.length} chars, recommended 100+)`);
+  if (question.explanation.length < 50) {
+    warnings.push(`Explanation too short (${question.explanation.length} chars, recommended 50+)`);
   }
   
   // 選択肢数チェック
