@@ -1,7 +1,18 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { UnifiedQuestion } from '@/data/questions-unified-complete';
+
+// レガシー問題型（APIから返される形式）
+interface LegacyQuestion {
+  id: number | string;
+  question: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+  category: string;
+  difficulty: 'easy' | 'medium' | 'hard';
+  subject: string;
+}
 
 interface QuestionStats {
   total: number;
@@ -22,16 +33,16 @@ interface QuestionStats {
 
 interface ApiResponse {
   success: boolean;
-  questions: UnifiedQuestion[];
+  questions: LegacyQuestion[];
   stats: QuestionStats;
   error?: string;
 }
 
 export default function QuestionManager() {
-  const [questions, setQuestions] = useState<UnifiedQuestion[]>([]);
+  const [questions, setQuestions] = useState<LegacyQuestion[]>([]);
   const [stats, setStats] = useState<QuestionStats | null>(null);
   const [loading, setLoading] = useState(false);
-  const [editingQuestion, setEditingQuestion] = useState<UnifiedQuestion | null>(null);
+  const [editingQuestion, setEditingQuestion] = useState<LegacyQuestion | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedSubject, setSelectedSubject] = useState('all');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -98,7 +109,7 @@ export default function QuestionManager() {
   };
 
   // 問題を編集
-  const saveEditedQuestion = async (updatedQuestion: UnifiedQuestion) => {
+  const saveEditedQuestion = async (updatedQuestion: LegacyQuestion) => {
     setLoading(true);
     try {
       const response = await fetch('/api/edit-question', {
@@ -168,7 +179,13 @@ export default function QuestionManager() {
       <div className="max-w-6xl mx-auto">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">🗂️ 問題管理システム</h1>
-          <p className="text-gray-600">既存の問題を編集・削除できます</p>
+          <p className="text-gray-600">既存の問題を閲覧できます</p>
+          <div className="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-2xl mx-auto">
+            <p className="text-blue-800 text-sm">
+              📋 <strong>お知らせ:</strong> 新しいデータ構造への移行中のため、現在は閲覧機能のみ利用可能です。<br/>
+              編集・削除機能は次回のアップデートで復活予定です。
+            </p>
+          </div>
         </div>
 
         {/* 統計情報 */}
@@ -230,15 +247,19 @@ export default function QuestionManager() {
           </div>
         </div>
 
-        {/* 編集フォーム */}
+        {/* 編集フォーム - 一時的に無効化 */}
         {editingQuestion && (
           <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
             <h3 className="text-lg font-bold text-gray-800 mb-4">✏️ 問題編集</h3>
-            <QuestionEditForm
-              question={editingQuestion}
-              onSave={saveEditedQuestion}
-              onCancel={() => setEditingQuestion(null)}
-            />
+            <div className="text-center py-8">
+              <p className="text-gray-600 mb-4">📝 新しいデータ構造への移行中のため、編集機能は一時的に利用できません</p>
+              <button
+                onClick={() => setEditingQuestion(null)}
+                className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
+              >
+                閉じる
+              </button>
+            </div>
           </div>
         )}
 
@@ -281,14 +302,16 @@ export default function QuestionManager() {
                     </div>
                     <div className="flex gap-2">
                       <button
-                        onClick={() => setEditingQuestion(question)}
-                        className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 transition-colors"
+                        disabled
+                        className="px-3 py-1 bg-gray-300 text-gray-500 text-sm rounded cursor-not-allowed"
+                        title="新しいデータ構造では編集機能は現在利用できません"
                       >
                         ✏️ 編集
                       </button>
                       <button
-                        onClick={() => deleteQuestion(question.id)}
-                        className="px-3 py-1 bg-red-500 text-white text-sm rounded hover:bg-red-600 transition-colors"
+                        disabled
+                        className="px-3 py-1 bg-gray-300 text-gray-500 text-sm rounded cursor-not-allowed"
+                        title="新しいデータ構造では削除機能は現在利用できません"
                       >
                         🗑️ 削除
                       </button>
@@ -350,8 +373,8 @@ export default function QuestionManager() {
 
 // 問題編集フォームコンポーネント
 interface QuestionEditFormProps {
-  question: UnifiedQuestion;
-  onSave: (question: UnifiedQuestion) => void;
+  question: LegacyQuestion;
+  onSave: (question: LegacyQuestion) => void;
   onCancel: () => void;
 }
 

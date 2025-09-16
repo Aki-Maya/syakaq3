@@ -1,5 +1,37 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { unifiedQuestions } from '@/data/questions-unified-complete';
+import { allUnifiedQuestions, UnifiedQuestion } from '@/data/questions-unified-complete';
+
+// 新しい型から古い型への変換ヘルパー
+interface LegacyQuestion {
+  id: number | string;
+  question: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+  category: string;
+  difficulty: 'easy' | 'medium' | 'hard';
+  subject: string;
+}
+
+function convertToLegacyFormat(question: UnifiedQuestion, index: number): LegacyQuestion {
+  // 難易度マッピング
+  const difficultyMap = {
+    'basic': 'easy',
+    'standard': 'medium', 
+    'advanced': 'hard'
+  } as const;
+
+  return {
+    id: index + 1, // 数値IDに変換
+    question: question.question,
+    options: question.options,
+    correct: question.correct,
+    explanation: question.explanation,
+    category: question.category,
+    difficulty: difficultyMap[question.difficulty] || 'medium',
+    subject: question.subject
+  };
+}
 
 export async function GET(request: NextRequest) {
   try {
@@ -9,7 +41,7 @@ export async function GET(request: NextRequest) {
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '20');
 
-    let filteredQuestions = [...unifiedQuestions];
+    let filteredQuestions = [...allUnifiedQuestions];
 
     // 科目でフィルタ
     if (subject && subject !== 'all') {
@@ -21,26 +53,29 @@ export async function GET(request: NextRequest) {
       filteredQuestions = filteredQuestions.filter(q => q.category === category);
     }
 
+    // レガシー形式に変換
+    const legacyQuestions = filteredQuestions.map((q, index) => convertToLegacyFormat(q, index));
+
     // ページネーション
     const startIndex = (page - 1) * limit;
     const endIndex = startIndex + limit;
-    const paginatedQuestions = filteredQuestions.slice(startIndex, endIndex);
+    const paginatedQuestions = legacyQuestions.slice(startIndex, endIndex);
 
     // 統計情報
     const stats = {
-      total: filteredQuestions.length,
+      total: legacyQuestions.length,
       page,
       limit,
-      totalPages: Math.ceil(filteredQuestions.length / limit),
+      totalPages: Math.ceil(legacyQuestions.length / limit),
       subjectCounts: {
-        geography: unifiedQuestions.filter(q => q.subject === 'geography').length,
-        history: unifiedQuestions.filter(q => q.subject === 'history').length,
-        civics: unifiedQuestions.filter(q => q.subject === 'civics').length
+        geography: allUnifiedQuestions.filter(q => q.subject === 'geography').length,
+        history: allUnifiedQuestions.filter(q => q.subject === 'history').length,
+        civics: allUnifiedQuestions.filter(q => q.subject === 'civics').length
       },
       difficultyCounts: {
-        easy: filteredQuestions.filter(q => q.difficulty === 'easy').length,
-        medium: filteredQuestions.filter(q => q.difficulty === 'medium').length,
-        hard: filteredQuestions.filter(q => q.difficulty === 'hard').length
+        easy: allUnifiedQuestions.filter(q => q.difficulty === 'basic').length,
+        medium: allUnifiedQuestions.filter(q => q.difficulty === 'standard').length,
+        hard: allUnifiedQuestions.filter(q => q.difficulty === 'advanced').length
       }
     };
 
