@@ -134,3 +134,12 @@ old-data-backup/
 design-*.md
 DEPLOYMENT_STATUS.md
 ecosystem.config.js
+
+# Data folder - only essential files should be tracked
+src/data/*-backup*
+src/data/*-cleaned*
+src/data/index-*.ts
+src/data/questions-unified.ts
+src/data/geography.ts
+src/data/history.ts  
+src/data/civics.ts
