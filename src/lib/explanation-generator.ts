@@ -124,7 +124,7 @@ export class ExplanationGenerator {
             【出力形式】
             各キーワードについて以下の形式で出力：
             ${keyword}は 【解説】。
-            ;
+            `;
   }
 
   /**
