@@ -16,7 +16,6 @@ export const unifiedQuestions = allUnifiedQuestions;
 
 import { 
   UnifiedQuestion as NewUnifiedQuestion,
-  Subject as UnifiedSubject,
   Difficulty,
   QuestionType,
   GeographyCategory,
