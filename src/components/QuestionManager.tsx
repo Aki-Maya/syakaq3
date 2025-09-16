@@ -46,6 +46,9 @@ export default function QuestionManager() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedSubject, setSelectedSubject] = useState('all');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  // 一括削除用の状態
+  const [selectedQuestionIds, setSelectedQuestionIds] = useState<Set<number | string>>(new Set());
+  const [bulkDeleting, setBulkDeleting] = useState(false);
 
   // 問題一覧を取得
   const fetchQuestions = async (page = 1, subject = 'all', category = 'all') => {
@@ -75,37 +78,68 @@ export default function QuestionManager() {
     }
   };
 
-  // 問題を削除
-  const deleteQuestion = async (questionId: number) => {
-    const question = questions.find(q => q.id === questionId);
-    if (!question) return;
-
-    if (!confirm(`以下の問題を削除しますか？\n\n"${question.question}"`)) {
+  // 一括削除機能
+  const bulkDeleteQuestions = async () => {
+    if (selectedQuestionIds.size === 0) {
+      alert('削除する問題を選択してください');
       return;
     }
 
-    setLoading(true);
+    const selectedQuestions = questions.filter(q => selectedQuestionIds.has(q.id));
+    const confirmMessage = `選択された${selectedQuestionIds.size}問を削除しますか？\n\n削除される問題:\n${selectedQuestions.slice(0, 5).map(q => `• ${q.question.substring(0, 40)}...`).join('\n')}${selectedQuestions.length > 5 ? `\n...他${selectedQuestions.length - 5}問` : ''}`;
+
+    if (!confirm(confirmMessage)) {
+      return;
+    }
+
+    setBulkDeleting(true);
     try {
-      const response = await fetch('/api/delete-question', {
+      const response = await fetch('/api/bulk-delete-questions', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ questionId })
+        body: JSON.stringify({ questionIds: Array.from(selectedQuestionIds) })
       });
 
       const data = await response.json();
 
       if (data.success) {
-        alert(`問題を削除しました\n残り問題数: ${data.remainingCount}件`);
+        alert(`${data.deletedCount}問を削除しました\n残り問題数: ${data.remainingCount}件`);
+        setSelectedQuestionIds(new Set());
         fetchQuestions(currentPage, selectedSubject, selectedCategory);
       } else {
-        throw new Error(data.error || '削除に失敗しました');
+        throw new Error(data.error || '一括削除に失敗しました');
       }
     } catch (error) {
-      console.error('削除エラー:', error);
-      alert('問題の削除に失敗しました');
+      console.error('一括削除エラー:', error);
+      alert('問題の一括削除に失敗しました: ' + (error instanceof Error ? error.message : '不明なエラー'));
     } finally {
-      setLoading(false);
+      setBulkDeleting(false);
     }
+  };
+
+  // チェックボックスの選択/解除
+  const toggleQuestionSelection = (questionId: number | string) => {
+    const newSelection = new Set(selectedQuestionIds);
+    if (newSelection.has(questionId)) {
+      newSelection.delete(questionId);
+    } else {
+      newSelection.add(questionId);
+    }
+    setSelectedQuestionIds(newSelection);
+  };
+
+  // 全選択/全解除
+  const toggleSelectAll = () => {
+    if (selectedQuestionIds.size === questions.length) {
+      setSelectedQuestionIds(new Set());
+    } else {
+      setSelectedQuestionIds(new Set(questions.map(q => q.id)));
+    }
+  };
+
+  // 単一問題削除（従来機能は無効化）
+  const deleteQuestion = async (questionId: number) => {
+    alert('単一削除機能は無効化されています。チェックボックスで選択して一括削除をご利用ください。');
   };
 
   // 問題を編集
@@ -143,12 +177,14 @@ export default function QuestionManager() {
     setSelectedSubject(newSubject);
     setSelectedCategory(newCategory);
     setCurrentPage(1);
+    setSelectedQuestionIds(new Set()); // 選択状態をクリア
     fetchQuestions(1, newSubject, newCategory);
   };
 
   // ページ変更時の処理
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage);
+    setSelectedQuestionIds(new Set()); // 選択状態をクリア
     fetchQuestions(newPage, selectedSubject, selectedCategory);
   };
 
@@ -213,10 +249,12 @@ export default function QuestionManager() {
           </div>
         )}
 
-        {/* フィルタ */}
+        {/* フィルタ & 一括操作 */}
         <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
-          <h3 className="text-lg font-bold text-gray-800 mb-4">🔍 フィルタ</h3>
-          <div className="flex gap-4">
+          <h3 className="text-lg font-bold text-gray-800 mb-4">🔍 フィルタ & 一括操作</h3>
+          
+          {/* フィルタ行 */}
+          <div className="flex gap-4 mb-4">
             <select 
               value={selectedSubject}
               onChange={(e) => handleFilterChange(e.target.value, selectedCategory)}
@@ -244,6 +282,28 @@ export default function QuestionManager() {
             >
               🔄 更新
             </button>
+          </div>
+
+          {/* 一括操作行 */}
+          <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
+            <button
+              onClick={toggleSelectAll}
+              className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
+            >
+              {selectedQuestionIds.size === questions.length ? '全解除' : '全選択'}
+            </button>
+            <span className="text-sm text-gray-600">
+              {selectedQuestionIds.size}問選択中
+            </span>
+            {selectedQuestionIds.size > 0 && (
+              <button
+                onClick={bulkDeleteQuestions}
+                disabled={bulkDeleting}
+                className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors disabled:opacity-50"
+              >
+                {bulkDeleting ? '削除中...' : `🗑️ 選択した${selectedQuestionIds.size}問を削除`}
+              </button>
+            )}
           </div>
         </div>
 
@@ -282,9 +342,18 @@ export default function QuestionManager() {
           ) : (
             <div className="space-y-4">
               {questions.map((question) => (
-                <div key={question.id} className="border border-gray-200 rounded-lg p-4">
+                <div key={question.id} className={`border rounded-lg p-4 transition-colors ${
+                  selectedQuestionIds.has(question.id) ? 'border-red-500 bg-red-50' : 'border-gray-200'
+                }`}>
                   <div className="flex justify-between items-start mb-3">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-3">
+                      {/* チェックボックス */}
+                      <input
+                        type="checkbox"
+                        checked={selectedQuestionIds.has(question.id)}
+                        onChange={() => toggleQuestionSelection(question.id)}
+                        className="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 focus:ring-2"
+                      />
                       <span className={`px-2 py-1 rounded text-xs font-bold text-white ${
                         question.subject === 'geography' ? 'bg-green-500' :
                         question.subject === 'history' ? 'bg-blue-500' : 'bg-purple-500'
@@ -304,14 +373,14 @@ export default function QuestionManager() {
                       <button
                         disabled
                         className="px-3 py-1 bg-gray-300 text-gray-500 text-sm rounded cursor-not-allowed"
-                        title="新しいデータ構造では編集機能は現在利用できません"
+                        title="チェックボックスで選択して一括削除をご利用ください"
                       >
                         ✏️ 編集
                       </button>
                       <button
                         disabled
                         className="px-3 py-1 bg-gray-300 text-gray-500 text-sm rounded cursor-not-allowed"
-                        title="新しいデータ構造では削除機能は現在利用できません"
+                        title="チェックボックスで選択して一括削除をご利用ください"
                       >
                         🗑️ 削除
                       </button>
