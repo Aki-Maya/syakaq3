@@ -202,7 +202,7 @@ export function getRandomQuestions(count: number = 10): Question[] {
  * 条件に合致する問題をランダム取得
  */
 export function getRandomQuestionsByCondition(
-  condition: Partial>,
+  condition: Partial<Pick<Question, 'category' | 'difficulty' | 'grade'>>,
   count: number = 10
 ): Question[] {
   let filtered = questions;
@@ -225,15 +225,15 @@ export function getRandomQuestionsByCondition(
  * 統計情報を取得
  */
 export function getStatistics() {
-  const categoryStats: Record = {
+  const categoryStats: Record<string, number> = {
     "地理": 0, "歴史": 0, "公民": 0, "経済": 0, "文化": 0
   };
 
-  const difficultyStats: Record = {
+  const difficultyStats: Record<string, number> = {
     "易": 0, "中": 0, "難": 0
   };
 
-  const gradeStats: Record = {
+  const gradeStats: Record<number, number> = {
     5: 0, 6: 0
   };
 
@@ -278,7 +278,7 @@ export class StudyHistory {
   }
 
   getWeakAreas(): Category[] {
-    const categoryResults: Record = {};
+    const categoryResults: Record<string, { correct: number; total: number }> = {};
 
     this.results.forEach(result => {
       const question = questions.find(q => q.id === result.questionId);
@@ -314,6 +314,22 @@ export class StudyHistory {
   }
 }
 
+// 追加のヘルパー関数
+export function getQuestionsBySubject(subject: string): Question[] {
+  return questions.filter(q => q.subject === subject);
+}
+
+export function getQuestionsByTag(tag: string): Question[] {
+  return questions.filter(q => q.tags.includes(tag));
+}
+
+export function getHighQualityQuestions(minScore: number = 8.0): Question[] {
+  return questions.filter(q => q.qualityScore >= minScore);
+}
+
+// エイリアスを追加
+export const allUnifiedQuestions = questions;
+
 // 使用例とエクスポート
 export default {
   questions,
@@ -324,5 +340,8 @@ export default {
   getRandomQuestions,
   getRandomQuestionsByCondition,
   getStatistics,
-  StudyHistory
+  StudyHistory,
+  getQuestionsBySubject,
+  getQuestionsByTag,
+  getHighQualityQuestions
 };
