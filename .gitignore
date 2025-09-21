@@ -99,3 +99,47 @@ jspm_packages/
 
 # Windows
 Thumbs.db
+
+# Development and Migration Scripts (Should not be deployed)
+*-backup-*.ts
+*-backup-*.json
+*backup*.json
+*backup*.ts
+analyze-*.js
+check-*.js
+cleanup-*.js
+create-*.js
+debug-*.js
+enhance-*.js
+fix-*.js
+integrate-*.js
+migrate-*.js
+migration-*.js
+quality-*.js
+rebuild-*.js
+recalculate-*.js
+remove-*.js
+safe-*.js
+test-*.js
+verify-*.js
+count-*.js
+fact-*.js
+find-*.js
+comprehensive-*.js
+old-data-backup/
+*.tar.gz
+*-stats.json
+*-report.json
+*-analysis.json
+design-*.md
+DEPLOYMENT_STATUS.md
+ecosystem.config.js
+
+# Data folder - only essential files should be tracked
+src/data/*-backup*
+src/data/*-cleaned*
+src/data/index-*.ts
+src/data/questions-unified.ts
+src/data/geography.ts
+src/data/history.ts  
+src/data/civics.ts

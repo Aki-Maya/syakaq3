@@ -1,11 +1,11 @@
 // 中学受験社会科 四択問題データベース
 // 全127項目の完全版
 
-export interface UnifiedQuestion {
+export interface Question {
   id: string;
   subject: string;
   category: string;
-  subcategory?: string;
+  subcategory: string;
   grade: number;
   difficulty: string;
   tags: string[];
@@ -14,12 +14,10 @@ export interface UnifiedQuestion {
   correct: number;
   explanation: string;
   type: string;
-  qualityScore?: number;
+  qualityScore: number;
   lastUpdated: string;
   createdAt: string;
   version: number;
-  era?: any;
-  source?: string;
 }
 
 export type Category = "地理" | "歴史" | "公民" | "経済" | "文化";
@@ -27,7 +25,7 @@ export type Difficulty = "易" | "中" | "難";
 export type Grade = 5 | 6;
 
 // 全127項目の問題データ
-export const questions: UnifiedQuestion[] = [
+export const questions: Question[] = [
   {"id":"geography_hokkaido","subject":"社会","category":"地理","subcategory":"都道府県","grade":6,"difficulty":"中","tags":["北海道","寒冷地","農業"],"question":"北海道の主な農業の特徴として正しいものはどれですか？","options":["稲作が中心である","じゃがいもや小麦の栽培が盛ん","みかんの栽培が有名","茶の栽培が盛ん"],"correct":1,"explanation":"北海道は冷涼な気候を生かしてじゃがいもや小麦、とうもろこしなどの畑作が盛んです。","type":"地理知識","qualityScore":8.5,"lastUpdated":"2024-12-20T04:00:00Z","createdAt":"2024-12-20T04:00:00Z","version":1},
   {"id":"geography_honshu","subject":"社会","category":"地理","subcategory":"都道府県","grade":5,"difficulty":"中","tags":["本州","日本列島","最大"],"question":"本州について正しい説明はどれですか？","options":["日本で2番目に大きな島","九州と四国の間にある","日本最大の島で、東京や大阪がある","北海道の南にある小さな島"],"correct":2,"explanation":"本州は日本最大の島で、首都東京や大阪、名古屋などの大都市があります。","type":"地理知識","qualityScore":9.0,"lastUpdated":"2024-12-20T04:00:00Z","createdAt":"2024-12-20T04:00:00Z","version":1},
   {"id":"geography_shikoku","subject":"社会","category":"地理","subcategory":"都道府県","grade":5,"difficulty":"中","tags":["四国","愛媛県","高知県"],"question":"四国地方について正しいものはどれですか？","options":["6つの県がある","香川県、愛媛県、徳島県、高知県の4県からなる","本州の北にある","沖縄県も含まれる"],"correct":1,"explanation":"四国地方は香川県、愛媛県、徳島県、高知県の4県で構成されています。","type":"地理知識","qualityScore":8.5,"lastUpdated":"2024-12-20T04:00:00Z","createdAt":"2024-12-20T04:00:00Z","version":1},
@@ -157,36 +155,33 @@ export const questions: UnifiedQuestion[] = [
   {"id":"culture_multicultural","subject":"社会","category":"文化","subcategory":"現代社会","grade":6,"difficulty":"中","tags":["多文化共生","国際化","異文化理解"],"question":"多文化共生について正しい説明はどれですか？","options":["自分の文化だけを大切にする","異なる文化を持つ人々が共に生きる","外国の文化を禁止する","文化の交流をしない"],"correct":1,"explanation":"多文化共生は、異なる文化や価値観を持つ人々がお互いを尊重し合いながら共に生きることです。","type":"文化知識","qualityScore":8.5,"lastUpdated":"2024-12-20T04:00:00Z","createdAt":"2024-12-20T04:00:00Z","version":1}
 ];
 
-// エイリアスを追加
-export const allUnifiedQuestions = questions;
-
 // ヘルパー関数
 
 /**
  * カテゴリ別に問題を取得
  */
-export function getQuestionsByCategory(category: Category): UnifiedQuestion[] {
+export function getQuestionsByCategory(category: Category): Question[] {
   return questions.filter(q => q.category === category);
 }
 
 /**
  * 難易度別に問題を取得
  */
-export function getQuestionsByDifficulty(difficulty: Difficulty): UnifiedQuestion[] {
+export function getQuestionsByDifficulty(difficulty: Difficulty): Question[] {
   return questions.filter(q => q.difficulty === difficulty);
 }
 
 /**
  * 学年別に問題を取得
  */
-export function getQuestionsByGrade(grade: Grade): UnifiedQuestion[] {
+export function getQuestionsByGrade(grade: Grade): Question[] {
   return questions.filter(q => q.grade === grade);
 }
 
 /**
  * キーワードで問題を検索
  */
-export function searchQuestions(keyword: string): UnifiedQuestion[] {
+export function searchQuestions(keyword: string): Question[] {
   const lowerKeyword = keyword.toLowerCase();
   return questions.filter(q => 
     q.question.toLowerCase().includes(lowerKeyword) ||
@@ -198,7 +193,7 @@ export function searchQuestions(keyword: string): UnifiedQuestion[] {
 /**
  * ランダムに問題を取得
  */
-export function getRandomQuestions(count: number = 10): UnifiedQuestion[] {
+export function getRandomQuestions(count: number = 10): Question[] {
   const shuffled = [...questions].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 }
@@ -207,9 +202,9 @@ export function getRandomQuestions(count: number = 10): UnifiedQuestion[] {
  * 条件に合致する問題をランダム取得
  */
 export function getRandomQuestionsByCondition(
-  condition: Partial<Pick<UnifiedQuestion, 'category' | 'difficulty' | 'grade'>>,
+  condition: Partial>,
   count: number = 10
-): UnifiedQuestion[] {
+): Question[] {
   let filtered = questions;
 
   if (condition.category) {
@@ -230,15 +225,15 @@ export function getRandomQuestionsByCondition(
  * 統計情報を取得
  */
 export function getStatistics() {
-  const categoryStats: Record<string, number> = {
+  const categoryStats: Record = {
     "地理": 0, "歴史": 0, "公民": 0, "経済": 0, "文化": 0
   };
 
-  const difficultyStats: Record<string, number> = {
+  const difficultyStats: Record = {
     "易": 0, "中": 0, "難": 0
   };
 
-  const gradeStats: Record<number, number> = {
+  const gradeStats: Record = {
     5: 0, 6: 0
   };
 
@@ -283,7 +278,7 @@ export class StudyHistory {
   }
 
   getWeakAreas(): Category[] {
-    const categoryResults: Record<string, { correct: number; total: number }> = {};
+    const categoryResults: Record = {};
 
     this.results.forEach(result => {
       const question = questions.find(q => q.id === result.questionId);
@@ -304,7 +299,7 @@ export class StudyHistory {
       .map(([category, _]) => category as Category);
   }
 
-  getRecommendedQuestions(count: number = 5): UnifiedQuestion[] {
+  getRecommendedQuestions(count: number = 5): Question[] {
     const weakAreas = this.getWeakAreas();
     if (weakAreas.length === 0) {
       return getRandomQuestions(count);
@@ -319,19 +314,6 @@ export class StudyHistory {
   }
 }
 
-// 追加のヘルパー関数
-export function getQuestionsBySubject(subject: string): UnifiedQuestion[] {
-  return questions.filter(q => q.subject === subject);
-}
-
-export function getQuestionsByTag(tag: string): UnifiedQuestion[] {
-  return questions.filter(q => q.tags.includes(tag));
-}
-
-export function getHighQualityQuestions(minScore: number = 8.0): UnifiedQuestion[] {
-  return questions.filter(q => q.qualityScore >= minScore);
-}
-
 // 使用例とエクスポート
 export default {
   questions,
@@ -342,8 +324,5 @@ export default {
   getRandomQuestions,
   getRandomQuestionsByCondition,
   getStatistics,
-  StudyHistory,
-  getQuestionsBySubject,
-  getQuestionsByTag,
-  getHighQualityQuestions
+  StudyHistory
 };

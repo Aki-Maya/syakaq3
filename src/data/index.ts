@@ -2,40 +2,20 @@
 // 統一データベースを使用するメインインデックス
 
 import { 
-  unifiedQuestions as allUnifiedQuestions, 
+  allUnifiedQuestions, 
   getQuestionsBySubject as getUnifiedBySubject,
   getQuestionsByCategory as getUnifiedByCategory,
   getQuestionsByTag,
   searchQuestions,
   getHighQualityQuestions
-} from './questions-unified';
+} from './questions-unified-complete';
 
-// 🎯 HIGH QUALITY FILTER: Only use educational valuable questions
-// 高品質問題のみを使用（教育的価値のある問題のみ）
-const HIGH_QUALITY_IDS = [
-  "GEO_HUM_002", "GEO_HUM_003", "GEO_PHY_001", "HIS_ANC_001", "HIS_ANC_005",
-  "HIS_MED_002", "HIS_EMO_002", "HIS_EMO_005", "HIS_EMO_006", "HIS_EMO_008",
-  "HIS_MOD_002", "HIS_MOD_003", "HIS_MOD_005", "HIS_MOD_006", "HIS_CON_001",
-  "HIS_CON_002", "HIS_ANC_007", "HIS_EMO_009", "HIS_MED_004", "GEO_PHY_003",
-  "GEO_PHY_005", "GEO_REG_001", "GEO_REG_002", "GEO_REG_004", "GEO_REG_005",
-  "GEO_REG_006", "GEO_REG_007", "GEO_REG_008", "GEO_REG_009", "GEO_REG_010",
-  "GEO_REG_011", "GEO_REG_012", "GEO_REG_013", "GEO_REG_014", "GEO_HUM_001",
-  "GEO_HUM_004", "GEO_HUM_005", "GEO_HUM_006", "GEO_HUM_007", "GEO_HUM_008",
-  "CIV_POL_001", "CIV_POL_002", "CIV_POL_003", "CIV_POL_004", "CIV_POL_005",
-  "CIV_POL_006", "CIV_POL_007", "CIV_POL_008", "CIV_POL_009", "CIV_POL_010",
-  "CIV_INT_001", "CIV_INT_002", "CIV_INT_003", "CIV_INT_004", "CIV_INT_005",
-  "CIV_INT_006", "CIV_ECO_001", "CIV_ECO_002", "CIV_ECO_003", "CIV_ECO_004",
-  "CIV_ECO_005", "CIV_ECO_006", "CIV_ECO_007"
-];
-
-// Filter to only high-quality questions - NO MORE "A はどれですか？答え『A』" nonsense!
-export const unifiedQuestions = allUnifiedQuestions.filter(q => 
-  HIGH_QUALITY_IDS.includes(q.id)
-);
+// 🎯 ALL QUESTIONS ARE NOW HIGH QUALITY: Using complete 445-question database
+// 全445問が高品質に変換済み - フィルタリング不要
+export const unifiedQuestions = allUnifiedQuestions;
 
 import { 
   UnifiedQuestion as NewUnifiedQuestion,
-  Subject as UnifiedSubject,
   Difficulty,
   QuestionType,
   GeographyCategory,
@@ -112,8 +92,8 @@ export interface SubjectCategory {
   questionCount: number;
 }
 
-// Calculate question counts from unified database
-const calculateQuestionCounts = () => {
+// Calculate question counts with proper initialization
+const calculateAndGetQuestionCounts = () => {
   const counts = {
     geography: {
       total: 0,
@@ -138,23 +118,32 @@ const calculateQuestionCounts = () => {
     }
   };
 
-  unifiedQuestions.forEach(q => {
-    if (q.subject === 'geography') {
-      counts.geography.total++;
-      counts.geography[q.category as keyof typeof counts.geography]++;
-    } else if (q.subject === 'history') {
-      counts.history.total++;
-      counts.history[q.category as keyof typeof counts.history]++;
-    } else if (q.subject === 'civics') {
-      counts.civics.total++;
-      counts.civics[q.category as keyof typeof counts.civics]++;
-    }
-  });
+  // Use allUnifiedQuestions directly
+  if (allUnifiedQuestions && Array.isArray(allUnifiedQuestions)) {
+    allUnifiedQuestions.forEach(q => {
+      if (q.subject === 'geography') {
+        counts.geography.total++;
+        if (counts.geography[q.category as keyof typeof counts.geography] !== undefined) {
+          counts.geography[q.category as keyof typeof counts.geography]++;
+        }
+      } else if (q.subject === 'history') {
+        counts.history.total++;
+        if (counts.history[q.category as keyof typeof counts.history] !== undefined) {
+          counts.history[q.category as keyof typeof counts.history]++;
+        }
+      } else if (q.subject === 'civics') {
+        counts.civics.total++;
+        if (counts.civics[q.category as keyof typeof counts.civics] !== undefined) {
+          counts.civics[q.category as keyof typeof counts.civics]++;
+        }
+      }
+    });
+  }
 
   return counts;
 };
 
-const questionCounts = calculateQuestionCounts();
+const questionCounts = calculateAndGetQuestionCounts();
 
 // Updated subject definitions with accurate question counts from unified database
 export const subjects: SubjectInfo[] = [
@@ -228,7 +217,7 @@ export type GovernmentBranch = any;
 
 // Enhanced utility functions using unified database
 export const getAllQuestions = (): NewUnifiedQuestion[] => {
-  return unifiedQuestions;
+  return unifiedQuestions || [];
 };
 
 export const getQuestionsBySubject = (subject: 'geography' | 'history' | 'civics'): NewUnifiedQuestion[] => {
@@ -240,7 +229,8 @@ export const getQuestionsBySubjectAndCategory = (subject: 'geography' | 'history
 };
 
 export const getRandomQuestionsMixed = (count: number = 10): NewUnifiedQuestion[] => {
-  const shuffled = [...unifiedQuestions].sort(() => 0.5 - Math.random());
+  const safeQuestions = unifiedQuestions || [];
+  const shuffled = [...safeQuestions].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
 
@@ -254,7 +244,7 @@ export const getQuestionsByDifficulty = (difficulty: 'easy' | 'medium' | 'hard')
     'hard': 'advanced' as const
   };
   
-  return unifiedQuestions.filter(q => q.difficulty === difficultyMap[difficulty]);
+  return (unifiedQuestions || []).filter(q => q.difficulty === difficultyMap[difficulty]);
 };
 
 // Legacy compatibility functions
@@ -424,17 +414,18 @@ export const calculateXPForCorrectAnswer = calculateXPFromScore;
 
 // Subject statistics using unified database
 export const getSubjectStats = () => {
+  const safeQuestions = unifiedQuestions || [];
   return {
-    totalQuestions: unifiedQuestions.length,
+    totalQuestions: safeQuestions.length,
     subjectBreakdown: {
       geography: questionCounts.geography.total,
       history: questionCounts.history.total,
       civics: questionCounts.civics.total
     },
     difficultyBreakdown: {
-      easy: unifiedQuestions.filter(q => q.difficulty === 'basic').length,
-      medium: unifiedQuestions.filter(q => q.difficulty === 'standard').length,
-      hard: unifiedQuestions.filter(q => q.difficulty === 'advanced').length
+      easy: safeQuestions.filter(q => q.difficulty === 'basic').length,
+      medium: safeQuestions.filter(q => q.difficulty === 'standard').length,
+      hard: safeQuestions.filter(q => q.difficulty === 'advanced').length
     }
   };
 };

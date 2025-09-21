@@ -34,7 +34,8 @@ const ShakaQuestHome = () => {
         {/* ヘッダー */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">ShakaQuest2</h1>
-          <p className="text-gray-600">中学受験学習アプリ</p>
+          <p className="text-gray-600">中学受験学習アプリ - 125問厳選版</p>
+          <div className="text-xs text-gray-500 mt-1">v3.1.0 - サンプル問題完全除去！</div>
         </div>
 
         {/* ユーザー統計カード */}
@@ -92,11 +93,11 @@ const ShakaQuestHome = () => {
         {/* 学習統計 */}
         <LearningStats userStats={userStats} />
 
-        {/* ランダムクイズボタン */}
-        <div className="text-center mt-8">
+        {/* ボタンエリア */}
+        <div className="text-center mt-8 space-y-4">
           <Link 
             href="/quiz"
-            className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:from-green-600 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="block bg-gradient-to-r from-green-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:from-green-600 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             onClick={() => {
               // ランダムクイズの場合、全科目の最終学習日を更新
               subjects.forEach(subject => updateLastStudied(subject.id));
@@ -104,6 +105,22 @@ const ShakaQuestHome = () => {
           >
             🚀 ランダムクイズを開始
           </Link>
+          
+          {/* 管理機能リンク */}
+          <div className="flex justify-center gap-4 mt-4">
+            <Link 
+              href="/questions"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-bold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              🗂️ 問題管理
+            </Link>
+            <Link 
+              href="/admin"
+              className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-lg font-bold hover:from-orange-600 hover:to-red-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              🔧 問題作成
+            </Link>
+          </div>
         </div>
       </div>
     </div>
