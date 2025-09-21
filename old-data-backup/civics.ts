@@ -314,8 +314,9 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     category: "politics",
     difficulty: "easy",
-    explanation: "2016年から選挙権年齢は18歳に引き下げられました。"
-},
+    explanation: "2016年から選挙権年齢は18歳に引き下げられました。",
+    type: "multiple-choice"
+  },
     {
     id: 222,
     question: '衆議院の総定数は何名ですか？',
@@ -323,7 +324,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     explanation: '衆議院の総定数は465名です。',
     category: 'politics',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 223,
@@ -332,7 +334,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     explanation: '参議院議員の任期は6年で、解散はありません。 ',
     category: 'politics',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 224,
@@ -346,7 +349,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     explanation: '憲法改正の発議には、衆参両院の総議員の3分の2以上の賛成が必要です（出席議員数ではない）。 ',
     category: 'politics',
-    difficulty: 'hard'
+    difficulty: 'hard',
+    type: 'multiple-choice'
   },
   {
     id: 225,
@@ -355,7 +359,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 0,
     explanation: '通常国会は毎年1月に召集され、会期は150日間です。',
     category: 'politics',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 226,
@@ -364,7 +369,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     explanation: '衆議院が解散されたときは、解散の日から40日以内に総選挙を行い、その選挙の日から30日以内に国会を召集しなければなりません。',
     category: 'politics',
-    difficulty: 'hard'
+    difficulty: 'hard',
+    type: 'multiple-choice'
   },
   {
     id: 227,
@@ -373,7 +379,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     explanation: '内閣は、衆議院で不信任の決議案が可決されたときは、10日以内に衆議院が解散されない限り、総辞職をしなければなりません。',
     category: 'politics',
-    difficulty: 'medium'
+    difficulty: 'medium',
+    type: 'multiple-choice'
   },
   {
     id: 228,
@@ -382,7 +389,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 2,
     explanation: '法律案は委員会で審議される際、必要に応じて専門家を招いて意見を集める公聴会が開かれることがあります。',
     category: 'politics',
-    difficulty: 'medium'
+    difficulty: 'medium',
+    type: 'multiple-choice'
   },
   {
     id: 229,
@@ -396,7 +404,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 3,
     explanation: '育児・介護休業法は、働く人が育児や家族の介護と仕事を両立できるよう、育児休業や介護休業などの制度を定めた法律です。',
     category: 'economics',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 230,
@@ -405,7 +414,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     explanation: '裁判を受ける権利に関連し、「疑わしきは被告人の利益に」の原則から、被告人に不利益な証拠が本人の自白のみの場合には有罪にできません。',
     category: 'human-rights',
-    difficulty: 'hard'
+    difficulty: 'hard',
+    type: 'multiple-choice'
   },
   {
     id: 231,
@@ -414,7 +424,8 @@ export const civicsQuestions: CivicsQuestion[] = [
     correct: 1,
     explanation: '1872年の学制公布当初、義務教育は4年でしたが、その後延長され、現在では小学校6年間と中学校3年間の合計9年間となっています。',
     category: 'human-rights',
-    difficulty: 'easy'
+    difficulty: 'easy',
+    type: 'multiple-choice'
   },
   {
     id: 232,
@@ -593,7 +604,7 @@ export const getRandomQuestions = (count: number = 5): CivicsQuestion[] => {
 };
 
 export const getCategories = (): string[] => {
-  return [...new Set(civicsQuestions.map(q => q.category))];
+  return Array.from(new Set(civicsQuestions.map(q => q.category)));
 };
 
 export default {

@@ -1,0 +1,56 @@
+{
+  "total": 128,
+  "bySubject": {
+    "civics": 40,
+    "geography": 42,
+    "history": 46
+  },
+  "byCategory": {
+    "environment": 2,
+    "human": 3,
+    "regional": 31,
+    "physical": 8,
+    "ancient": 10,
+    "early-modern": 10,
+    "medieval": 4,
+    "modern": 18,
+    "contemporary": 4,
+    "constitution": 5,
+    "politics": 30,
+    "economics": 3
+  },
+  "bySubjectCategory": {
+    "civics-environment": 2,
+    "geography-human": 3,
+    "geography-regional": 31,
+    "geography-physical": 8,
+    "history-ancient": 10,
+    "history-early-modern": 10,
+    "history-medieval": 4,
+    "history-modern": 18,
+    "history-contemporary": 4,
+    "civics-constitution": 5,
+    "civics-politics": 30,
+    "civics-economics": 3
+  },
+  "categoryMapping": {
+    "geography": {
+      "physical": 8,
+      "human": 3,
+      "regional": 31
+    },
+    "history": {
+      "ancient": 10,
+      "medieval": 4,
+      "early-modern": 10,
+      "modern": 18,
+      "contemporary": 4
+    },
+    "civics": {
+      "constitution": 5,
+      "politics": 30,
+      "economics": 3,
+      "environment": 2
+    }
+  }
+}

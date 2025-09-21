@@ -1,8 +1,8 @@
-// Unified Questions Database for ShakaQuest - Specific Problem Cleaned
-// 統一問題データベース - 特定問題除去済み
-// Generated: 2025-09-08T02:40:51.801Z
+// Unified Questions Database for ShakaQuest - Cleaned Version
+// 統一問題データベース - クリーンアップ済み
+// Generated: 2025-09-08T02:32:16.565Z
 // Total Questions: 450
-// Status: Specific problematic questions removed
+// Quality Status: All broken questions removed and replaced with educational content
 
 import { UnifiedQuestion } from './unified-types';
 
@@ -12481,29 +12481,3 @@ export const unifiedQuestions: UnifiedQuestion[] = [
     "qualityScore": 6.5
   }
 ];
-
-// Export utility functions
-export const getQuestionsBySubject = (subject: 'geography' | 'history' | 'civics'): UnifiedQuestion[] => {
-  return unifiedQuestions.filter(q => q.subject === subject);
-};
-
-export const getQuestionsByCategory = (subject: 'geography' | 'history' | 'civics', category: string): UnifiedQuestion[] => {
-  return unifiedQuestions.filter(q => q.subject === subject && q.category === category);
-};
-
-export const getQuestionsByTag = (tag: string): UnifiedQuestion[] => {
-  return unifiedQuestions.filter(q => q.tags && q.tags.includes(tag));
-};
-
-export const searchQuestions = (query: string): UnifiedQuestion[] => {
-  const lowerQuery = query.toLowerCase();
-  return unifiedQuestions.filter(q => 
-    q.question.toLowerCase().includes(lowerQuery) ||
-    q.explanation.toLowerCase().includes(lowerQuery) ||
-    (q.tags && q.tags.some(tag => tag.toLowerCase().includes(lowerQuery)))
-  );
-};
-
-export const getHighQualityQuestions = (minQuality: number = 7): UnifiedQuestion[] => {
-  return unifiedQuestions.filter(q => (q.qualityScore || 0) >= minQuality);
-};
